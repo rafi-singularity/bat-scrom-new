@@ -745,6 +745,10 @@ video {
   margin-top: -3.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -821,12 +825,12 @@ video {
   height: 40px;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
-}
-
 .h-\[562px\] {
   height: 562px;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
 }
 
 .h-\[90vh\] {
