@@ -1,50 +1,52 @@
 <div class="bg-primary">
-  <div class="container mx-auto">
+  <div class="container mx-auto h-[90vh]">
     <!-- Header -->
     <div class="py-[2.875rem] px-[4rem]">
       <div class="flex justify-between gap-4 items-center">
+        <!-- Logos -->
         <div
           data-aos="fade-right"
           class="flex items-end divide-x-2 divide-[#FA73B4]"
         >
           <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
           <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          <img src="" alt="" />
         </div>
-        <!--  -->
-        <div data-aos="fade-left" class="">
-          <img src="../assets/icons/badge2.svg" alt="" srcset="" />
+        <!-- Badge -->
+        <div data-aos="fade-left">
+          <img src="../assets/icons/badge2.svg" alt="" />
         </div>
       </div>
     </div>
-    <div class="flex justify-center">
-      <div class="flex items-start relative pr-[12rem]">
+
+    <!-- Content Section -->
+    <div class="flex justify-end items-center px-14 gap-8">
+      <!-- Slider Image -->
+      <div class="h-full relative pr-[8rem]">
+        <!-- Text Content -->
         <div
           data-aos="fade-left"
-          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] py-14 rounded-[3.75rem] relative top-[5rem] left-[19rem] z-[1]"
+          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] z-10 absolute -left-[50%] top-[10%]"
         >
           <div class="space-y-14">
-            <div class="">
+            <div>
               <p class="text-white text-4xl font-medium">Working with Shakib</p>
               <div class="h-2 bg-yellow w-28 mt-2"></div>
             </div>
             <p class="text-white text-[5rem] font-bold">A Shaky Start</p>
             <button
               onclick="loadPage('./page-3.html')"
-              data-aos="zoom-in-right"
-              class="btn w-fit relative -bottom-[5rem]"
+              class="btn w-fit relative z-20"
               type="button"
             >
               <span>Let's Go</span>
-              <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+              <img src="../assets/icons/arrow.svg" alt="" />
             </button>
           </div>
         </div>
         <img
           src="../assets/slider2user.png"
-          class="relative z-10 object-cover"
-          alt=""
-          srcset=""
+          class="h-auto w-full object-contain relative z-20"
+          alt="Slider Image"
           data-aos="fade-up"
         />
       </div>

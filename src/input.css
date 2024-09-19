@@ -6,6 +6,7 @@
 
 #root {
   font-family: "Poppins", sans-serif !important;
+  /* @apply overflow-hidden h-screen; */
 }
 .btn {
   @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;

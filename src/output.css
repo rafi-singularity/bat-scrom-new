@@ -616,10 +616,6 @@ video {
   left: 0px;
 }
 
-.left-\[19rem\] {
-  left: 19rem;
-}
-
 .left-\[24rem\] {
   left: 24rem;
 }
@@ -696,6 +692,26 @@ video {
   top: 5rem;
 }
 
+.right-\[55\%\] {
+  right: 55%;
+}
+
+.-left-\[55\%\] {
+  left: -55%;
+}
+
+.-left-\[50\%\] {
+  left: -50%;
+}
+
+.top-\[20\%\] {
+  top: 20%;
+}
+
+.top-\[10\%\] {
+  top: 10%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -710,6 +726,10 @@ video {
 
 .z-\[1\] {
   z-index: 1;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .col-span-1 {
@@ -837,12 +857,25 @@ video {
   height: 90vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[40vh\] {
+  height: 40vh;
 }
 
 .min-h-screen {
@@ -942,6 +975,10 @@ video {
   gap: 1.75rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-\[11rem\] {
   gap: 11rem;
 }
@@ -1027,6 +1064,11 @@ video {
   background-color: rgb(255 187 0 / var(--tw-bg-opacity));
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1034,6 +1076,15 @@ video {
 
 .p-\[2\.875rem\] {
   padding: 2.875rem;
+}
+
+.p-\[3rem\] {
+  padding: 3rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .px-\[4rem\] {
@@ -1069,6 +1120,11 @@ video {
 .py-\[350px\] {
   padding-top: 350px;
   padding-bottom: 350px;
+}
+
+.px-\[8rem\] {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .pb-\[3\.25rem\] {
@@ -1121,6 +1177,14 @@ video {
 
 .pt-\[5\.75rem\] {
   padding-top: 5.75rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pr-\[4rem\] {
+  padding-right: 4rem;
 }
 
 .text-4xl {
@@ -1201,6 +1265,7 @@ video {
 
 #root {
   font-family: "Poppins", sans-serif !important;
+  /* @apply overflow-hidden h-screen; */
 }
 
 .btn {
