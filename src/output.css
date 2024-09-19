@@ -1102,6 +1102,10 @@ video {
   overflow-x: hidden;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .text-nowrap {
   text-wrap: nowrap;
 }
@@ -1318,6 +1322,10 @@ video {
 
 .text-\[3\.5rem\] {
   font-size: 3.5rem;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
 }
 
 .font-bold {
@@ -1555,6 +1563,10 @@ video {
   .xl\:text-\[3rem\] {
     font-size: 3rem;
   }
+
+  .xl\:leading-\[4\.875rem\] {
+    line-height: 4.875rem;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -1580,5 +1592,9 @@ video {
 
   .\32xl\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .\32xl\:leading-\[4\.875rem\] {
+    line-height: 4.875rem;
   }
 }
