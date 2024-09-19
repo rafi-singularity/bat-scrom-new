@@ -1,64 +1,56 @@
-<div class="grid grid-cols-8 bg-primary">
-  <div
-    data-aos="fade-right"
-    class="col-span-3 w-full h-screen overflow-hidden relative"
-  >
-    <div class="fixed left-0 right-0 top-0 bottom-0">
-      <img src="../assets/slide1.png" class="object-cover w-full" />
-    </div>
-  </div>
-  <div class="col-span-5">
-    <div class="container mx-auto">
-      <!-- Header -->
-      <div class="bg-[#F63E9F] p-[2.875rem] space-y-10">
-        <div class="flex justify-between gap-4 items-center">
-          <div
-            data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#FA73B4]"
-          >
-            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-            <img src="" alt="" />
-          </div>
-          <!--  -->
-          <div data-aos="fade-left" class="">
-            <img src="../assets/icons/badge1.svg" alt="" srcset="" />
-          </div>
+<div class="bg-primary">
+  <div class="container mx-auto">
+    <!-- Header -->
+    <div class="py-[2.875rem] px-[4rem]">
+      <div class="flex justify-between gap-4 items-center">
+        <!-- Logos -->
+        <div
+          data-aos="fade-right"
+          class="flex items-end divide-x-2 divide-[#FA73B4]"
+        >
+          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
         </div>
-        <!-- Header title -->
-        <div data-aos="fade-up" class="relative">
-          <h1 class="text-white text-[2.5rem] xl:text-[3rem] font-bold">
-            Cronicles of Shakib
-          </h1>
-          <img src="../assets/icons/underline.svg" alt="" />
+        <!-- Badge -->
+        <div data-aos="fade-left">
+          <img src="../assets/icons/badge2.svg" alt="" />
         </div>
       </div>
-      <!-- Description -->
-      <div
-        class="text-white text-[22px] font-medium p-[2.875rem] flex flex-col gap-5 justify-start overflow-y-auto h-[60vh]"
-      >
-        <p data-aos="fade-down" class="">
-          Without further ado, let’s get this journey started! During the
-          training, you will be role-playing multiple characters, but the story
-          will revolve around a character named Shakib. Shakib has been recently
-          appointed as the new Brand Deployment Executive in the Activation
-          Team. Without further ado, let’s get started!
-        </p>
-        <p data-aos="fade-down" class="">
-          Vaping devices have been an up-and-coming product in the market and
-          your company wants to join the bandwagon. With prior experience in
-          brand activation, he has been tagged with the latest Vuse launch into
-          the market and asked to conduct a survey on the vaping scenario of the
-          market.
-        </p>
-        <button
-          onclick="loadPage('./page-2.html')"
-          class="btn w-fit mb-4"
-          type="button"
+    </div>
+
+    <!-- Content Section -->
+    <div class="mx-auto relative h-[calc(100vh-147px)] flex items-center">
+      <!-- Text Content -->
+      <div class="relative w-[80%] mx-auto">
+        <div
+          data-aos="fade-left"
+          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] relative w-fit"
         >
-          <span>Let's Go</span>
-          <img src="../assets/icons/arrow.svg" alt="" srcset="" />
-        </button>
+          <div class="space-y-10">
+            <div>
+              <p class="text-white text-4xl font-medium">
+                Welcome to License to Manage!
+              </p>
+              <div class="h-1 bg-yellow w-36 mt-2"></div>
+            </div>
+            <p class="text-white text-[2rem] 2xl:text-[4rem] font-bold">
+              Make Responsible <br />Decisions
+            </p>
+            <button
+              onclick="loadPage('./page-3.html')"
+              class="btn w-fit relative z-20"
+              type="button"
+            >
+              <span>Let's Go</span>
+              <img src="../assets/icons/arrow.svg" alt="" />
+            </button>
+          </div>
+          <img
+            src="../assets/slider2user.png"
+            class="w-auto object-contain absolute top-0 -translate-y-20 translate-x-[50%]"
+            alt="Slider Image"
+          />
+        </div>
       </div>
     </div>
   </div>
