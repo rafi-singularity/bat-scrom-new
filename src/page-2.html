@@ -1,54 +1,62 @@
-<div class="bg-primary">
-  <div class="container mx-auto h-[90vh]">
-    <!-- Header -->
-    <div class="py-[2.875rem] px-[4rem]">
-      <div class="flex justify-between gap-4 items-center">
-        <!-- Logos -->
-        <div
-          data-aos="fade-right"
-          class="flex items-end divide-x-2 divide-[#FA73B4]"
-        >
-          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-        </div>
-        <!-- Badge -->
-        <div data-aos="fade-left">
-          <img src="../assets/icons/badge2.svg" alt="" />
-        </div>
-      </div>
+<div class="grid grid-cols-8 bg-primary">
+  <div
+    data-aos="fade-right"
+    class="col-span-3 w-full h-screen overflow-hidden relative"
+  >
+    <div class="fixed left-0 right-0 top-0 bottom-0">
+      <img src="../assets/slide1.png" class="object-contain w-full" />
     </div>
-
-    <!-- Content Section -->
-    <div class="flex justify-end items-center px-14 gap-8">
-      <!-- Slider Image -->
-      <div class="h-full relative pr-[8rem]">
-        <!-- Text Content -->
-        <div
-          data-aos="fade-left"
-          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] z-10 absolute -left-[50%] top-[10%]"
-        >
-          <div class="space-y-14">
-            <div>
-              <p class="text-white text-4xl font-medium">Working with Shakib</p>
-              <div class="h-2 bg-yellow w-28 mt-2"></div>
-            </div>
-            <p class="text-white text-[5rem] font-bold">A Shaky Start</p>
-            <button
-              onclick="loadPage('./page-3.html')"
-              class="btn w-fit relative z-20"
-              type="button"
-            >
-              <span>Let's Go</span>
-              <img src="../assets/icons/arrow.svg" alt="" />
-            </button>
+  </div>
+  <div class="col-span-5">
+    <div class="container mx-auto">
+      <!-- Header -->
+      <div class="bg-[#F63E9F] p-[2.875rem] space-y-10">
+        <div class="flex justify-between gap-4 items-center">
+          <div
+            data-aos="fade-right"
+            class="flex items-end divide-x-2 divide-[#FA73B4]"
+          >
+            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+            <img src="" alt="" />
+          </div>
+          <!--  -->
+          <div data-aos="fade-left" class="">
+            <img src="../assets/icons/badge1.svg" alt="" srcset="" />
           </div>
         </div>
-        <img
-          src="../assets/slider2user.png"
-          class="h-auto w-full object-contain relative z-20"
-          alt="Slider Image"
-          data-aos="fade-up"
-        />
+        <!-- Header title -->
+        <div data-aos="fade-up" class="relative">
+          <h1 class="text-white text-[2.5rem] xl:text-[3rem] font-bold">
+            Make Responsible Decisions
+          </h1>
+          <div class="h-1 bg-yellow w-24 mt-0"></div>
+        </div>
+      </div>
+      <!-- Description -->
+      <div
+        class="text-white text-[22px] font-medium p-[2.875rem] flex flex-col gap-5 justify-start overflow-y-auto h-[60vh]"
+      >
+        <p class="">
+          Welcome to License to Manage! In this training, you’ll navigate
+          multiple scenarios to help you Do The Right Thing. If you learn to
+          wield compliance as a strategic tool, you will be able to navigate
+          unforeseen crises with ease.
+        </p>
+        <p class="">
+          After completing all the scenarios, you will have to take a final test
+          to assess your understanding. Our goal is to equip you with the skills
+          to help you act with integrity to achieve results. Let’s take the
+          right steps towards ‘A Better Tomorrow.’
+        </p>
+        <button
+          onclick="loadPage('./page-3.html')"
+          class="btn w-[14rem] mb-4"
+          type="button"
+        >
+          <span>Next</span>
+          <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+        </button>
       </div>
     </div>
   </div>
