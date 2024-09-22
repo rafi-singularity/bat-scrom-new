@@ -1,35 +1,85 @@
-<div class="bg-white w-screen min-h-screen">
-  <!-- Header -->
-  <div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-    <div class="flex justify-end gap-4 items-center">
-      <div data-aos="fade-left" class="">
-        <img src="./assets/icons/badge2.svg" alt="" srcset="" />
-      </div>
+<!-- Header -->
+
+<div class="grid grid-cols-2 h-[90vh]">
+  <div class="bg-primary text-white px-[9.375rem] relative">
+    <div class="pt-[10rem] max-w-[40.875rem]">
+      <p
+        class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]"
+        data-aos="fade-down"
+      >
+        That's Correct!
+      </p>
+      <p
+        class="min-[1792px]:text-[22px] text-[12px] font-medium"
+        data-aos="fade-right"
+      >
+        Regardless of Rapide’s reliability in the market, contracts must be
+        updated for all vendors. When working with any supplier—whether familiar
+        or not—the AFC risk assessment should always be the top priority.
+      </p>
+      <img
+        src="../assets/icons/tick.svg"
+        alt=""
+        class="absolute right-32 min-[1792px]:mt-16 mt-5 min-[1792px]:w-[191px] w-[136px]"
+        data-aos="zoom-out-down"
+      />
     </div>
   </div>
-  <div class="grid grid-cols-2 h-[100vh] bg-primary px-[9.375rem]">
-    <div class="h-screen flex items-end">
-      <img src="./assets/slider2user.png" class="bottom-0" alt="" srcset="" />
+  <div
+    class="bg-[#b51d66] flex flex-col justify-center items-center px-[60px] min-[1792px]:pt-[5rem] pt-[1rem]"
+  >
+    <div class="flex justify-end w-full mb-6">
+      <img
+        class="float-right min-[1792px]:w-[255px] w-[180px]"
+        src="../assets/icons/badge2.svg"
+        alt=""
+        srcset=""
+      />
     </div>
-    <div class="flex flex-col justify-center">
-      <h1 class="text-white font-bold text-[58px]" data-aos="fade-right">
-        Episode Summary
-      </h1>
-      <p class="text-white font-semibold text-[22px] mt-4" data-aos="fade-up">
-        You have reached the end of this episode. Let’s take a look at what
-        Procurement Policy and other relevant company policies provide.
-      </p>
-      <div class="flex gap-7 mt-[40px]" data-aos="zoom-out">
-        <button onclick="loadPage('./page-12.html')" type="button">
-          <img src="./assets/icons/slide11-1.svg" alt="" />
-        </button>
-        <button onclick="loadPage('./page-13.html')" type="button">
-          <img src="./assets/icons/slide11-2.svg" alt="" />
-        </button>
+    <div class="space-y-4">
+      <!-- MCQ -->
+      <div class="mcq" data-aos="fade-up">
+        <div class="">A</div>
+        <p class="">
+          Shakib’s quick thinking and decisiveness demonstrate initiative.
+          Commend him for his fast delivery and proceed to the next task.
+        </p>
       </div>
-      <p class="text-white text-[22px] mt-[28px]" data-aos="fade-up">
-        Select the icon to learn more
-      </p>
+      <div class="mcq" data-aos="fade-up">
+        <div>B</div>
+        <p>
+          Rapide is a reputable market research agency with a previously
+          low-risk rating. Therefore, immediately completing the AFC assessment
+          and mitigation plans is not critical.
+        </p>
+      </div>
+      <div class="mcq" data-aos="fade-up">
+        <div>C</div>
+        <p>
+          Considering Shakib’s previous positive experiences with Rapide, it was
+          appropriate to contact and select them for the project without further
+          due diligence.
+        </p>
+      </div>
+      <div class="mcq" data-aos="fade-up">
+        <div>D</div>
+        <p>
+          Since the survey cost was already within the approved budget, Shakib
+          was justified in moving forward with Rapide without seeking a second
+          competitive bid.
+        </p>
+      </div>
+      <div class="mcq correct" data-aos="fade-up">
+        <div>E</div>
+        <p>None of the above.</p>
+      </div>
+      <button
+        onclick="loadPage('./page-12.html')"
+        class="btnMcq mt-10 float-right -bottom-8 relative z-20 min-[1792px]:text-lg text-sm"
+        type="button"
+      >
+        Continue
+      </button>
     </div>
   </div>
 </div>

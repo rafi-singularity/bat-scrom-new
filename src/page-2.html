@@ -8,9 +8,9 @@
     </div>
   </div>
   <div class="col-span-5">
-    <div class="container mx-auto">
+    <div class="mx-auto">
       <!-- Header -->
-      <div class="bg-[#F63E9F] p-[2.875rem] space-y-10">
+      <div class="bg-[#F63E9F] p-[2.875rem] space-y-10 px-5">
         <div class="flex justify-between gap-4 items-center">
           <div
             data-aos="fade-right"
@@ -21,7 +21,11 @@
             <img src="" alt="" />
           </div>
           <!--  -->
-          <div data-aos="fade-left" class="">
+          <div
+            data-aos="fade-left"
+            class="cursor-pointer"
+            onclick="loadPage('./page-1.html')"
+          >
             <img src="../assets/icons/badge1.svg" alt="" srcset="" />
           </div>
         </div>
@@ -35,7 +39,8 @@
       </div>
       <!-- Description -->
       <div
-        class="text-white text-[22px] font-medium p-[2.875rem] flex flex-col gap-5 justify-start overflow-y-auto h-[60vh]"
+        data-aos="fade-left"
+        class="text-white text-base 2xl:text-[22px] font-medium p-[2.875rem] px-5 flex flex-col gap-5 justify-start overflow-y-auto h-[60vh]"
       >
         <p class="">
           Welcome to License to Manage! In this training, you’ll navigate

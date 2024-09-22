@@ -6,22 +6,24 @@
 
 #root {
   font-family: "Poppins", sans-serif !important;
-  @apply overflow-x-hidden;
+  @apply overflow-x-hidden overflow-y-hidden;
 }
 
 .btn {
   @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
+.btnMcq {
+  @apply bg-blue text-white min-[1792px]:text-[24px] text-sm rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
+}
 .mcq {
-  @apply flex items-center gap-5 bg-white  hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] py-5 rounded-[15px] shadow-md;
+  @apply flex items-center gap-5 bg-white  hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md;
 }
 .mcq div {
   @apply bg-[#E6EEF6] rounded-lg text-[#004F9F] font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0;
 }
 .mcq p {
-  @apply text-[#646870] text-xl;
+  @apply text-[#646870] min-[1792px]:text-xl text-[10px];
 }
-
 .mcq:hover div {
   @apply text-white bg-[#4cc8f1];
 }
@@ -63,5 +65,5 @@
 
 /* No Scrollbar */
 ::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
