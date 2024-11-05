@@ -1,48 +1,39 @@
-<div class="bg-primary w-screen h-screen overflow-hidden">
+<div class="bg-white w-screen min-h-screen">
   <!-- Header -->
-  <div class="pt-[2.4375rem] px-[4rem] container mx-auto">
-    <div class="flex justify-end items-center">
-      <div data-aos="fade-left">
-        <img src="../assets/icons/badge2.svg" alt="" />
+  <div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
+    <div class="flex justify-end gap-4 items-center">
+      <div data-aos="fade-left" class="">
+        <img src="./assets/icons/badge2.svg" alt="" srcset="" />
       </div>
     </div>
   </div>
-
-  <div class="grid grid-cols-2 h-full bg-primary px-[9.375rem]">
-    <div class="flex items-end">
-      <img
-        src="../assets/slider2user.png"
-        class="max-h-full object-contain"
-        alt=""
-      />
+  <div class="grid grid-cols-2 h-[100vh] bg-primary px-[9.375rem]">
+    <div class="h-screen flex items-end">
+      <img src="./assets/slider2user.png" class="bottom-0" alt="" srcset="" />
     </div>
     <div class="flex flex-col justify-center">
-      <h1 class="text-white font-bold text-[51px]" data-aos="fade-right">
+      <h1 class="text-white font-bold text-[58px]" data-aos="fade-right">
         Episode Summary
       </h1>
-      <p class="text-white font-semibold text-[22px] mt-3" data-aos="fade-up">
+      <p class="text-white font-semibold text-[22px] mt-4" data-aos="fade-up">
         You have reached the end of this episode. Let’s take a look at what
         Procurement Policy and other relevant company policies provide.
       </p>
-      <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
-        <button onclick="loadPage('./page-13.html')" type="button">
-          <img
-            class="w-[95px] h-[95px]"
-            src="../assets/icons/slide11-1.svg"
-            alt=""
-          />
+      <div class="flex gap-7 mt-[40px]" data-aos="zoom-out">
+        <button onclick="loadPage('./page-12.html')" type="button">
+          <img src="./assets/icons/slide11-1.svg" alt="" />
         </button>
-        <button onclick="loadPage('./page-14.html')" type="button">
+        <button
+          onclick="loadPage('./page-13.html')"
+          class="float-right md:me-36"
+        >
           <img
-            class="w-[95px] h-[95px]"
-            src="../assets/icons/slide11-2.svg"
+            src="./assets/icons/continue_btn.svg"
+            data-aos="fade-up"
             alt=""
           />
         </button>
       </div>
-      <p class="text-white text-[20px] mt-[20px]">
-        Select the icon to learn more
-      </p>
     </div>
   </div>
 </div>
