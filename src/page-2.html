@@ -1,52 +1,67 @@
-<div class="bg-primary">
-  <div class="container mx-auto">
-    <!-- Header -->
-    <div class="py-[2.875rem] px-[4rem]">
-      <div class="flex justify-between gap-4 items-center">
-        <div
-          data-aos="fade-right"
-          class="flex items-end divide-x-2 divide-[#FA73B4]"
-        >
-          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          <img src="" alt="" />
-        </div>
-        <!--  -->
-        <div data-aos="fade-left" class="">
-          <img src="../assets/icons/badge2.svg" alt="" srcset="" />
-        </div>
-      </div>
+<div class="grid grid-cols-8 bg-primary">
+  <div
+    data-aos="fade-right"
+    class="col-span-3 w-full h-screen overflow-hidden relative"
+  >
+    <div class="fixed left-0 right-0 top-0 bottom-0">
+      <img src="../assets/slide1.png" class="object-contain w-full" />
     </div>
-    <div class="flex justify-center">
-      <div class="flex items-start relative pr-[12rem]">
-        <div
-          data-aos="fade-left"
-          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] py-14 rounded-[3.75rem] relative top-[5rem] left-[19rem] z-[1]"
-        >
-          <div class="space-y-14">
-            <div class="">
-              <p class="text-white text-4xl font-medium">Working with Shakib</p>
-              <div class="h-2 bg-yellow w-28 mt-2"></div>
-            </div>
-            <p class="text-white text-[5rem] font-bold">A Shaky Start</p>
-            <button
-              onclick="loadPage('./page-3.html')"
-              data-aos="zoom-in-right"
-              class="btn w-fit relative -bottom-[5rem]"
-              type="button"
-            >
-              <span>Let's Go</span>
-              <img src="../assets/icons/arrow.svg" alt="" srcset="" />
-            </button>
+  </div>
+  <div class="col-span-5">
+    <div class="mx-auto">
+      <!-- Header -->
+      <div class="bg-[#F63E9F] p-[2.875rem] space-y-10 px-5">
+        <div class="flex justify-between gap-4 items-center">
+          <div
+            data-aos="fade-right"
+            class="flex items-end divide-x-2 divide-[#FA73B4]"
+          >
+            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+            <img src="" alt="" />
+          </div>
+          <!--  -->
+          <div
+            data-aos="fade-left"
+            class="cursor-pointer"
+            onclick="loadPage('./page-1.html')"
+          >
+            <img src="../assets/icons/badge1.svg" alt="" srcset="" />
           </div>
         </div>
-        <img
-          src="../assets/slider2user.png"
-          class="relative z-10 object-cover"
-          alt=""
-          srcset=""
-          data-aos="fade-up"
-        />
+        <!-- Header title -->
+        <div data-aos="fade-up" class="relative">
+          <h1 class="text-white text-[2.5rem] xl:text-[3rem] font-bold">
+            Make Responsible Decisions
+          </h1>
+          <div class="h-1 bg-yellow w-24 mt-0"></div>
+        </div>
+      </div>
+      <!-- Description -->
+      <div
+        data-aos="fade-left"
+        class="text-white text-base 2xl:text-[22px] font-medium p-[2.875rem] px-5 flex flex-col gap-5 justify-start overflow-y-auto h-[60vh]"
+      >
+        <p class="">
+          Welcome to License to Manage! In this training, you’ll navigate
+          multiple scenarios to help you Do The Right Thing. If you learn to
+          wield compliance as a strategic tool, you will be able to navigate
+          unforeseen crises with ease.
+        </p>
+        <p class="">
+          After completing all the scenarios, you will have to take a final test
+          to assess your understanding. Our goal is to equip you with the skills
+          to help you act with integrity to achieve results. Let’s take the
+          right steps towards ‘A Better Tomorrow.’
+        </p>
+        <button
+          onclick="loadPage('./page-3.html')"
+          class="btn w-[14rem] mb-4"
+          type="button"
+        >
+          <span>Next</span>
+          <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+        </button>
       </div>
     </div>
   </div>
