@@ -1,42 +1,55 @@
-<div class="grid md:grid-cols-2 grid-cols-1">
-  <div class=" ">
-    <div class="bg-[#E72582]">
-      <img
-        data-aos="fade-right"
-        class="relative pt-[5.75rem] pb-[3.25rem] md:left-[11.875rem] z-50"
-        src="./assets/slide3_chat.png"
-        alt=""
-      />
-    </div>
-    <div class="bg-white px-[9.4375rem] py-[2.3125rem]">
-      <div data-aos="fade-down" class="flex items-center gap-2 mb-[1.15rem]">
-        <img src="./assets/icons/horizontal_bar.svg" alt="" />
-        <p class="text-[#004F9F] text-[1.5rem]">
-          Select the arrow button to learn more
-        </p>
-      </div>
-      <div class="flex gap-4">
-        <button data-aos="fade-right" onclick="loadPage('./page-2.html')">
-          <img src="./assets/icons/prev_btn.svg" alt="" />
-        </button>
-        <button onclick="loadPage('./page-4.html')">
-          <img data-aos="fade-left" src="./assets/icons/next_btn.svg" alt="" />
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="w-full h-screen overflow-hidden relative">
+<div class="bg-primary">
+  <div class="container mx-auto">
     <!-- Header -->
-    <img
-      src="./assets/icons/badge2.svg"
-      class="absolute top-[3.125rem] left-[35rem] z-10"
-      alt=""
-    />
-
-    <img
-      data-aos="fade-left"
-      src="./assets/slide3_img.png"
-      class="object-cover w-full"
-    />
+    <div class="py-[2.875rem] px-[4rem]">
+      <div class="flex justify-between gap-4 items-center">
+        <div
+          data-aos="fade-right"
+          class="flex items-end divide-x-2 divide-[#FA73B4]"
+        >
+          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+          <img src="" alt="" />
+        </div>
+        <!--  -->
+        <div data-aos="fade-left" class="">
+          <img src="../assets/icons/badge2.svg" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="flex items-start relative pr-[12rem]">
+        <div
+          data-aos="fade-left"
+          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] py-14 rounded-[3.75rem] relative top-[5rem] left-[19rem] z-[1]"
+        >
+          <div class="space-y-14">
+            <div class="">
+              <p class="text-white text-4xl font-medium">Working with Shakib</p>
+              <div class="h-2 bg-yellow w-28 mt-2"></div>
+            </div>
+            <p class="text-white text-[5rem] font-bold w-full text-nowrap">
+              A Shaky Start
+            </p>
+            <button
+              onclick="loadPage('./page-3.html')"
+              data-aos="zoom-in-right"
+              class="btn w-fit relative -bottom-[5rem]"
+              type="button"
+            >
+              <span>Let's Go</span>
+              <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+            </button>
+          </div>
+        </div>
+        <img
+          src="../assets/slider2user.png"
+          class="relative z-10 object-cover"
+          alt=""
+          srcset=""
+          data-aos="fade-up"
+        />
+      </div>
+    </div>
   </div>
 </div>

@@ -600,6 +600,10 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .-bottom-8 {
   bottom: -2rem;
 }
@@ -801,6 +805,10 @@ video {
   margin-top: 40px;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -866,6 +874,10 @@ video {
   width: 100vw;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
 .max-w-\[27rem\] {
   max-width: 27rem;
 }
@@ -876,6 +888,14 @@ video {
 
 .max-w-\[40\.875rem\] {
   max-width: 40.875rem;
+}
+
+.max-w-\[1080px\] {
+  max-width: 1080px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
@@ -993,8 +1013,42 @@ video {
   overflow-x: hidden;
 }
 
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
 .rounded-\[3\.75rem\] {
   border-radius: 3.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(231 37 130 / var(--tw-border-opacity));
+}
+
+.border-\[\#FB439B\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 67 155 / var(--tw-border-opacity));
 }
 
 .bg-\[\#E72582\] {
@@ -1025,6 +1079,15 @@ video {
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(255 187 0 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .object-cover {
@@ -1123,6 +1186,10 @@ video {
   padding-top: 5.75rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1197,6 +1264,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 #root {
