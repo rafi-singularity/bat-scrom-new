@@ -1,80 +1,110 @@
-<div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-  <div class="flex justify-end gap-4 items-center">
-    <div data-aos="fade-left" class="">
-      <img src="./assets/icons/badge2.svg" alt="" srcset="" />
+<div class="bg-white">
+  <!-- Header -->
+  <div class="pt-[2.875rem] px-[9.375rem] bg-primary">
+    <div class="flex justify-end gap-4 items-center">
+      <div data-aos="fade-left" class="">
+        <img src="./assets/icons/badge2.svg" alt="" srcset="" />
+      </div>
+    </div>
+    <p class="text-white text-[70px] font-bold uppercase" data-aos="fade-right">
+      Decision Time!
+    </p>
+  </div>
+  <div class="bg-secondary px-[9.375rem] text-white">
+    <div class="grid grid-cols-2 gap-10">
+      <div class="flex flex-col gap-[11rem]">
+        <p class="max-w-[36rem] text-[22px] mt-8" data-aos="fade-up">
+          Shakib comes to you and shares his working process. After hearing his
+          actions, the following thoughts are plaguing your mind. Which of the
+          options represent the correct guidelines as his line manager?  
+        </p>
+        <p
+          class="max-w-[27rem] text-xl font-medium ml-auto"
+          data-aos="fade-left"
+        >
+          Select the most appropriate answers and click on Submit. There can be
+          more than one correct answer.  
+        </p>
+      </div>
+      <div class="space-y-4 -mt-10 -mb-8">
+        <!-- MCQ -->
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <div class="">A</div>
+          <p class="">
+            Shakib has demonstrated strong will by being quick on his feet.
+            Praise Shakib for his fast delivery and move onto the next task.
+          </p>
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <div>B</div>
+          <p>
+            Rapide is widely recognized market research agency in the county and
+            its previous risk rating before expiry was low risk. Hence, it is
+            not critical to have the AFC assessment and the subsequent
+            mitigation action plans completed immediately.
+          </p>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <div>C</div>
+          <p>
+            Given Shakib’s familiarity with Rapide, contacting them and
+            shortlisting them for the project was the right course of action.
+          </p>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <div>D</div>
+          <p>
+            As the cost of the survey was already budgeted, it was okay for
+            Shakib to give the go-ahead to Rapide without getting a second
+            competitive quotation from another vendor.
+          </p>
+        </div>
+        <div
+          id="e"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <div>E</div>
+          <p>None of the above.</p>
+        </div>
+        <button
+          class="btn mt-10 relative z-20"
+          type="button"
+          data-aos="fade-up-right"
+          onclick="handleSubmit()"
+        >
+          Submit
+        </button>
+      </div>
     </div>
   </div>
-</div>
-<div class="grid grid-cols-2 h-[90vh]">
-  <div class="bg-primary text-white pl-[9.375rem] relative">
-    <div class="pt-[10rem] max-w-[40.875rem]">
-      <p class="font-bold text-[70px] mb-[30px]" data-aos="fade-down">
-        That's incorrect!
-      </p>
-      <p
-        class="font-semibold text-[28px] space-y-[20px] mb-[20px]"
-        data-aos="fade-up"
-      >
-        Option <span id="right-answer">“D”</span> is the correct answer
-      </p>
-      <p class="text-[22px] font-medium" data-aos="fade-right">
-        All data that we create, whether financial or non-financial, must
-        accurately reflect the transactions and events covered. Failing to
-        keep accurate records is contrary to Group Policy and may also be
-        illegal.
-      </p>
-      <img
-        src="./assets/icons/cross.svg"
-        alt=""
-        class="absolute right-32 mt-20"
-        data-aos="zoom-out-down"
-      />
-    </div>
-  </div>
-  <div class="bg-[#b51d66] pr-[9.375rem]">
-    <div class="space-y-4 pt-[10rem] pl-[3rem]">
-      <!-- MCQ -->
-      <div id="a" class="mcq" data-aos="fade-up">
-        <div class="">A</div>
-        <p class="">
-          Shakib has demonstrated strong will by being quick on his feet.
-          Praise Shakib for his fast delivery and move onto the next task.
-        </p>
-      </div>
-      <div id="b" class="mcq" data-aos="fade-up">
-        <div>B</div>
-        <p>
-          Rapide is widely recognized market research agency in the county
-          and its previous risk rating before expiry was low risk. Hence,
-          it is not critical to have the AFC assessment and the subsequent
-          mitigation action plans completed immediately.
-        </p>
-      </div>
-      <div id="c" class="mcq" data-aos="fade-up">
-        <div>C</div>
-        <p>
-          Given Shakib’s familiarity with Rapide, contacting them and
-          shortlisting them for the project was the right course of
-          action.
-        </p>
-      </div>
-      <div id="d" class="mcq correct" data-aos="fade-up">
-        <div>D</div>
-        <p>
-          As the cost of the survey was already budgeted, it was okay for
-          Shakib to give the go-ahead to Rapide without getting a second
-          competitive quotation from another vendor.
-        </p>
-      </div>
-      <div id="e" class="mcq" data-aos="fade-up">
-        <div>E</div>
-        <p>None of the above.</p>
-      </div>
-      <button onclick="loadPage('./page-11.html')" class="btn mt-10 -bottom-8 relative z-20" type="button">
-        Continue
-      </button>
-    </div>
+  <div class="bg-white px-[9.375rem]">
+    <img
+      src="./assets/slider8user.png"
+      class="absolute bottom-0 z-10 h-[30rem]"
+      alt=""
+      data-aos="fade-up"
+    />
   </div>
 </div>
-</div>
-

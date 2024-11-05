@@ -1,110 +1,53 @@
-<div class="bg-white">
+<div class="bg-primary">
   <!-- Header -->
-  <div class="pt-[2.875rem] px-[9.375rem] bg-primary">
-    <div class="flex justify-end gap-4 items-center">
+  <div class="py-[2.875rem] px-[4rem]">
+    <div class="flex justify-between gap-4 items-center">
+      <div
+        data-aos="fade-right"
+        class="flex items-end divide-x-2 divide-[#FA73B4]"
+      >
+        <img src="./assets/icons/bat_logo.svg" alt="" class="pr-4" />
+        <img src="./assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+        <img src="" alt="" />
+      </div>
+      <!--  -->
       <div data-aos="fade-left" class="">
         <img src="./assets/icons/badge2.svg" alt="" srcset="" />
       </div>
     </div>
-    <p class="text-white text-[70px] font-bold uppercase" data-aos="fade-right">
-      Decision Time!
-    </p>
   </div>
-  <div class="bg-[#F63E9F] px-[9.375rem] text-white">
-    <div class="grid grid-cols-2 gap-10">
-      <div class="flex flex-col gap-[11rem]">
-        <p class="max-w-[36rem] text-[22px] mt-8" data-aos="fade-up">
-          Shakib comes to you and shares his working process. After hearing his
-          actions, the following thoughts are plaguing your mind. Which of the
-          options represent the correct guidelines as his line manager?  
-        </p>
-        <p
-          class="max-w-[27rem] text-xl font-medium ml-auto"
-          data-aos="fade-left"
-        >
-          Select the most appropriate answers and click on Submit. There can be
-          more than one correct answer.  
-        </p>
+  <div class="flex justify-center">
+    <div class="flex items-start relative pr-[12rem]">
+      <div
+        data-aos="fade-left"
+        class="bg-secondary pl-[5rem] pr-[8rem] py-14 rounded-[3.75rem] relative top-[5rem] left-[24rem] z-[1]"
+      >
+        <div class="">
+          <div class="">
+            <p class="text-white text-[5rem] font-bold pt-24 leading-[5rem]">
+              You are Shakib's <br />
+              Line Manager
+            </p>
+            <div class="h-2 bg-yellow w-28"></div>
+          </div>
+          <button
+            data-aos="zoom-in-right"
+            class="btn w-fit relative -bottom-[5rem]"
+            type="button"
+            onclick="loadPage('./page-8.html')"
+          >
+            <span>Let's Go</span>
+            <img src="./assets/icons/arrow.svg" alt="" srcset="" />
+          </button>
+        </div>
       </div>
-      <div class="space-y-4 -mt-10 -mb-8">
-        <!-- MCQ -->
-        <div
-          id="a"
-          onclick=" selectHandler(this)"
-          class="mcq"
-          data-aos="fade-up"
-        >
-          <div class="">A</div>
-          <p class="">
-            Shakib has demonstrated strong will by being quick on his feet.
-            Praise Shakib for his fast delivery and move onto the next task.
-          </p>
-        </div>
-        <div
-          id="b"
-          onclick=" selectHandler(this)"
-          class="mcq"
-          data-aos="fade-up"
-        >
-          <div>B</div>
-          <p>
-            Rapide is widely recognized market research agency in the county and
-            its previous risk rating before expiry was low risk. Hence, it is
-            not critical to have the AFC assessment and the subsequent
-            mitigation action plans completed immediately.
-          </p>
-        </div>
-        <div
-          id="c"
-          onclick=" selectHandler(this)"
-          class="mcq"
-          data-aos="fade-up"
-        >
-          <div>C</div>
-          <p>
-            Given Shakib’s familiarity with Rapide, contacting them and
-            shortlisting them for the project was the right course of action.
-          </p>
-        </div>
-        <div
-          id="d"
-          onclick=" selectHandler(this)"
-          class="mcq"
-          data-aos="fade-up"
-        >
-          <div>D</div>
-          <p>
-            As the cost of the survey was already budgeted, it was okay for
-            Shakib to give the go-ahead to Rapide without getting a second
-            competitive quotation from another vendor.
-          </p>
-        </div>
-        <div
-          id="e"
-          onclick=" selectHandler(this)"
-          class="mcq"
-          data-aos="fade-up"
-        >
-          <div>E</div>
-          <p>None of the above.</p>
-        </div>
-        <button
-          class="btn mt-10 relative z-20"
-          type="button"
-          data-aos="fade-up-right"
-          onclick="handleSubmit()"
-        >
-          Submit
-        </button>
-      </div>
+      <img
+        data-aos="fade-up"
+        src="./assets/slider7user.png"
+        class="relative z-10 -mt-14"
+        alt=""
+        srcset=""
+      />
     </div>
-  </div>
-  <div class="bg-white px-[9.375rem]">
-    <img
-      src="./assets/slider8user.png"
-      class="absolute bottom-0 z-10 h-[30rem]"
-      alt=""
-      data-aos="fade-up"
-    />
   </div>
 </div>
