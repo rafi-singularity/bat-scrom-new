@@ -781,6 +781,10 @@ video {
   margin-top: 36px;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -791,6 +795,10 @@ video {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-\[20rem\] {
@@ -1058,6 +1066,11 @@ video {
   border-color: rgb(250 115 180 / var(--tw-divide-opacity));
 }
 
+.divide-\[\#8BBD86\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(139 189 134 / var(--tw-divide-opacity));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1078,22 +1091,18 @@ video {
   border-radius: 3.75rem;
 }
 
-.border-l-2 {
-  border-left-width: 2px;
-}
-
 .border-l-4 {
   border-left-width: 4px;
-}
-
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .border-\[\#FFBB00\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 187 0 / var(--tw-border-opacity));
+}
+
+.bg-\[\#004F9F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 79 159 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#E72582\] {
@@ -1113,7 +1122,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(231 37 130 / var(--tw-bg-opacity));
+  background-color: rgb(47 145 47 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1124,6 +1133,15 @@ video {
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(255 187 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#8BBD86\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 189 134 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -1210,6 +1228,10 @@ video {
   padding-left: 0px;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1250,12 +1272,8 @@ video {
   padding-top: 5.75rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-end {
@@ -1360,6 +1378,14 @@ video {
 
 .leading-10 {
   line-height: 2.5rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-\[\#004F9F\] {
