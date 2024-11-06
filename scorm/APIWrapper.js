@@ -144,11 +144,11 @@ const selectHandler = (selected) => {
 
 const handleSubmit = async () => {
   if (answer !== "") {
-    if (answer === "d") {
-      loadPage("./page-10.html");
+    if (answer === "c") {
+      loadPage("./page-12.html");
       return;
     } else {
-      const newDocument = await loadPage("./page-9.html");
+      const newDocument = await loadPage("./page-11.html");
       newDocument.getElementById(answer).classList.add("wrong");
       return;
     }

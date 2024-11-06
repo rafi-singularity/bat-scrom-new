@@ -1,75 +1,93 @@
-<!-- Header -->
-<div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-  <div class="flex justify-end gap-4 items-center">
-    <div data-aos="fade-left" class="">
-      <img src="./assets/icons/badge2.svg" alt="" srcset="" />
-    </div>
+<div class="relative">
+  <div
+    onclick="loadPage('./page-1.html')"
+    class="absolute top-0 py-[2rem] right-0 px-[4rem] z-50 w-full cursor-pointer"
+  >
+    <img
+      class="float-right min-[1792px]:w-[255px] w-[180px]"
+      src="../assets/icons/badge2.svg"
+      alt=""
+      srcset=""
+    />
   </div>
-</div>
-<div class="grid grid-cols-2 h-[90vh]">
-  <div class="bg-primary text-white pl-[9.375rem] relative">
-    <div class="pt-[10rem] max-w-[40.875rem]">
-      <p class="font-bold text-[70px] mb-[30px]" data-aos="fade-down">
-        That's Correct!
-      </p>
-      <p class="text-[22px] font-medium" data-aos="fade-right">
-        No matter how reliable Rapide is in the market, contracts must be
-        updated for all vendors in the system. While working with any supplier-
-        old or new- make sure the AFC risk assessment is the first thing you do.
-      </p>
-      <img
-        src="./assets/icons/tick.svg"
-        alt=""
-        class="absolute right-32 mt-20"
-        data-aos="zoom-out-down"
-      />
-    </div>
+  <div
+    class="w-[100%] bg-[#b51d66] h-[90vh] absolute top-0 bottom-0 left-0 right-0"
+  >
+    <div class="bg-primary w-[80%] h-[90vh]"></div>
   </div>
-  <div class="bg-[#b51d66] pr-[9.375rem]">
-    <div class="space-y-4 pt-[10rem] pl-[3rem]">
-      <!-- MCQ -->
-      <div class="mcq" data-aos="fade-up">
-        <div class="">A</div>
-        <p class="">
-          Shakib has demonstrated strong will by being quick on his feet. Praise
-          Shakib for his fast delivery and move onto the next task.
+
+  <!-- Header -->
+
+  <div class="grid grid-cols-2 h-[90vh] relative z-50">
+    <div class="text-white px-[9.375rem] relative">
+      <div class="pt-[10rem] max-w-[40.875rem]">
+        <p
+          class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]"
+          data-aos="fade-down"
+        >
+          That's Correct!
         </p>
-      </div>
-      <div class="mcq" data-aos="fade-up">
-        <div>B</div>
-        <p>
-          Rapide is widely recognized market research agency in the county and
-          its previous risk rating before expiry was low risk. Hence, it is not
-          critical to have the AFC assessment and the subsequent mitigation
-          action plans completed immediately.
+        <p
+          class="min-[1630px]:text-[22px] text-[16px] font-medium"
+          data-aos="fade-right"
+        >
+          Regardless of FastTrack’s reliability in the market, contracts must be
+          updated for all vendors. When working with any supplier—whether
+          familiar or not—the AFC risk assessment should always be the top
+          priority.
         </p>
+        <img
+          src="../assets/icons/tick.svg"
+          alt=""
+          class="absolute right-32 min-[1792px]:mt-16 mt-5 min-[1792px]:w-[191px] w-[136px]"
+          data-aos="zoom-out-down"
+        />
       </div>
-      <div class="mcq" data-aos="fade-up">
-        <div>C</div>
-        <p>
-          Given Shakib’s familiarity with Rapide, contacting them and
-          shortlisting them for the project was the right course of action.
-        </p>
-      </div>
-      <div class="mcq correct" data-aos="fade-up">
-        <div>D</div>
-        <p>
-          As the cost of the survey was already budgeted, it was okay for Shakib
-          to give the go-ahead to Rapide without getting a second competitive
-          quotation from another vendor.
-        </p>
-      </div>
-      <div class="mcq" data-aos="fade-up">
-        <div>E</div>
-        <p>None of the above.</p>
-      </div>
-      <button
-        onclick="loadPage('./page-11.html')"
-        class="btn mt-10 -bottom-8 relative z-20"
-        type="button"
-      >
-        Continue
-      </button>
     </div>
+    <div
+      class="flex flex-col justify-center items-center px-[60px] min-[1792px]:pt-[5rem] pt-[1rem]"
+    >
+      <div class="space-y-4">
+        <!-- MCQ -->
+        <div class="mcq" data-aos="fade-up">
+          <div class="">A</div>
+          <p class="">
+            Shakib’s quick thinking and decisiveness demonstrate initiative.
+            Commend him for his fast delivery and proceed to the next task.
+          </p>
+        </div>
+        <div class="mcq" data-aos="fade-up">
+          <div>B</div>
+          <p>
+            FastTrack is a reputable market research agency with a previously
+            low-risk rating. Therefore, immediately completing the AFC
+            assessment and mitigation plans is not critical.
+          </p>
+        </div>
+        <div class="mcq correct" data-aos="fade-up">
+          <div>C</div>
+          <p>
+            Despite Shakib’s previous positive experiences with FastTrack,
+            Shakib should have done the right due diligence and complete the AFC
+            assessment.
+          </p>
+        </div>
+        <div class="mcq" data-aos="fade-up">
+          <div>D</div>
+          <p>
+            Since the survey cost was already within the approved budget, Shakib
+            was justified in moving forward with Rapide without seeking a second
+            competitive bid.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button
+      onclick="loadPage('./page-13.html')"
+      class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 mx-[4rem] z-20"
+      type="button"
+    >
+      Continue
+    </button>
   </div>
 </div>
