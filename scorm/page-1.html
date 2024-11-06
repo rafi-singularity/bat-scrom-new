@@ -1,0 +1,74 @@
+<div class="bg-primary h-full overflow-hidden">
+  <div class="bg-primary h-full overflow-hidden">
+    <div class="container mx-auto">
+      <!-- Header -->
+      <div class="py-[2.875rem] px-[4rem]">
+        <div class="flex justify-between gap-4 items-center">
+          <!-- Logos -->
+          <div
+            data-aos="fade-right"
+            class="flex items-end divide-x-2 divide-[#FA73B4]"
+          >
+            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+          </div>
+          <!-- Badge -->
+          <!-- <div
+            class="cursor-pointer"
+            onclick="loadPage('./page-1.html')"
+            data-aos="fade-left"
+          >
+            <img src="../assets/icons/badge2.svg" alt="" />
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Video content -->
+      <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center flex-col">
+          <div
+            class="relative rounded-[20px] w-auto border-4 border-[#FB439B] overflow-hidden drop-shadow-xl"
+          >
+            <!-- thumbnail+playButton -->
+            <div
+              onclick="handlePlayButton()"
+              id="thumbnail-wrapper"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10"
+            >
+              <!-- <img
+              src="../assets/video-thumbnail.png"
+              alt="Thumbnail"
+              class="absolute w-full h-full object-cover"
+            /> -->
+              <img
+                src="../assets/icons/play-button.svg"
+                alt="Play Button"
+                class="z-20 cursor-pointer"
+              />
+            </div>
+
+            <!-- video part -->
+            <video
+              id="videoPlay"
+              src="../assets/Monisha_Abraham_License_to_Manage.mp4"
+              poster="../assets/video-thumbnail.png"
+              width="600"
+              class="mx-auto"
+              style="width: auto; height: 60vh"
+            ></video>
+          </div>
+          <div class="w-full flex items-center justify-end pt-3">
+            <button
+              onclick="loadPage('./page-2.html')"
+              class="btn w-fit"
+              type="button"
+            >
+              <span>Start</span>
+              <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
