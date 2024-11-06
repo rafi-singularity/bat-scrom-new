@@ -1,59 +1,47 @@
-<div class="bg-primary h-full overflow-hidden">
-  <div class="bg-primary h-full overflow-hidden">
-    <div class="px-5 mx-auto">
-      <!-- Header -->
-      <div class="py-[2.875rem] px-[4rem]">
-        <div class="flex justify-between gap-4 items-center">
-          <!-- Logos -->
-          <div
-            data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#FA73B4]"
-          >
-            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          </div>
-          <!-- Badge -->
-          <div data-aos="fade-left">
-            <img src="../assets/icons/badge2.svg" alt="" />
-          </div>
-        </div>
+<div class="bg-primary w-screen h-screen overflow-hidden">
+  <!-- Header -->
+  <div class="pt-[2.4375rem] px-[4rem] container mx-auto">
+    <div class="flex justify-end items-center">
+      <div data-aos="fade-left">
+        <img src="../assets/icons/scenario02-badge.svg" alt="" />
       </div>
+    </div>
+  </div>
 
-      <!-- Content Section -->
-      <div
-        class="mx-auto relative h-[calc(100vh-247px)] flex items-center pl-0 2xl:pl-[15%]"
-      >
-        <!-- Text Content -->
-        <div class="relative w-[80%] mx-auto">
-          <div
-            data-aos="fade-left"
-            class="bg-[#F63E9F] pl-[5rem] pr-[10rem] rounded-[3.75rem] h-fit py-[6rem] relative w-fit"
-          >
-            <div class="space-y-10">
-              <div>
-                <p class="text-white text-6xl font-bold">
-                  You are Shakib’s <br />Line Manager 
-                </p>
-                <div class="h-1 bg-yellow w-28 mt-2"></div>
-              </div>
-
-              <button
-                onclick="loadPage('./page-9.html')"
-                class="btn w-fit absolute -bottom-[6%] z-20"
-                type="button"
-              >
-                <span>Let's Go</span>
-                <img src="../assets/icons/arrow.svg" alt="" />
-              </button>
-            </div>
-            <img
-              src="../assets/slider7user.png"
-              class="w-auto object-contain absolute top-0 -translate-y-20 translate-x-[35%] 2xl:translate-x-[35%]"
-              alt="Slider Image"
-            />
-          </div>
-        </div>
+  <div class="grid grid-cols-2 h-full bg-primary px-[9.375rem]">
+    <div class="flex items-end">
+      <img
+        src="../assets/slider2user.png"
+        class="max-h-full object-contain"
+        alt=""
+      />
+    </div>
+    <div class="flex flex-col justify-center">
+      <h1 class="text-white font-bold text-[51px]" data-aos="fade-right">
+        Episode Summary
+      </h1>
+      <p class="text-white font-semibold text-[22px] mt-3" data-aos="fade-up">
+        You have reached the end of this episode. Here’s a quick glimpse of the policies.
+      </p>
+      <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
+        <button onclick="loadPage('./page-9.html')" type="button">
+          <img
+            class="w-[95px] h-[95px]"
+            src="../assets/icons/slide11-1.svg"
+            alt=""
+          />
+        </button>
+        <button onclick="loadPage('./page-10.html')" type="button">
+          <img
+            class="w-[95px] h-[95px]"
+            src="../assets/icons/slide11-2.svg"
+            alt=""
+          />
+        </button>
       </div>
+      <p class="text-white text-[20px] mt-[20px]">
+        Select the icon to learn more
+      </p>
     </div>
   </div>
 </div>
