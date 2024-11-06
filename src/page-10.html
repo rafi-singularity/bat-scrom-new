@@ -1,75 +1,154 @@
-<!-- Header -->
-<div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-  <div class="flex justify-end gap-4 items-center">
-    <div data-aos="fade-left" class="">
-      <img src="./assets/icons/badge2.svg" alt="" srcset="" />
+<div class="bg-white">
+  <!-- Header -->
+  <div class="pt-[2.875rem] px-[9.375rem] bg-primary">
+    <div class="flex justify-end gap-4 items-center">
+      <div
+        onclick="loadPage('./page-1.html')"
+        data-aos="fade-left"
+        class="min-[1792px]:w-[255px] w-[180px] cursor-pointer"
+      >
+        <img src="../assets/icons/badge2.svg" alt="" srcset="" />
+      </div>
     </div>
+    <p
+      class="text-white min-[1792px]:text-[70px] text-[40px] font-bold uppercase"
+      data-aos="fade-right"
+    >
+      Decision Time!
+      <svg
+        width="157"
+        height="6"
+        viewBox="0 0 157 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.794678"
+          y="0.100952"
+          width="155.437"
+          height="5.49432"
+          fill="#FFBB00"
+        />
+      </svg>
+    </p>
   </div>
-</div>
-<div class="grid grid-cols-2 h-[90vh]">
-  <div class="bg-primary text-white pl-[9.375rem] relative">
-    <div class="pt-[10rem] max-w-[40.875rem]">
-      <p class="font-bold text-[70px] mb-[30px]" data-aos="fade-down">
-        That's Correct!
-      </p>
-      <p class="text-[22px] font-medium" data-aos="fade-right">
-        No matter how reliable Rapide is in the market, contracts must be
-        updated for all vendors in the system. While working with any supplier-
-        old or new- make sure the AFC risk assessment is the first thing you do.
-      </p>
-      <img
-        src="./assets/icons/tick.svg"
-        alt=""
-        class="absolute right-32 mt-20"
-        data-aos="zoom-out-down"
-      />
-    </div>
-  </div>
-  <div class="bg-[#b51d66] pr-[9.375rem]">
-    <div class="space-y-4 pt-[10rem] pl-[3rem]">
-      <!-- MCQ -->
-      <div class="mcq" data-aos="fade-up">
-        <div class="">A</div>
-        <p class="">
-          Shakib has demonstrated strong will by being quick on his feet. Praise
-          Shakib for his fast delivery and move onto the next task.
+  <div class="bg-primary px-[9.375rem] text-white">
+    <div class="grid grid-cols-2 h-[65vh] relative z-50">
+      <div class="flex flex-col 2xl:gap-[3rem] gap-[2rem]">
+        <p
+          class="max-w-[36rem] 2xl:text-[22px] text-[14px] mt-5"
+          data-aos="fade-up"
+        >
+          Shakib shares his approach to handling the recent assignment. As his
+          line manager, which of the following guidelines would best reflect the
+          correct course of action?
         </p>
+
+        <div
+          class="flex justify-start items-center border-l-4 pl-2 border-[#FFBB00]"
+        >
+          <p
+            class="max-w-[27rem] 2xl:text-[18px] italic text-[12px] font-medium"
+            data-aos="fade-left"
+          >
+            Select all that apply and click Submit. There may be more than one
+            correct answer.
+          </p>
+        </div>
       </div>
-      <div class="mcq" data-aos="fade-up">
-        <div>B</div>
-        <p>
-          Rapide is widely recognized market research agency in the county and
-          its previous risk rating before expiry was low risk. Hence, it is not
-          critical to have the AFC assessment and the subsequent mitigation
-          action plans completed immediately.
-        </p>
-      </div>
-      <div class="mcq" data-aos="fade-up">
-        <div>C</div>
-        <p>
-          Given Shakib’s familiarity with Rapide, contacting them and
-          shortlisting them for the project was the right course of action.
-        </p>
-      </div>
-      <div class="mcq correct" data-aos="fade-up">
-        <div>D</div>
-        <p>
-          As the cost of the survey was already budgeted, it was okay for Shakib
-          to give the go-ahead to Rapide without getting a second competitive
-          quotation from another vendor.
-        </p>
-      </div>
-      <div class="mcq" data-aos="fade-up">
-        <div>E</div>
-        <p>None of the above.</p>
+      <div class="space-y-4 -mt-10">
+        <!-- MCQ -->
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            A
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
+          >
+            Shakib’s quick thinking and decisiveness demonstrate initiative.
+            Commend him for his fast delivery and proceed to the next task.
+          </p>
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            B
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
+          >
+            Rapide is a reputable market research agency with a previously
+            low-risk rating. Therefore, immediately completing the AFC
+            assessment and mitigation plans is not critical.
+          </p>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            C
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
+          >
+            Considering Shakib’s previous positive experiences with Rapide, it
+            was appropriate to contact and select them for the project without
+            further due diligence.
+          </p>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            D
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
+          >
+            Since the survey cost was already within the approved budget, Shakib
+            was justified in moving forward with Rapide without seeking a second
+            competitive bid.
+          </p>
+        </div>
       </div>
       <button
-        onclick="loadPage('./page-11.html')"
-        class="btn mt-10 -bottom-8 relative z-20"
+        class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 z-20"
         type="button"
+        onclick="handleSubmit()"
       >
-        Continue
+        Submit
       </button>
     </div>
+  </div>
+  <div class="bg-white px-[9.375rem]">
+    <img
+      src="../assets/slider8user.png"
+      class="absolute bottom-0 z-10 min-[1792px]:h-[25rem] h-[20rem]"
+      alt=""
+      data-aos="fade-up"
+    />
   </div>
 </div>

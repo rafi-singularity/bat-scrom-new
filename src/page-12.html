@@ -1,62 +1,93 @@
-<div class="grid md:grid-cols-4 grid-cols-1">
-  <div class="col-span-3">
-    <div class="bg-white relative">
-      <div class="bg-[#E72582] h-[40px]"></div>
-      <img
-        src="./assets/icons/slide12_ploygon.png"
-        class="absolute right-[-0.75rem] top-[30%] z-50"
-        alt=""
-        data-aos="fade-left"
-      />
-      <div
-        data-aos="fade-down"
-        class="h-[562px] md:px-[150px] py-[350px] relative top-[-7.25rem]"
-      >
-        <div class="flex items-center gap-4 mb-8">
-          <img src="./assets/icons/slide11-1.svg" alt="" />
-          <h1 class="text-[4.5rem] font-bold">Procurement Policy</h1>
-        </div>
-        <p class="text-[#004F9F] font-medium text-[22px]">
-          The Procurement Policy applies for all indirect goods and services and
-          Rapide’s intervention was not an exception. Moreover, this policy is
-          dynamic and sourcing limits with a single vendor may be subjected to
-          change at the discretion of the business.
-          <br />
-          <br />
-          Shakib should have been more diligent with this sourcing, especially
-          considering how Rapide’s contract have already expired. Low or medium
-          risk supplier need to be recertified every 3 years, whereas a
-          high-risk supplier needs to be assessed every 2 years.
-        </p>
-      </div>
-      <div class="flex gap-4 justify-end">
-        <button onclick="loadPage('./page-11.html')" type="button">
-          <img src="./assets/icons/back-gray.svg" data-aos="fade-up" alt="" />
-        </button>
-        <button
-          onclick="loadPage('./page-13.html')"
-          class="float-right md:me-36"
-        >
-          <img
-            src="./assets/icons/continue_btn.svg"
-            data-aos="fade-up"
-            alt=""
-          />
-        </button>
-      </div>
-    </div>
+<div class="relative">
+  <div
+    onclick="loadPage('./page-1.html')"
+    class="absolute top-0 py-[2rem] right-0 px-[4rem] z-50 w-full cursor-pointer"
+  >
+    <img
+      class="float-right min-[1792px]:w-[255px] w-[180px]"
+      src="../assets/icons/badge2.svg"
+      alt=""
+      srcset=""
+    />
   </div>
   <div
-    class="col-span-1 w-full h-screen overflow-hidden relative"
-    data-aos="fade-left"
+    class="w-[100%] bg-[#b51d66] h-[90vh] absolute top-0 bottom-0 left-0 right-0"
   >
-    <!-- Header -->
-    <img
-      src="./assets/icons/badge2.svg"
-      class="absolute top-[3.125rem] left-[6.85rem;] z-50"
-      alt=""
-    />
+    <div class="bg-primary w-[80%] h-[90vh]"></div>
+  </div>
 
-    <img src="./assets/slide12_img.png" class="object-cover w-full h-full" />
+  <!-- Header -->
+
+  <div class="grid grid-cols-2 h-[90vh] relative z-50">
+    <div class="text-white px-[9.375rem] relative">
+      <div class="pt-[10rem] max-w-[40.875rem]">
+        <p
+          class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]"
+          data-aos="fade-down"
+        >
+          That's Correct!
+        </p>
+        <p
+          class="min-[1630px]:text-[22px] text-[16px] font-medium"
+          data-aos="fade-right"
+        >
+          Regardless of FastTrack’s reliability in the market, contracts must be
+          updated for all vendors. When working with any supplier—whether
+          familiar or not—the AFC risk assessment should always be the top
+          priority.
+        </p>
+        <img
+          src="../assets/icons/tick.svg"
+          alt=""
+          class="absolute right-32 min-[1792px]:mt-16 mt-5 min-[1792px]:w-[191px] w-[136px]"
+          data-aos="zoom-out-down"
+        />
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-center items-center px-[60px] min-[1792px]:pt-[5rem] pt-[1rem]"
+    >
+      <div class="space-y-4">
+        <!-- MCQ -->
+        <div class="mcq" data-aos="fade-up">
+          <div class="">A</div>
+          <p class="">
+            Shakib’s quick thinking and decisiveness demonstrate initiative.
+            Commend him for his fast delivery and proceed to the next task.
+          </p>
+        </div>
+        <div class="mcq" data-aos="fade-up">
+          <div>B</div>
+          <p>
+            FastTrack is a reputable market research agency with a previously
+            low-risk rating. Therefore, immediately completing the AFC
+            assessment and mitigation plans is not critical.
+          </p>
+        </div>
+        <div class="mcq correct" data-aos="fade-up">
+          <div>C</div>
+          <p>
+            Despite Shakib’s previous positive experiences with FastTrack,
+            Shakib should have done the right due diligence and complete the AFC
+            assessment.
+          </p>
+        </div>
+        <div class="mcq" data-aos="fade-up">
+          <div>D</div>
+          <p>
+            Since the survey cost was already within the approved budget, Shakib
+            was justified in moving forward with Rapide without seeking a second
+            competitive bid.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button
+      onclick="loadPage('./page-13.html')"
+      class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 mx-[4rem] z-20"
+      type="button"
+    >
+      Continue
+    </button>
   </div>
 </div>

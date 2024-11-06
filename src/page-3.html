@@ -1,42 +1,64 @@
-<div class="grid md:grid-cols-2 grid-cols-1">
-  <div class=" ">
-    <div class="bg-[#E72582]">
-      <img
-        data-aos="fade-right"
-        class="relative pt-[5.75rem] pb-[3.25rem] md:left-[11.875rem] z-50"
-        src="./assets/slide3_chat.png"
-        alt=""
-      />
-    </div>
-    <div class="bg-white px-[9.4375rem] py-[2.3125rem]">
-      <div data-aos="fade-down" class="flex items-center gap-2 mb-[1.15rem]">
-        <img src="./assets/icons/horizontal_bar.svg" alt="" />
-        <p class="text-[#004F9F] text-[1.5rem]">
-          Select the arrow button to learn more
-        </p>
-      </div>
-      <div class="flex gap-4">
-        <button data-aos="fade-right" onclick="loadPage('./page-2.html')">
-          <img src="./assets/icons/prev_btn.svg" alt="" />
-        </button>
-        <button onclick="loadPage('./page-4.html')">
-          <img data-aos="fade-left" src="./assets/icons/next_btn.svg" alt="" />
-        </button>
-      </div>
+<div class="grid grid-cols-8 bg-primary">
+  <div
+    data-aos="fade-right"
+    class="col-span-3 w-full h-screen overflow-hidden relative"
+  >
+    <div class="fixed left-0 right-0 top-0 bottom-0">
+      <img src="../assets/slide1.png" class="object-cover w-full" />
     </div>
   </div>
-  <div class="w-full h-screen overflow-hidden relative">
-    <!-- Header -->
-    <img
-      src="./assets/icons/badge2.svg"
-      class="absolute top-[3.125rem] left-[35rem] z-10"
-      alt=""
-    />
+  <div class="col-span-5">
+    <div class="container mx-auto">
+      <!-- Header -->
+      <div class="bg-secondary p-[2.875rem] space-y-10">
+        <div class="flex justify-between gap-4 items-center">
+          <div
+            data-aos="fade-right"
+            class="flex items-end divide-x-2 divide-[#FA73B4]"
+          >
+            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+            <img src="" alt="" />
+          </div>
+          <!--  -->
+          <div
+            data-aos="fade-left"
+            class="cursor-pointer"
+            onclick="loadPage('./page-1.html')"
+          >
+            <img src="../assets/icons/badge1.svg" alt="" srcset="" />
+          </div>
+        </div>
+        <!-- Header title -->
+        <div data-aos="fade-up" class="relative">
+          <h1 class="text-white text-[2.5rem] xl:text-[3rem] font-bold">
+            Make Responsible Choices
+          </h1>
+          <img src="../assets/icons/underline.svg" alt="" />
+        </div>
+      </div>
+      <!-- Description -->
+      <div
+        class="text-white text-[22px] font-medium p-[2.875rem] flex flex-col gap-5 justify-start overflow-y-auto h-[60vh]"
+      >
+        <p data-aos="fade-down" class="">
+          Welcome to License to Manage! In this training, you’ll navigate
+          multiple scenarios to help you Do The Right Thing. When you adopt
+          compliance as a strategic tool, you will be able to navigate
+          unforeseen crises with ease. Our goal is to equip you with the skills
+          to help you act with integrity to achieve results. Let’s take the
+          right steps towards ‘A Better Tomorrow.’
+        </p>
 
-    <img
-      data-aos="fade-left"
-      src="./assets/slide3_img.png"
-      class="object-cover w-full"
-    />
+        <button
+          onclick="loadPage('./page-4.html')"
+          class="btn w-fit mb-4"
+          type="button"
+        >
+          <span>See More</span>
+          <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+        </button>
+      </div>
+    </div>
   </div>
 </div>

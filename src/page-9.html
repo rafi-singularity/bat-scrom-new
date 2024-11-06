@@ -1,80 +1,63 @@
-<div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-  <div class="flex justify-end gap-4 items-center">
-    <div data-aos="fade-left" class="">
-      <img src="./assets/icons/badge2.svg" alt="" srcset="" />
-    </div>
-  </div>
-</div>
-<div class="grid grid-cols-2 h-[90vh]">
-  <div class="bg-primary text-white pl-[9.375rem] relative">
-    <div class="pt-[10rem] max-w-[40.875rem]">
-      <p class="font-bold text-[70px] mb-[30px]" data-aos="fade-down">
-        That's incorrect!
-      </p>
-      <p
-        class="font-semibold text-[28px] space-y-[20px] mb-[20px]"
-        data-aos="fade-up"
-      >
-        Option <span id="right-answer">“D”</span> is the correct answer
-      </p>
-      <p class="text-[22px] font-medium" data-aos="fade-right">
-        All data that we create, whether financial or non-financial, must
-        accurately reflect the transactions and events covered. Failing to
-        keep accurate records is contrary to Group Policy and may also be
-        illegal.
-      </p>
-      <img
-        src="./assets/icons/cross.svg"
-        alt=""
-        class="absolute right-32 mt-20"
-        data-aos="zoom-out-down"
-      />
-    </div>
-  </div>
-  <div class="bg-[#b51d66] pr-[9.375rem]">
-    <div class="space-y-4 pt-[10rem] pl-[3rem]">
-      <!-- MCQ -->
-      <div id="a" class="mcq" data-aos="fade-up">
-        <div class="">A</div>
-        <p class="">
-          Shakib has demonstrated strong will by being quick on his feet.
-          Praise Shakib for his fast delivery and move onto the next task.
-        </p>
+<div class="bg-primary h-full overflow-hidden">
+  <div class="bg-primary h-full overflow-hidden">
+    <div class="px-5 mx-auto">
+      <!-- Header -->
+      <div class="py-[2.875rem] px-[4rem]">
+        <div class="flex justify-between gap-4 items-center">
+          <!-- Logos -->
+          <div
+            data-aos="fade-right"
+            class="flex items-end divide-x-2 divide-[#FA73B4]"
+          >
+            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+          </div>
+          <!-- Badge -->
+          <div
+            class="cursor-pointer"
+            onclick="loadPage('./page-1.html')"
+            data-aos="fade-left"
+          >
+            <img src="../assets/icons/badge2.svg" alt="" />
+          </div>
+        </div>
       </div>
-      <div id="b" class="mcq" data-aos="fade-up">
-        <div>B</div>
-        <p>
-          Rapide is widely recognized market research agency in the county
-          and its previous risk rating before expiry was low risk. Hence,
-          it is not critical to have the AFC assessment and the subsequent
-          mitigation action plans completed immediately.
-        </p>
-      </div>
-      <div id="c" class="mcq" data-aos="fade-up">
-        <div>C</div>
-        <p>
-          Given Shakib’s familiarity with Rapide, contacting them and
-          shortlisting them for the project was the right course of
-          action.
-        </p>
-      </div>
-      <div id="d" class="mcq correct" data-aos="fade-up">
-        <div>D</div>
-        <p>
-          As the cost of the survey was already budgeted, it was okay for
-          Shakib to give the go-ahead to Rapide without getting a second
-          competitive quotation from another vendor.
-        </p>
-      </div>
-      <div id="e" class="mcq" data-aos="fade-up">
-        <div>E</div>
-        <p>None of the above.</p>
-      </div>
-      <button onclick="loadPage('./page-11.html')" class="btn mt-10 -bottom-8 relative z-20" type="button">
-        Continue
-      </button>
-    </div>
-  </div>
-</div>
-</div>
 
+      <!-- Content Section -->
+      <div
+        class="mx-auto relative h-[calc(100vh-247px)] flex items-center pl-0 2xl:pl-[15%]"
+      >
+        <!-- Text Content -->
+        <div class="relative w-[80%] mx-auto">
+          <div
+            data-aos="fade-left"
+            class="bg-[#F63E9F] pl-[5rem] pr-[10rem] rounded-[3.75rem] h-fit py-[6rem] relative w-fit"
+          >
+            <div class="space-y-10">
+              <div>
+                <p class="text-white text-6xl font-bold">
+                  You are Shakib’s <br />Line Manager 
+                </p>
+                <div class="h-1 bg-yellow w-28 mt-2"></div>
+              </div>
+
+              <button
+                onclick="loadPage('./page-10.html')"
+                class="btn w-fit absolute -bottom-[6%] z-20"
+                type="button"
+              >
+                <span>Let's Go</span>
+                <img src="../assets/icons/arrow.svg" alt="" />
+              </button>
+            </div>
+            <img
+              src="../assets/slider7user.png"
+              class="w-auto object-contain absolute top-0 -translate-y-20 translate-x-[35%] 2xl:translate-x-[35%]"
+              alt="Slider Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
