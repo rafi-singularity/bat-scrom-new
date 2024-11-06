@@ -1,68 +1,120 @@
-<div class="px-5 mx-auto">
-  <!-- Header -->
+<div class="relative">
   <div
     onclick="loadPage('./page-1.html')"
-    class="py-[2rem] 2xl:py-[2.875rem] px-[4rem] cursor-pointer"
+    class="absolute top-0 py-[2rem] right-0 px-[4rem] z-50 w-full cursor-pointer"
   >
     <img
+      class="float-right min-[1792px]:w-[255px] w-[180px]"
       src="../assets/icons/badge2.svg"
-      class="ml-auto relative z-10"
       alt=""
+      srcset=""
     />
-  </div>
-  <div class="relative z-10 w-1/2 px-5 h-[50vh] 2xl:h-[55vh]">
-    <h1 class="text-white text-[3rem] 2xl:text-[4.5rem] font-bold">
-      A Familiar Choice
-    </h1>
-    <img src="../assets/icons/underline_1.svg" class="mb-[1.125rem]" alt="" />
-    <p class="text-white font-medium text-[18px] 2xl:text-[22px]">
-      Shakib considered his manager’s brief. The business case had to be ready
-      quickly, but Shakib wasn’t sure where to begin. While reviewing the list
-      of approved vendors, he spotted a familiar name: FastTrack.<br /><br />
-      Shakib had worked with FastTrack at his previous job and knew they could
-      meet tight deadlines. However, there was an issue— FastTrack’s AFC risk
-      assessment and contract had expired.
-    </p>
-  </div>
-  <div class="p-5">
-    <div data-aos="fade-down" class="flex items-center gap-2 mb-[1.15rem]">
-      <img src="../assets/icons/horizontal_bar.svg" alt="" />
-      <p class="text-[#004F9F] text-[1.5rem]">
-        Select the arrow button to Continue
-      </p>
-    </div>
-    <div class="flex gap-4">
-      <button onclick="loadPage('./page-6.html')">
-        <img src="../assets/icons/prev_btn.svg" alt="" />
-      </button>
-      <button onclick="loadPage('./page-8.html')">
-        <img src="../assets/icons/next_btn.svg" alt="" />
-      </button>
-    </div>
   </div>
   <div
-    class="w-1/2 right-0 ml-auto h-screen overflow-hidden absolute top-0 left-0"
+    class="w-[100%] bg-primary h-[90vh] absolute top-0 bottom-0 left-0 right-0"
   >
-    <img
-      data-aos="fade-left"
-      src="../assets/slide4_img.png"
-      class="object-cover w-full"
-    />
+    <div class="bg-[#1D92C3] w-[80%] h-[90vh]"></div>
   </div>
-  <div class="bg-[#E72582] absolute top-0 left-0 w-1/2 h-[70vh]">
-    <div class="absolute -right-[76px] top-[40%]">
-      <svg
-        width="76"
-        height="136"
-        viewBox="0 0 76 136"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M75.4311 67.8384L-3.09785 135.087L-3.09784 0.589688L75.4311 67.8384Z"
-          fill="#E72582"
+
+  <!-- Header -->
+
+  <div class="grid grid-cols-2 h-[90vh] relative z-50">
+    <div class="text-white px-[9.375rem] relative">
+      <div class="pt-[6rem] max-w-[40.875rem]">
+        <p
+          class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]"
+          data-aos="fade-down"
+        >
+          That’s incorrect!
+        </p>
+        <p
+          class="min-[1630px]:text-[22px] text-[14px] font-medium"
+          data-aos="fade-right"
+        >
+          <span class="font-bold">Option “B” & “C” is the correct answer</span
+          ><br /><br />
+          Shakib wilfully obtained confidential information from a Public
+          Official, an action that breaches our SoBC Policy. We must engage with
+          openness, transparency, and integrity. Moreover, he offered a ‘gift’
+          to a Public Official to extract information out of him. This exchange
+          may warrant a disciplinary action such as a verbal or written warning,
+          or even a termination of his contract.
+        </p>
+        <img
+          src="../assets/icons/cross.svg"
+          alt=""
+          class="absolute right-32 min-[1792px]:mt-16 mt-2 min-[1792px]:w-[191px] w-[136px]"
+          data-aos="zoom-out-down"
         />
-      </svg>
+      </div>
     </div>
+    <div
+      class="flex flex-col justify-center items-center px-[60px] min-[1792px]:pt-[5rem] pt-[1rem]"
+    >
+      <div class="space-y-4">
+        <!-- MCQ -->
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <div class="">A</div>
+          <p class="">
+            Shakib is being collaborative by supporting the Regulatory Affairs
+            team to meet their regulatory engagement goals. We need to work
+            together as one team, no matter what it takes.
+          </p>
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq correct"
+          data-aos="fade-up"
+        >
+          <div class="">B</div>
+          <p class="">
+            The information is not yet public, so Shakib has induced a Public
+            Official to breach a duty of confidentiality. Shakib should not have
+            asked Tahmid for the report and should have refused to accept the
+            report even if Tahmid had offered it.
+          </p>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq correct"
+          data-aos="fade-up"
+        >
+          <div class="">C</div>
+          <p class="">
+            Shakib could be said to have offered the Formula 1 ticket as a gift
+            to Tahmid to obtain a favour on behalf of the business. It is
+            completely unacceptable for anyone connected to the business to be
+            involved in any activity relating to bribery and corruption, even
+            for the sake of achieving business results.
+          </p>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <div class="">D</div>
+          <p class="">
+            Shakib is being proactive by getting the draft regulation; one
+            should be able to use on one’s social network in times like this.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button
+      onclick="loadPage('./page-8.html')"
+      class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 mx-[4rem] z-20"
+      type="button"
+    >
+      Continue
+    </button>
   </div>
 </div>

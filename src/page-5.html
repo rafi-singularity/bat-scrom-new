@@ -1,67 +1,155 @@
-<div class="bg-primary h-full overflow-hidden">
-  <div class="bg-primary h-full overflow-hidden">
-    <div class="container mx-auto">
-      <!-- Header -->
-      <div class="py-[2.875rem] px-[4rem]">
-        <div class="flex justify-between gap-4 items-center">
-          <!-- Logos -->
-          <div
-            data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#FA73B4]"
-          >
-            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          </div>
-          <!-- Badge -->
-          <div
-            class="cursor-pointer"
-            onclick="loadPage('./page-1.html')"
-            data-aos="fade-left"
-          >
-            <img src="../assets/icons/badge2.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Content Section -->
-      <div class="mx-auto relative h-[calc(100vh-247px)] flex items-center">
-        <!-- Text Content -->
-        <div class="relative w-[80%] mx-auto">
-          <div
-            data-aos="fade-left"
-            class="bg-[#F63E9F] ml-[6.25rem] 2xl:min-w-[50rem] pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] relative w-fit"
-          >
-            <div class="space-y-10">
-              <div>
-                <p class="text-white text-4xl font-medium">
-                  Working with Shakib
-                </p>
-                <div class="h-1 bg-yellow w-32 mt-2"></div>
-              </div>
-              <div class="max-w-[16rem] 2xl:max-w-[27rem]">
-                <p
-                  class="text-white text-[3rem] 2xl:text-[5rem] font-bold text-nowrap"
-                >
-                  A Shaky Start
-                </p>
-              </div>
-              <button
-                onclick="loadPage('./page-6.html')"
-                class="btn w-fit absolute -bottom-[6%] z-20"
-                type="button"
-              >
-                <span>Start Episode</span>
-                <img src="../assets/icons/arrow.svg" alt="" />
-              </button>
-            </div>
-            <img
-              src="../assets/slider2user.png"
-              class="w-auto object-contain absolute top-0 -translate-y-20 translate-x-[45%] 2xl:translate-x-[50%]"
-              alt="Slider Image"
-            />
-          </div>
-        </div>
+<div class="bg-white">
+  <!-- Header -->
+  <div class="min-[1630px]:pt-[2.875rem] pt-[1.5rem] px-[9.375rem] bg-primary">
+    <div class="flex justify-end gap-4 items-center">
+      <div
+        onclick="loadPage('./page-1.html')"
+        data-aos="fade-left"
+        class="min-[1792px]:w-[255px] w-[180px] cursor-pointer"
+      >
+        <img src="../assets/icons/badge2.svg" alt="" srcset="" />
       </div>
     </div>
+    <p
+      class="text-white min-[1792px]:text-[70px] text-[40px] font-bold uppercase"
+      data-aos="fade-right"
+    >
+      Decision Time!
+      <svg
+        width="167"
+        height="9"
+        viewBox="0 0 167 9"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0.903809" y="0.375" width="166" height="8" fill="#00B1EB" />
+      </svg>
+    </p>
+  </div>
+  <div class="bg-primary px-[9.375rem] text-white">
+    <div class="grid grid-cols-2 h-[65vh] relative z-50">
+      <div
+        class="flex flex-col 2xl:gap-[3rem] min-[1630px]:gap-[2rem] gap-[1rem]"
+      >
+        <p
+          class="max-w-[36rem] 2xl:text-[22px] text-[14px] min-[1630px]:mt-5 mt-3"
+          data-aos="fade-up"
+        >
+          Eventually, Tahmid discloses that the government is not in favor of
+          approving the New Category product. With this information at hand,
+          Shakib now goes to his line manager to discuss the way forward. What
+          do you think about what Shakib has done? Select the most appropriate
+          options.
+        </p>
+
+        <div
+          class="flex justify-start items-center border-l-4 pl-2 border-white"
+        >
+          <p
+            class="max-w-[27rem] min-[1752px]:text-[18px] italic text-[12px] font-medium"
+            data-aos="fade-left"
+          >
+            Select the most appropriate answers and click on<br />
+            Submit. There can be more than one correct answer.  
+          </p>
+        </div>
+      </div>
+      <div class="space-y-4 -mt-10">
+        <!-- MCQ -->
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            A
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
+          >
+            Shakib is being collaborative by supporting the Regulatory Affairs
+            team to meet their regulatory engagement goals. We need to work
+            together as one team, no matter what it takes.
+          </p>
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            B
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
+          >
+            The information is not yet public, so Shakib has induced a Public
+            Official to breach a duty of confidentiality. Shakib should not have
+            asked Tahmid for the report and should have refused to accept the
+            report even if Tahmid had offered it.
+          </p>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            C
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
+          >
+            Shakib could be said to have offered the Formula 1 ticket as a gift
+            to Tahmid to obtain a favour on behalf of the business. It is
+            completely unacceptable for anyone connected to the business to be
+            involved in any activity relating to bribery and corruption, even
+            for the sake of achieving business results.
+          </p>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            D
+          </div>
+          <p
+            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
+          >
+            Shakib is being proactive by getting the draft regulation; one
+            should be able to use on one’s social network in times like this.
+          </p>
+        </div>
+      </div>
+      <button
+        class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 z-20"
+        type="button"
+        onclick="handleSubmit()"
+      >
+        Submit
+      </button>
+    </div>
+  </div>
+  <div class="bg-white px-[9.375rem]">
+    <img
+      src="../assets/slider8user.png"
+      class="absolute bottom-0 z-10 min-[1792px]:h-[25rem] h-[20rem]"
+      alt=""
+      data-aos="fade-up"
+    />
   </div>
 </div>

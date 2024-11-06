@@ -145,10 +145,10 @@ const selectHandler = (selected) => {
 const handleSubmit = async () => {
   if (answer !== "") {
     if (answer === "c") {
-      loadPage("./page-12.html");
+      loadPage("./page-6.html");
       return;
     } else {
-      const newDocument = await loadPage("./page-11.html");
+      const newDocument = await loadPage("./page-7.html");
       newDocument.getElementById(answer).classList.add("wrong");
       return;
     }

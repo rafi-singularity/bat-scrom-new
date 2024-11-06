@@ -1,63 +1,70 @@
-<div class="bg-primary h-full overflow-hidden">
-  <div class="bg-primary h-full overflow-hidden">
-    <div class="px-5 mx-auto">
-      <!-- Header -->
-      <div class="py-[2.875rem] px-[4rem]">
-        <div class="flex justify-between gap-4 items-center">
-          <!-- Logos -->
-          <div
-            data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#FA73B4]"
-          >
-            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          </div>
-          <!-- Badge -->
-          <div
-            class="cursor-pointer"
-            onclick="loadPage('./page-1.html')"
-            data-aos="fade-left"
-          >
-            <img src="../assets/icons/badge2.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Content Section -->
+<div class="grid md:grid-cols-4 grid-cols-1">
+  <div class="col-span-3">
+    <div class="bg-white relative">
+      <div class="bg-[#13A2DF] h-[4.39vh]"></div>
+      <!-- <img
+        src="../assets/icons/slide13_polygon.png"
+        class="absolute right-[0rem] z-50"
+        alt=""
+        style="top: 22.1%"
+        data-aos="fade-left"
+      /> -->
       <div
-        class="mx-auto relative h-[calc(100vh-247px)] flex items-center pl-0 2xl:pl-[15%]"
+        data-aos="fade-down"
+        class="h-[93.42vh] flex justify-center flex-col md:px-[140px]"
       >
-        <!-- Text Content -->
-        <div class="relative w-[80%] mx-auto">
-          <div
-            data-aos="fade-left"
-            class="bg-[#F63E9F] pl-[5rem] pr-[10rem] rounded-[3.75rem] h-fit py-[6rem] relative w-fit"
+        <div class="mb-3">
+          <img src="../assets/icons/slide11-1.svg" alt="" />
+          <h1
+            class="2xl:text-[3.5rem] text-wrap text-[2.25rem] font-bold 2xl:leading-[4.875rem]"
           >
-            <div class="space-y-10">
-              <div>
-                <p class="text-white text-6xl font-bold">
-                  You are Shakib’s <br />Line Manager 
-                </p>
-                <div class="h-1 bg-yellow w-28 mt-2"></div>
-              </div>
-
-              <button
-                onclick="loadPage('./page-10.html')"
-                class="btn w-fit absolute -bottom-[6%] z-20"
-                type="button"
-              >
-                <span>Let's Go</span>
-                <img src="../assets/icons/arrow.svg" alt="" />
-              </button>
-            </div>
-            <img
-              src="../assets/slider7user.png"
-              class="w-auto object-contain absolute top-0 -translate-y-20 translate-x-[35%] 2xl:translate-x-[35%]"
-              alt="Slider Image"
-            />
-          </div>
+            Anti-Bribery and Corruption
+          </h1>
+        </div>
+        <p class="text-[#004F9F] font-medium 2xl:text-[20px] text-[14px]">
+          Shakib should not have leveraged his relationship with Tahmid in this
+          manner as Shakib breached a duty of confidentiality. Regardless of the
+          dynamic between the two, offering anything to a Public Official in
+          return for a favour can be considered inappropriate and goes against
+          our SOBC.
+          <br />
+          <br />
+          The F1 tickets were a blatant example of bribery. The Group mandates
+          that no employee can offer, promise, or give any gift, payment, or
+          other benefit to any person (directly or indirectly) to influence or
+          reward a person of interest.
+          <br />
+          <br />
+          Moreover, if we must talk to anyone in the Regulatory area, we should
+          first discuss with the CORA team and check all due diligence before
+          engaging. Engagement with politicians, policy makers and regulators,
+          when carried out transparently and with high regard for accuracy,
+          allows for the best information to be used as a foundation for
+          decision making.
+        </p>
+        <div class="flex gap-4 mt-12 justify-end">
+          <button onclick="loadPage('./page-13.html')" type="button">
+            <img src="../assets/icons/back-gray.svg" alt="" />
+          </button>
+          <button onclick="loadPage('./page-1.html')" class="float-right">
+            <img src="../assets/icons/end_btn.svg" alt="" />
+          </button>
         </div>
       </div>
     </div>
+  </div>
+  <div
+    class="col-span-1 w-full h-screen overflow-hidden relative"
+    data-aos="fade-left"
+  >
+    <!-- Header -->
+    <img
+      onclick="loadPage('./page-1.html')"
+      src="../assets/icons/badge2.svg"
+      class="absolute top-[3.125rem] 2xl:left-[25%] left-[10%] z-50 cursor-pointer"
+      alt=""
+    />
+
+    <img src="../assets/slide13_img.png" class="w-full h-full" />
   </div>
 </div>

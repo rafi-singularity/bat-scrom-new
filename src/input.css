@@ -22,7 +22,7 @@
   @apply bg-[#E6EEF6] rounded-lg text-[#004F9F] font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0;
 }
 .mcq p {
-  @apply text-[#646870] min-[1630px]:text-2xl text-[15px];
+  @apply text-[#646870] min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px];
 }
 .mcq:hover div {
   @apply text-white bg-[#4cc8f1];
