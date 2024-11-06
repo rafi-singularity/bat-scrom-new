@@ -1,80 +1,132 @@
-<div class="px-5 mx-auto">
+<div class="bg-white">
   <!-- Header -->
-  <div class="py-[2rem] 2xl:py-[2.875rem] px-[4rem]">
+  <div class="pt-[2.875rem] px-[9.375rem] bg-primary">
+    <div class="flex justify-end gap-4 items-center">
+      <div data-aos="fade-left" class="min-[1792px]:w-[255px] w-[180px]">
+        <img src="../assets/icons/badge2.svg" alt="" srcset="" />
+      </div>
+    </div>
+    <p
+      class="text-white min-[1792px]:text-[70px] text-[40px] font-bold uppercase"
+      data-aos="fade-right"
+    >
+      Decision Time!
+      <svg
+        width="157"
+        height="6"
+        viewBox="0 0 157 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.794678"
+          y="0.100952"
+          width="155.437"
+          height="5.49432"
+          fill="#FFBB00"
+        />
+      </svg>
+    </p>
+  </div>
+  <div class="bg-primary px-[9.375rem] text-white">
+    <div class="grid grid-cols-2 gap-10">
+      <div class="flex flex-col 2xl:gap-[3rem] gap-[2rem]">
+        <p
+          class="max-w-[36rem] 2xl:text-[22px] text-[14px] mt-5"
+          data-aos="fade-up"
+        >
+        Shakib explains how Maliha helped him with the navigation and shares his plan for the app upgrade. Take a moment to consider everything Shakib has told you. What’s the right guidance as his line manager, and what are the potential risks?
+        </p>
+
+        <div
+          class="flex justify-start items-center border-l-4 pl-2 border-[#FFBB00]"
+        >
+          <p
+            class="max-w-[27rem] 2xl:text-[18px] italic text-[12px] font-medium"
+            data-aos="fade-left"
+          >
+          Select the buttons to approve or reject the activities, then submit.
+          </p>
+        </div>
+      </div>
+      <div class="space-y-4 -mt-10 -mb-8">
+        <!-- MCQ -->
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div class="">A</div> -->
+          <p class="">
+            Shakib’s quick thinking and decisiveness demonstrate initiative.
+            Commend him for his fast delivery and proceed to the next task.
+          </p>
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div>B</div> -->
+          <p>
+            Rapide is a reputable market research agency with a previously
+            low-risk rating. Therefore, immediately completing the AFC
+            assessment and mitigation plans is not critical.
+          </p>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div>C</div> -->
+          <p>
+            Considering Shakib’s previous positive experiences with Rapide, it
+            was appropriate to contact and select them for the project without
+            further due diligence.
+          </p>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div>D</div> -->
+          <p>
+            Since the survey cost was already within the approved budget, Shakib
+            was justified in moving forward with Rapide without seeking a second
+            competitive bid.
+          </p>
+        </div>
+        <div
+          id="e"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div>E</div> -->
+          <p>None of the above.</p>
+        </div>
+        <button
+          class="btnMcq float-right mt-10 relative z-20 2xl:text-md text-sm"
+          type="button"
+          onclick="handleSubmit()"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white px-[9.375rem]">
     <img
-      src="../assets/icons/badge2.svg"
-      class="ml-auto relative z-10"
+      src="../assets/slider8user.png"
+      class="absolute bottom-0 z-10 min-[1792px]:h-[25rem] h-[20rem]"
       alt=""
+      data-aos="fade-up"
     />
   </div>
-    <div class="h-[50vh] w-[50vw]  relative z-50 -right-10 overflow-hidden ">
-      <img
-        data-aos="fade-right"
-        class="object-contain h-full w-auto ml-auto"
-        src="../assets/slide3_chat.png"
-        alt=""
-      />
-    </div>
-    <div class="p-5 2xl:mt-10">
-      <div data-aos="fade-down" class="flex items-center gap-2 mb-[1.15rem]">
-        <img src="../assets/icons/horizontal_bar.svg" alt="" />
-        <p class="text-[#004F9F] text-[1.5rem]">
-          Select the arrow button to learn more
-        </p>
-      </div>
-      <div  class="flex gap-4">
-        <button  onclick="loadPage('./page-4.html')">
-          <img src="../assets/icons/prev_btn.svg" alt="" />
-        </button>
-        <button onclick="loadPage('./page-6.html')">
-          <img src="../assets/icons/next_btn.svg" alt="" />
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    class="w-1/2 right-0 ml-auto h-screen overflow-hidden absolute top-0 left-0"
-  >
-    <img
-      data-aos="fade-left"
-      src="../assets/slide3_img.png"
-      class="object-cover w-full"
-    />
-  </div>
-  <div class="bg-[#E72582] absolute top-0 left-0 w-1/2 h-[70vh]"></div>
 </div>
-<!-- <div class="grid md:grid-cols-2 grid-cols-1">
-  <div class=" ">
-    <div class="bg-[#E72582]">
-      <img
-        data-aos="fade-right"
-        class="relative pt-[5.75rem] pb-[3.25rem] md:left-[11.875rem] z-50"
-        src="../assets/slide3_chat.png"
-        alt=""
-      />
-    </div>
-    <div class="bg-white px-[9.4375rem] py-[2.3125rem]">
-      <div data-aos="fade-down" class="flex items-center gap-2 mb-[1.15rem]">
-        <img src="../assets/icons/horizontal_bar.svg" alt="" />
-        <p class="text-[#004F9F] text-[1.5rem]">
-          Select the arrow button to learn more
-        </p>
-      </div>
-      <div class="flex gap-4">
-        <button data-aos="fade-right" onclick="loadPage('./page-2.html')">
-          <img src="../assets/icons/prev_btn.svg" alt="" />
-        </button>
-        <button onclick="loadPage('./page-4.html')">
-          <img data-aos="fade-left" src="../assets/icons/next_btn.svg" alt="" />
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="w-full h-screen overflow-hidden relative">
-    <img
-      data-aos="fade-left"
-      src="../assets/slide3_img.png"
-      class="object-cover w-full"
-    />
-  </div>
-</div> -->

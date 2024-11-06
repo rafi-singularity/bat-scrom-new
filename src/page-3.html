@@ -1,67 +1,75 @@
-<div class="bg-primary overflow-hidden">
-  <div class="container mx-auto">
-    <!-- Header -->
-    <div class="py-[2.875rem] px-[4rem]">
-      <div class="flex justify-between gap-4 items-center">
-        <!-- Logos -->
-        <div
-          data-aos="fade-right"
-          class="flex items-end divide-x-2 divide-[#FA73B4]"
-        >
-          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+<div class="grid grid-cols-8 ">
+  <div
+    data-aos="fade-right"
+    class="col-span-3 w-full h-screen overflow-hidden relative"
+  >
+    <div class="fixed left-0 right-0 top-0 bottom-0">
+      <img src="../assets/s2-s3.png" class="object-contain w-full" />
+    </div>
+  </div>
+  <div class="col-span-5">
+    <div class="mx-auto">
+      <!-- Header -->
+      <div class="bg-primary p-[2.875rem] space-y-10 px-5 ">
+        <div class="flex justify-between gap-4 items-center">
+          <div
+            data-aos="fade-right"
+            class="flex items-end divide-x-2 divide-[#FA73B4] invisible"
+          >
+            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+            <img src="" alt="" />
+          </div>
+          <!--  -->
+          <div
+            data-aos="fade-left"
+            class="cursor-pointer"
+            onclick="loadPage('./page-1.html')"
+          >
+            <img src="../assets/icons/scenario02-badge.svg" alt="" srcset="" />
+          </div>
         </div>
-        <!-- Badge -->
-        <div
-          data-aos="fade-left"
-          class="cursor-pointer"
-          onclick="loadPage('./page-1.html')"
-        >
-          <img src="../assets/icons/badge2.svg" alt="" />
+        <!-- Header title -->
+        <div data-aos="fade-up" class="relative">
+          <h1 class="text-white text-[2.5rem] xl:text-[3rem] font-bold">
+            Learning the Ropes
+          </h1>
+          <div class="h-1 bg-[#97DE97] w-44 h-1 mt-0"></div>
         </div>
       </div>
-    </div>
-
-    <!-- Content Section -->
-    <div class="mx-auto relative h-[calc(100vh-147px)] flex items-center">
-      <!-- Text Content -->
-      <div class="relative w-[80%] mx-auto">
-        <div
-          data-aos="fade-left"
-          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] relative w-fit max-w-[50rem]"
-        >
-          <div class="space-y-5 2xl:space-y-10 pb-5">
-            <div>
-              <p class="text-white text-4xl leading-10 font-bold">
-                Chronicles of Shakib
-              </p>
-              <div class="h-1 bg-yellow w-36 mt-2"></div>
-            </div>
-            <p class="text-white text-[16px] font-bold">
-              Let’s dive right in! In this training, you will role-play multiple
-              characters, but the story centers around Shakib, the new Brand
-              Deployment Executive on the Activation Team. Vaping devices have
-              been an up-and-coming product in the market, and your company is
-              eager to enter this growing market. With Shakib's background in
-              brand activation, he has been tasked with leading the launch of
-              the latest Vuse product and conducting a survey to understand the
-              vaping landscape.
+      <!-- Description -->
+      <div
+        data-aos="fade-left"
+        class="bg-primary text-white text-base 2xl:text-[22px] font-medium pt-[2.875rem] px-5 flex flex-col gap-5 justify-start overflow-y-auto h-[35vh]"
+      >
+        <p class="">
+          Vortex was developed by a 3rd party to track different area performances. When Shakib got access to the platform, he noticed that Maliha’s Vortex profile was still active. He took a chance and called her. Luckily, Maliha was still willing to help. She logged in through her phone and showed him how to navigate the app. Inspired, Shakib saw more potential in Vortex. He contacted a different agency to upgrade the app into a retailer tracker.        </p>
+      </div>
+      <div class="bg-white">
+        <div class="px-5 py-2 2xl:mt-10">
+          <div data-aos="fade-down" class="flex items-center gap-2 mb-[1.15rem]">
+            <img src="../assets/icons/horizontal_bar.svg" alt="" />
+            <p class="text-[#004F9F] text-[1.5rem]">
+              Select the arrow button to learn more
             </p>
-            <button
-              onclick="loadPage('./page-4.html')"
-              class="btn w-fit z-20 absolute -bottom-[6%]"
-              type="button"
-            >
-              <span>Let's Go</span>
-              <img src="../assets/icons/arrow.svg" alt="" />
+          </div>
+          <div  class="flex gap-4">
+            <button  onclick="loadPage('./page-2.html')">
+              <img src="../assets/icons/prev_btn.svg" alt="" />
+            </button>
+            <button onclick="loadPage('./page-4.html')">
+              <img src="../assets/icons/next_btn.svg" alt="" />
             </button>
           </div>
-          <img
-            src="../assets/slider2user.png"
-            class="w-auto object-contain absolute top-0 -translate-y-20 translate-x-[50%]"
-            alt="Slider Image"
-          />
         </div>
+        <!-- <button
+          onclick="loadPage('./page-3.html')"
+          class="btn w-[14rem] mb-4"
+          type="button"
+        >
+          <span>Next</span>
+          <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+        </button> -->
       </div>
     </div>
   </div>
