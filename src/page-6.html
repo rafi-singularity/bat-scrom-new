@@ -1,120 +1,142 @@
-<div class="px-5 mx-auto">
-  <!-- Header -->
-  <div class="py-[2rem] 2xl:py-[2.875rem] px-[4rem]">
-    <img
-      src="../assets/icons/badge2.svg"
-      class="ml-auto relative z-10"
-      alt=""
-    />
-  </div>
-  <div class="relative z-10 w-1/2 px-5 h-[50vh] 2xl:h-[55vh]">
-    <h1 class="text-white text-[3rem] 2xl:text-[4.5rem] font-bold">
-      A Familiar Choice
-    </h1>
-    <img src="../assets/icons/underline_1.svg" class="mb-[1.125rem]" alt="" />
-    <p class="text-white font-medium text-[18px] 2xl:text-[22px]">
-      Shakib considered his manager’s directive. The business case had to be
-      ready quickly, but Shakib wasn’t sure where to begin. While reviewing the
-      list of approved vendors, he spotted a familiar name: Rapide.
-      <br /><br />
-      Shakib had worked with Rapide at his previous job and knew they could meet
-      tight deadlines. However, there was an issue—Rapide's AFC risk assessment
-      and contract had expired.
-    </p>
-  </div>
-  <div class="p-5">
-    <div data-aos="fade-down" class="flex items-center gap-2 mb-[1.15rem]">
-      <img src="../assets/icons/horizontal_bar.svg" alt="" />
-      <p class="text-[#004F9F] text-[1.5rem]">
-        Select the arrow button to learn more
+<div class="grid grid-cols-2 h-[85vh]">
+  <div class="bg-primary text-white px-[9.375rem] relative">
+    <div class="pt-[10rem] max-w-[40.875rem]">
+      <p class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]" data-aos="fade-down">
+        That's incorrect!
       </p>
-    </div>
-    <div class="flex gap-4">
-      <button onclick="loadPage('./page-5.html')">
-        <img src="../assets/icons/prev_btn.svg" alt="" />
-      </button>
-      <button onclick="loadPage('./page-7.html')">
-        <img src="../assets/icons/next_btn.svg" alt="" />
-      </button>
-    </div>
-  </div>
-  <div
-    class="w-1/2 right-0 ml-auto h-screen overflow-hidden absolute top-0 left-0"
-  >
-    <img
-      data-aos="fade-left"
-      src="../assets/slide4_img.png"
-      class="object-cover w-full"
-    />
-  </div>
-  <div class="bg-[#E72582] absolute top-0 left-0 w-1/2 h-[70vh]">
-    <div class="absolute -right-[76px] top-[40%]">
-      <svg
-        width="76"
-        height="136"
-        viewBox="0 0 76 136"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <!-- <p
+        class="font-semibold min-[1792px]:text-[28px] text-[16px] space-y-[20px] mb-[20px]"
+        data-aos="fade-up"
       >
-        <path
-          d="M75.4311 67.8384L-3.09785 135.087L-3.09784 0.589688L75.4311 67.8384Z"
-          fill="#E72582"
-        />
-      </svg>
+        Option <span id="right-answer">“E”</span> is the correct answer
+      </p> -->
+      <p class="min-[1792px]:text-[22px] text-[12px] font-medium" data-aos="fade-right">
+        Shakib should not have shared Vortex’s information with
+        a new vendor without proper assessment as it is a serious breach of data. Moreover, Maliha’s Line Manager should have completed the proper offboarding before she left the organization.      </p>
+      <img
+        src="../assets/icons/cross.svg"
+        alt=""
+        class="absolute right-32 min-[1792px]:mt-16 mt-5 min-[1792px]:w-[191px] w-[136px]"
+        data-aos="zoom-out-down"
+      />
+    </div>
+  </div>
+  <div class="bg-primary flex relative flex-col justify-center items-center px-[60px] min-[1792px]:pt-[1rem] pt-[1rem]">
+    <button onclick="loadPage('./page-12.html')" class="btnMcq mt-10 float-right -bottom-6 right-0 z-20 mx-[3.85rem] absolute min-[1792px]:text-lg text-sm" type="button">
+      Continue
+    </button>
+    <div class="bg-[#3DAA3D] absolute top-0 right-0 bottom-0 w-[25%] h-full">
+
+    </div>
+    <div class="space-y-4 ">
+      <div class="flex justify-end w-full mb-6">
+        <img class="float-right min-[1792px]:w-[255px] z-50 w-[180px]" src="../assets/icons/scenario02-badge.svg" alt="" srcset="" />
+      </div>
+      <!-- MCQ -->
+      <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div class="">A</div> -->
+          <p class="">
+            Praise Shakib’s idea and ensure the revamp happens smoothly but keep it quiet from the wider function until launch. 
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle1" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle1" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle1" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
+          
+          
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div>B</div> -->
+          <p>
+            Shakib should inform IDT to check and remove all system and application access of leavers.
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle2" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle2" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle2" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div>C</div> -->
+          <p>
+            The offboarding process for Maliha should have been completed, including the recovery of her Vortex account before her departure. This should be reported immediately as it poses a company risk.
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle3" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle3" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle3" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq"
+          data-aos="fade-up"
+        >
+          <!-- <div>D</div> -->
+          <p>
+            Consulting a new agency without proper assessment exposed confidential company data, which was not the right approach.
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle4" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle4" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle4" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
+        </div>
     </div>
   </div>
 </div>
+</div>
 
-<!-- <div class="grid md:grid-cols-2 grid-cols-1">
-  <div class=" ">
-    <div class="bg-[#E72582] relative">
-      <img
-        src="../assets/icons/polygon.svg"
-        class="absolute right-[-4.75rem] top-[40%] z-50"
-        alt=""
-      />
-      <div
-        data-aos="fade-up"
-        class="h-[562px] md:px-[150px] py-[350px] relative top-[-6.25rem]"
-      >
-        <h1 class="text-white text-[4.5rem] font-bold">A Tricky Situation</h1>
-        <img
-          src="../assets/icons/underline_1.svg"
-          class="mb-[1.125rem]"
-          alt=""
-        />
-        <p class="text-white font-medium text-[22px]">
-          Shakib was reflecting over the implications of that message from his
-          line manager. The business case needed to be appraised on time, but he
-          had no idea where to start. He looks through the list of existing
-          vendors and comes across a familiar name, Rapide.
-        </p>
-      </div>
-    </div>
-    <div class="bg-white px-[9.4375rem] py-[2.3125rem]">
-      <div class="flex items-center gap-2 mb-[1.15rem]">
-        <img src="../assets/icons/horizontal_bar.svg" alt="" />
-        <p class="text-[#004F9F] text-[1.5rem]" data-aos="fade-right">
-          Select the arrow button to learn more
-        </p>
-      </div>
-      <div class="flex gap-4">
-        <button data-aos="fade-right" onclick="loadPage('./page-3.html')">
-          <img src="../assets/icons/prev_btn.svg" alt="" />
-        </button>
-        <button data-aos="fade-left" onclick="loadPage('./page-5.html')">
-          <img src="../assets/icons/next_btn.svg" alt="" />
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="w-full h-screen overflow-hidden relative" data-aos="fade-left">
-    <img
-      src="../assets/icons/badge2.svg"
-      class="absolute top-[3.125rem] left-[35rem] z-100"
-      alt=""
-    />
-
-    <img src="../assets/slide4_img.png" class="object-cover w-full" />
-  </div>
-</div> -->
