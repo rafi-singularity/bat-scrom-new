@@ -610,6 +610,12 @@ video {
 
 .-bottom-6 {
   bottom: -1.5rem;
+.-bottom-5 {
+  bottom: -1.25rem;
+}
+
+.-bottom-6 {
+  bottom: -1.5rem;
 }
 
 .-bottom-\[6\%\] {
@@ -678,6 +684,50 @@ video {
 
 .top-\[40\%\] {
   top: 40%;
+}
+
+.left-\[-65px\] {
+  left: -65px;
+}
+
+.left-\[-60px\] {
+  left: -60px;
+}
+
+.left-\[-70px\] {
+  left: -70px;
+}
+
+.left-\[-50px\] {
+  left: -50px;
+}
+
+.left-\[-45px\] {
+  left: -45px;
+}
+
+.left-\[-40px\] {
+  left: -40px;
+}
+
+.left-\[-35px\] {
+  left: -35px;
+}
+
+.left-\[-30px\] {
+  left: -30px;
+}
+
+.left-\[-25px\] {
+  left: -25px;
+}
+
+.left-\[-20px\] {
+  left: -20px;
+}
+
+.left-\[-15px\] {
+  left: -15px;
 }
 
 .z-10 {
@@ -797,6 +847,22 @@ video {
 
 .mt-\[36px\] {
   margin-top: 36px;
+}
+
+.mb-\[1rem\] {
+  margin-bottom: 1rem;
+}
+
+.mb-\[0\.5rem\] {
+  margin-bottom: 0.5rem;
+}
+
+.mb-\[0\.25rem\] {
+  margin-bottom: 0.25rem;
+}
+
+.mb-\[0\.45rem\] {
+  margin-bottom: 0.45rem;
 }
 
 .flex {
@@ -943,6 +1009,22 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[50\] {
+  width: 50;
+}
+
+.w-\[510\] {
+  width: 510;
+}
+
+.w-\[90px\] {
+  width: 90px;
 }
 
 .min-w-\[95px\] {
@@ -1408,6 +1490,10 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1638,6 +1724,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:max-w-\[27rem\] {
+    max-width: 27rem;
+  }
+
   .xl\:text-\[3rem\] {
     font-size: 3rem;
   }
@@ -1723,6 +1813,14 @@ video {
 }
 
 @media (min-width: 1792px) {
+  .min-\[1792px\]\:left-\[-75px\] {
+    left: -75px;
+  }
+
+  .min-\[1792px\]\:left-\[-65px\] {
+    left: -65px;
+  }
+
   .min-\[1792px\]\:mt-16 {
     margin-top: 4rem;
   }
@@ -1737,6 +1835,14 @@ video {
 
   .min-\[1792px\]\:w-\[255px\] {
     width: 255px;
+  }
+
+  .min-\[1792px\]\:w-auto {
+    width: auto;
+  }
+
+  .min-\[1792px\]\:max-w-\[27rem\] {
+    max-width: 27rem;
   }
 
   .min-\[1792px\]\:pt-\[1rem\] {
@@ -1758,5 +1864,21 @@ video {
   .min-\[1792px\]\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .min-\[1792px\]\:text-\[1px\] {
+    font-size: 1px;
+  }
+
+  .min-\[1792px\]\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+
+  .min-\[1792px\]\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .min-\[1792px\]\:text-\[1\.15rem\] {
+    font-size: 1.15rem;
   }
 }
