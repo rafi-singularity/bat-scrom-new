@@ -123,30 +123,42 @@ pipwerks.SCORM.API.find = function (win) {
     pipwerks.SCORM.API.isFound = (API !== null);
 };
 
-// MCQ
-let answer = '';
 
-const selectHandler = (selected) => {
-    const options = document.querySelectorAll('.mcq');
-    options.forEach(option => {
-        option.classList.remove('correct');
-    });
-    selected.classList.add('correct');
-    answer = selected.id;
+// Question Section
+let answer = [0, 1, 1, 1];
+let selectedValues = [];
+
+
+function isMatch(inputArray) {
+    // Check if the input array has the same length and elements as the correct answer
+    return inputArray.length === answer.length &&
+        inputArray.every((value, index) => value === answer[index]);
 }
 
-
 const handleSubmit = async () => {
-    if (answer !== '') {
-        if (answer === 'e') {
-            loadPage('./page-11.html');
-            return
+    // Select all checkboxes
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    // Loop through checkboxes to check which are selected
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+            selectedValues.push(0);
         } else {
-            const newDocument = await loadPage('./page-10.html');
-            newDocument.getElementById(answer).classList.add('wrong');
-            return
+            selectedValues.push(1);
         }
+    }); console.log('input value', selectedValues);
+    const isValid = isMatch(selectedValues);
+    if (isValid) {
+        selectedValues = []
+        return loadPage('./page-7.html');
+
     } else {
-        return;
+        await loadPage('./page-6.html');
+        checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        console.log(checkboxes);
+        checkboxes.forEach((checkbox, index) => {
+            checkbox.checked = selectedValues[index] === 0;
+            console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
+        })
+        return selectedValues = [];
     }
 }

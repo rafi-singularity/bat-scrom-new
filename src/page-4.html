@@ -7,13 +7,17 @@
           <!-- Logos -->
           <div
             data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#FA73B4]"
+            class="flex items-end divide-x-2 divide-[#0E2B63]"
           >
             <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
             <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
           </div>
           <!-- Badge -->
-          <div data-aos="fade-left">
+          <div
+            class="cursor-pointer"
+            onclick="loadPage('./page-1.html')"
+            data-aos="fade-left"
+          >
             <img src="../assets/icons/scenario02-badge.svg" alt="" />
           </div>
         </div>
@@ -27,23 +31,24 @@
             data-aos="fade-left"
             class="bg-[#8BBD86] ml-[6.25rem] 2xl:min-w-[50rem] pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] relative w-fit"
           >
-            
-              <div>
-              </div>
-              <div class="min-[1792px]:max-w-[27rem] 2xl:max-w-[27rem]">
-                <p class="text-white text-[2.5rem] py-5 2xl:text-[3.5rem] text-nowrap font-bold">
-                  You are Shakib’s <br> Line Manager
-                </p>
-              </div>
-              <button
-                onclick="loadPage('./page-5.html')"
-                class="btn w-fit absolute -bottom-[6%] z-20"
-                type="button"
+            <div></div>
+            <div class="min-[1792px]:max-w-[27rem] 2xl:max-w-[27rem]">
+              <p
+                class="text-white text-[2.5rem] py-5 2xl:text-[3.5rem] text-nowrap font-bold"
               >
-                <span>Let's Go</span>
-                <img src="../assets/icons/arrow.svg" alt="" />
-              </button>
-        
+                You are Shakib’s <br />
+                Line Manager
+              </p>
+            </div>
+            <button
+              onclick="loadPage('./page-5.html')"
+              class="btn w-fit absolute -bottom-[6%] z-20"
+              type="button"
+            >
+              <span>Let's Go</span>
+              <img src="../assets/icons/arrow.svg" alt="" />
+            </button>
+
             <img
               src="../assets/s2-s4.png"
               class="w-auto object-contain absolute top-0 min-[1792px]:left-[-75px] left-[-15px] -translate-y-20 translate-x-[45%] 2xl:translate-x-[50%]"
