@@ -680,8 +680,28 @@ video {
   top: 40%;
 }
 
-.right-\[10\%\] {
-  right: 10%;
+.bottom-\[2rem\] {
+  bottom: 2rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.top-8 {
+  top: 2rem;
 }
 
 .z-10 {
@@ -702,10 +722,6 @@ video {
 
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-
-.col-span-4 {
-  grid-column: span 4 / span 4;
 }
 
 .float-right {
@@ -816,10 +832,6 @@ video {
 
 .h-\[46px\] {
   height: 46px;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
 }
 
 .h-\[60vh\] {
@@ -1233,6 +1245,10 @@ video {
   padding-right: 8rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-\[1\.5rem\] {
   padding-top: 1.5rem;
 }
@@ -1251,14 +1267,6 @@ video {
 
 .pt-\[6rem\] {
   padding-top: 6rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-2xl {
@@ -1296,10 +1304,6 @@ video {
   font-size: 16px;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
-}
-
 .text-\[2\.25rem\] {
   font-size: 2.25rem;
 }
@@ -1318,6 +1322,14 @@ video {
 
 .text-\[58px\] {
   font-size: 58px;
+}
+
+.text-\[1px\] {
+  font-size: 1px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .font-bold {
@@ -1598,10 +1610,6 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .md\:px-\[140px\] {
     padding-left: 140px;
     padding-right: 140px;
@@ -1616,10 +1624,6 @@ video {
 @media (min-width: 1536px) {
   .\32xl\:left-\[25\%\] {
     left: 25%;
-  }
-
-  .\32xl\:right-\[25\%\] {
-    right: 25%;
   }
 
   .\32xl\:h-\[55vh\] {
@@ -1668,10 +1672,6 @@ video {
 
   .\32xl\:text-\[3\.5rem\] {
     font-size: 3.5rem;
-  }
-
-  .\32xl\:text-\[4\.5rem\] {
-    font-size: 4.5rem;
   }
 
   .\32xl\:text-\[4rem\] {
@@ -1732,6 +1732,10 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .min-\[1630px\]\:text-\[20px\] {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1652px) {
@@ -1758,10 +1762,6 @@ video {
 @media (min-width: 1792px) {
   .min-\[1792px\]\:mt-16 {
     margin-top: 4rem;
-  }
-
-  .min-\[1792px\]\:mt-12 {
-    margin-top: 3rem;
   }
 
   .min-\[1792px\]\:h-\[25rem\] {
