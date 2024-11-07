@@ -968,17 +968,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
 @keyframes pulse {
   50% {
     opacity: .5;
@@ -1568,6 +1557,92 @@ video {
 }
 
 .mcq:hover p {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mcq-main {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 15px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.mcq-main:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 177 235 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1536px) {
+  .mcq-main {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.mcq-main div {
+  display: flex;
+  height: 46px;
+  width: 46px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 238 246 / var(--tw-bg-opacity));
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 79 159 / var(--tw-text-opacity));
+}
+
+.group:hover .mcq-main div {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 219 250 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mcq-main p {
+  font-size: 13px;
+  --tw-text-opacity: 1;
+  color: rgb(100 104 112 / var(--tw-text-opacity));
+}
+
+.group:hover .mcq-main p {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1630px) {
+  .mcq-main p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.mcq-main:hover div {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 200 241 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mcq-main:hover p {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
