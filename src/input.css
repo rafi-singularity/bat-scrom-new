@@ -10,29 +10,29 @@
 }
 
 .btn {
-  @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
+  @apply bg-[#00B1EB] text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .btnMcq {
-  @apply bg-blue leading-[32px] text-white text-[24px]  rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
+  @apply bg-[#00B1EB] leading-[32px] text-white text-[24px]  rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .mcq {
-  @apply flex items-center gap-5 bg-white  hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md;
+  @apply flex items-center gap-5 bg-white transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md;
 }
 .mcq div {
-  @apply bg-[#E6EEF6] rounded-lg text-[#004F9F] font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0;
+  @apply rounded-lg text-[#004F9F] font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0;
 }
 .mcq p {
   @apply text-[#646870] min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px];
 }
-.mcq:hover div {
-  @apply text-white bg-[#4cc8f1];
-}
-.mcq:hover p {
+/* .mcq:hover div {
+  @apply text-white ;
+} */
+/* .mcq:hover p {
   @apply text-white;
-}
+} */
 
-/* Incorrect */
-.wrong {
+Incorrect
+/* .wrong {
   background-color: #ee3737 !important;
   color: #ffffff !important;
 }
@@ -45,10 +45,10 @@
 }
 .wrong:hover div {
   background-color: #ffffff3a !important;
-}
+} */
 
 /* Correct */
-.correct {
+/* .correct {
   background-color: #50af47 !important;
   color: #ffffff !important;
 }
@@ -61,7 +61,7 @@
 }
 .correct:hover div {
   background-color: #ffffff3a !important;
-}
+} */
 
 /* No Scrollbar */
 ::-webkit-scrollbar {
