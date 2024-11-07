@@ -610,6 +610,12 @@ video {
 
 .-bottom-6 {
   bottom: -1.5rem;
+.-bottom-5 {
+  bottom: -1.25rem;
+}
+
+.-bottom-6 {
+  bottom: -1.5rem;
 }
 
 .-bottom-\[6\%\] {
@@ -1184,6 +1190,11 @@ video {
 .divide-\[\#FA73B4\] > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(250 115 180 / var(--tw-divide-opacity));
+}
+
+.divide-\[\#703EAB\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(112 62 171 / var(--tw-divide-opacity));
 }
 
 .overflow-hidden {
