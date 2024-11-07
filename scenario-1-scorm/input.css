@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#root {
+  font-family: "Poppins", sans-serif !important;
+  @apply overflow-x-hidden overflow-y-hidden;
+}
+
+.btn {
+  @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
+}
+.btnMcq {
+  @apply bg-blue leading-[32px] text-white text-[24px]  rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
+}
+.mcq {
+  @apply flex items-center gap-5 bg-white  hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md;
+}
+.mcq div {
+  @apply bg-[#E6EEF6] rounded-lg text-[#004F9F] font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0;
+}
+.mcq p {
+  @apply text-[#646870] min-[1630px]:text-2xl text-[15px];
+}
+.mcq:hover div {
+  @apply text-white bg-[#4cc8f1];
+}
+.mcq:hover p {
+  @apply text-white;
+}
+
+.mcq-main {
+  @apply flex items-center gap-5 bg-white hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md;
+}
+.mcq-main div {
+  @apply bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0;
+}
+.mcq-main p {
+  @apply text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px];
+}
+
+.mcq-main:hover div {
+  @apply text-white bg-[#4cc8f1];
+}
+.mcq-main:hover p {
+  @apply text-white;
+}
+/* Incorrect */
+.wrong {
+  background-color: #ee3737 !important;
+  color: #ffffff !important;
+}
+.wrong div {
+  background-color: #ffffff3a;
+  color: #ffffff !important;
+}
+.wrong p {
+  color: #ffffff !important;
+}
+.wrong:hover div {
+  background-color: #ffffff3a !important;
+}
+
+/* Correct */
+.correct {
+  background-color: #50af47 !important;
+  color: #ffffff !important;
+}
+.correct div {
+  background-color: #ffffff3a;
+  color: #ffffff !important;
+}
+.correct p {
+  color: #ffffff !important;
+}
+.correct:hover div {
+  background-color: #ffffff3a !important;
+}
+
+/* No Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+/* CSS for Preloader Fade-Out Effect */
+.preloader {
+  z-index: 50;
+  transition: opacity 2 ease, visibility 0.5s ease; /* Transition effect */
+}
+
+.preloader.fade-out {
+  opacity: 0; /* Fade out effect */
+  visibility: hidden; /* Hide element when fully transparent */
+}
