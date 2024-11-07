@@ -1,56 +1,87 @@
-<div class="bg-white w-screen min-h-screen">
-  <!-- Header -->
-  <div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-    <div class="flex justify-end gap-4 items-center">
-      <div
+<div class="grid md:grid-cols-4 grid-cols-1">
+  <div class="col-span-3">
+    <div class="bg-white relative">
+      <div class="bg-[#EF7D00] h-[4.39vh]"></div>
+      <!-- <img
+        src="../assets/icons/slide13_polygon.png"
+        class="absolute right-[0rem] z-50"
+        alt=""
+        style="top: 22.1%"
         data-aos="fade-left"
-        class="cursor-pointer"
-        onclick="loadPage('./page-1.html')"
+      /> -->
+      <div
+        data-aos="fade-down"
+        class="h-[93.42vh] flex justify-center flex-col md:px-[140px]"
       >
-        <img src="../assets/icons/badge2.svg" alt="" srcset="" />
+        <div class="mb-3">
+          <img src="../assets/icons/slide11-1.svg" alt="" />
+          <h1
+            class="min-[1630px]:text-[3.5rem] text-wrap text-[2.25rem] font-bold min-[1630px]:leading-[4.875rem] text-[#0E2B63]"
+          >
+            Speak Up
+          </h1>
+        </div>
+        <p class="text-[#004F9F] font-medium min-[1630px]:text-[20px] min-[1400px]:text-[16px] text-[13px]">
+          It takes courage to Speak Up about wrongdoings. Anyone working for or
+          with the Group who is concerned about actual or suspected wrongdoing
+          at work (whether it is something from the past or likely to happen)
+          should Speak Up.
+          <br />
+          <br />
+          This applies for employees, contractors, contingent workers, business
+          partners, customers, suppliers, and their workers. If you want to
+          raise your concerns locally, here are the Local Designated Officers.
+          <br />
+          <br />
+          <ul class="text-[#004F9F] font-medium min-[1630px]:text-[20px] min-[1400px]:text-[16px]  text-[13px]">
+            <li class="list-disc">
+          Head of Legal 
+            </li>
+            <li class="list-disc">
+              Head of Finance
+                </li>
+                <li class="list-disc">
+                  Head of HR 
+                    </li>
+                    <li class="list-disc">
+                      Company Secretary & Senior Legal Counsel
+                        </li>
+          </ul>
+          <br />
+
+          <p class="text-[#004F9F] font-medium min-[1630px]:text-[20px] min-[1400px]:text-[16px]  text-[13px]">
+            Moreover, if we must talk to anyone in the Regulatory area, we should
+            first discuss with the CORA team and check all due diligence before
+            engaging. Engagement with politicians, policy makers and regulators,
+            when carried out transparently and with high regard for accuracy,
+            allows for the best information to be used as a foundation for
+            decision making.
+          </p>
+         
+        </p>
+        <div class="flex gap-4 mt-12 justify-end">
+          <button onclick="loadPage('./page-7.html')" type="button">
+            <img src="../assets/icons/back-gray.svg" alt="" />
+          </button>
+          <button onclick="loadPage('./page-1.html')" class="float-right">
+            <img src="../assets/icons/end_btn.svg" alt="" />
+          </button>
+        </div>
       </div>
     </div>
   </div>
   <div
-    class="grid grid-cols-2 h-[100vh] bg-primary px-[9.375rem] min-[1752px]:pt-0 pt-4"
+    class="col-span-1 w-full h-screen overflow-hidden relative"
+    data-aos="fade-left"
   >
-    <div class="h-screen flex items-end">
-      <img src="../assets/slider2user.png" class="bottom-0" alt="" srcset="" />
-    </div>
-    <div class="flex flex-col justify-center">
-      <h1
-        class="text-white font-bold text-[58px] text-nowrap"
-        data-aos="fade-right"
-      >
-        Episode Summary
-      </h1>
-      <p class="text-white font-semibold text-[22px] mt-4" data-aos="fade-up">
-        You have reached the end of this episode. Shakib has breached the
-        Anti-Bribery and Corruption Policy through his actions. Let’s look at
-        this policy in more detail.
-      </p>
-      <div class="flex gap-7 mt-[40px]" data-aos="zoom-out">
-        <button
-          onclick="loadPage('./page-9.html')"
-          type="button"
-          class="bg-white h-[7rem] w-[7rem] p-4 rounded-xl"
-        >
-          <img
-            src="../assets/icons/slide11-1.svg"
-            alt=""
-            class="h-full w-auto mx-auto"
-          />
-        </button>
-      </div>
-      <div
-        class="flex justify-start items-center border-l-4 pl-2 border-white text-white mt-5"
-      >
-        <p
-          class="max-w-[27rem] min-[1752px]:text-[18px] italic text-[12px] font-medium"
-        >
-          Select the icon to learn more
-        </p>
-      </div>
-    </div>
+    <!-- Header -->
+    <img
+      onclick="loadPage('./page-1.html')"
+      src="../assets/icons/badge2.svg"
+      class="absolute right-8 top-8 z-50 cursor-pointer"
+      alt=""
+    />
+
+    <img src="../assets/slide13_img.png" class="h-full object-cover" />
   </div>
 </div>

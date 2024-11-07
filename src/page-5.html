@@ -1,155 +1,139 @@
-<div class="bg-[#E1F6FD] absolute top-0 right-0 left-0 bottom-0 h-screen">
-  <!-- Header -->
-  <div class="min-[1630px]:pt-[2.875rem] pt-[1.5rem] px-[9.375rem] bg-primary">
-    <div class="flex justify-end gap-4 items-center">
-      <div
-        onclick="loadPage('./page-1.html')"
-        data-aos="fade-left"
-        class="min-[1792px]:w-[255px] w-[180px] cursor-pointer"
-      >
-        <img src="../assets/icons/badge2.svg" alt="" srcset="" />
-      </div>
-    </div>
-    <p
-      class="text-white min-[1792px]:text-[70px] text-[40px] font-bold uppercase"
-      data-aos="fade-right"
-    >
-      Decision Time!
-      <svg
-        width="167"
-        height="9"
-        viewBox="0 0 167 9"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="0.903809" y="0.375" width="166" height="8" fill="#00B1EB" />
-      </svg>
-    </p>
-  </div>
-  <div class="bg-primary px-[9.375rem] text-white">
-    <div class="grid grid-cols-2 h-[65vh] relative z-50">
-      <div
-        class="flex flex-col 2xl:gap-[3rem] min-[1630px]:gap-[2rem] gap-[1rem]"
-      >
-        <p
-          class="max-w-[36rem] 2xl:text-[22px] text-[14px] min-[1630px]:mt-5 mt-3"
-          data-aos="fade-up"
-        >
-          Eventually, Tahmid discloses that the government is not in favor of
-          approving the New Category product. With this information at hand,
-          Shakib now goes to his line manager to discuss the way forward. What
-          do you think about what Shakib has done? Select the most appropriate
-          options.
-        </p>
+<div>
 
-        <div
-          class="flex justify-start items-center border-l-4 pl-2 border-white"
-        >
-          <p
-            class="max-w-[27rem] min-[1752px]:text-[18px] italic text-[12px] font-medium"
-            data-aos="fade-left"
-          >
-            Select the most appropriate answers and click on<br />
-            Submit. There can be more than one correct answer.  
-          </p>
-        </div>
+<div class="grid grid-cols-2 h-[85vh]">
+  <div class="bg-primary text-white px-[9.375rem] relative">
+    <div class="pt-[10rem] max-w-[40.875rem]">
+      <p class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]" data-aos="fade-down">
+        That's incorrect!
+      </p>
+      <!-- <p
+        class="font-semibold min-[1792px]:text-[28px] text-[16px] space-y-[20px] mb-[20px]"
+        data-aos="fade-up"
+      >
+        Option <span id="right-answer">“E”</span> is the correct answer
+      </p> -->
+      <p class="min-[1792px]:text-[22px] text-[12px] font-medium" data-aos="fade-right">
+        Samia should be encouraged to Speak Up about her discomfort. She can choose to do so anonymously if required. Click next to learn more. </p>
+      <img
+        src="../assets/icons/cross.svg"
+        alt=""
+        class="absolute right-32 min-[1792px]:mt-16 mt-5 min-[1792px]:w-[191px] w-[136px]"
+        data-aos="zoom-out-down"
+      />
+    </div>
+  </div>
+  <div class="bg-primary flex relative flex-col justify-center items-center px-[60px] min-[1792px]:pt-[1rem] pt-[1rem]">
+    <button onclick="loadPage('./page-8.html')" class="btnMcq mt-10 float-right -bottom-6 right-0 z-20 mx-[3.85rem] absolute min-[1792px]:text-lg text-sm" type="button">
+      Continue
+    </button>
+    <div class="bg-[#FF9016] absolute top-0 right-0 bottom-0 w-[25%] h-full">
+
+    </div>
+    <div class="space-y-4 ">
+      <div class="flex justify-end w-full mb-6">
+        <img  onclick="loadPage('./page-1.html')" class="float-right min-[1792px]:w-[255px] z-50 w-[180px] absolute top-8 right-16 cursor-pointer" src="../assets/icons/badge2.svg" alt="" srcset="" />
       </div>
-      <div class="space-y-4 -mt-10">
-        <!-- MCQ -->
-        <div
+      <!-- MCQ -->
+      <div
           id="a"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          class="mcq"
           data-aos="fade-up"
         >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            A
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
-          >
-            Shakib is being collaborative by supporting the Regulatory Affairs
-            team to meet their regulatory engagement goals. We need to work
-            together as one team, no matter what it takes.
+          <!-- <div class="">A</div> -->
+          <p class="">
+            Praise Shakib’s idea and ensure the revamp happens smoothly but keep it quiet from the wider function until launch. 
           </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input disabled type="checkbox" id="toggle1" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle1" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle1" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
+          
+          
         </div>
         <div
           id="b"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          class="mcq"
           data-aos="fade-up"
         >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            B
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
-          >
-            The information is not yet public, so Shakib has induced a Public
-            Official to breach a duty of confidentiality. Shakib should not have
-            asked Tahmid for the report and should have refused to accept the
-            report even if Tahmid had offered it.
+          <!-- <div>B</div> -->
+          <p>
+            Shakib should inform IDT to check and remove all system and application access of leavers.
           </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input disabled type="checkbox" id="toggle2" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle2" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle2" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
         </div>
         <div
           id="c"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          class="mcq"
           data-aos="fade-up"
         >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            C
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
-          >
-            Shakib could be said to have offered the Formula 1 ticket as a gift
-            to Tahmid to obtain a favour on behalf of the business. It is
-            completely unacceptable for anyone connected to the business to be
-            involved in any activity relating to bribery and corruption, even
-            for the sake of achieving business results.
+          <!-- <div>C</div> -->
+          <p>
+            The offboarding process for Maliha should have been completed, including the recovery of her Vortex account before her departure. This should be reported immediately as it poses a company risk.
           </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input disabled type="checkbox" id="toggle3" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle3" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle3" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
         </div>
         <div
           id="d"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#004F9F] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
+          class="mcq"
           data-aos="fade-up"
         >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-primary rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            D
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px]"
-          >
-            Shakib is being proactive by getting the draft regulation; one
-            should be able to use on one’s social network in times like this.
+          <!-- <div>D</div> -->
+          <p>
+            Consulting a new agency without proper assessment exposed confidential company data, which was not the right approach.
           </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input disabled type="checkbox" id="toggle4" class="hidden peer">
+            
+            <!-- Accept Button -->
+            <label for="toggle4" class="cursor-pointer peer-checked:hidden">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Accept.svg" alt="">
+                
+            </label>
+            
+            <!-- Reject Button -->
+            <label for="toggle4" class="cursor-pointer hidden peer-checked:block">
+              <img class="min-w-[95px] max-w-[95px]" src="../assets/icons/Reject.svg" alt="">
+            </label>
+          </div>
         </div>
-      </div>
-      <button
-        class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 z-20"
-        type="button"
-        onclick="handleSubmit()"
-      >
-        Submit
-      </button>
     </div>
   </div>
-  <div class="bg-white px-[9.375rem]">
-    <img
-      src="../assets/slider8user.png"
-      class="absolute bottom-0 z-10 min-[1792px]:h-[25rem] h-[20rem]"
-      alt=""
-      data-aos="fade-up"
-    />
-  </div>
+</div>
+</div>
 </div>

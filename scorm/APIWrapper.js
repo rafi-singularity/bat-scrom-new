@@ -131,7 +131,7 @@ pipwerks.SCORM.API.find = function (win) {
 // Scenario 1
 
 // MCQ
-let answer = "";
+// let answer = "";
 
 const selectHandler = (selected) => {
   const options = document.querySelectorAll(".mcq");
@@ -142,44 +142,56 @@ const selectHandler = (selected) => {
   answer = selected.id;
 };
 
+// const handleSubmit = async () => {
+//   if (answer !== "") {
+//     if (answer === "c") {
+//       loadPage("./page-6.html");
+//       return;
+//     } else {
+//       const newDocument = await loadPage("./page-7.html");
+//       newDocument.getElementById(answer).classList.add("wrong");
+//       return;
+//     }
+//   } else {
+//     return;
+//   }
+// };
+
+let answer = [0, 1, 1, 1];
+let selectedValues = [];
+
+function isMatch(inputArray) {
+  // Check if the input array has the same length and elements as the correct answer
+  return (
+    inputArray.length === answer.length &&
+    inputArray.every((value, index) => value === answer[index])
+  );
+}
+
 const handleSubmit = async () => {
-  if (answer !== "") {
-    if (answer === "c") {
-      loadPage("./page-6.html");
-      return;
+  // Select all checkboxes
+  let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  // Loop through checkboxes to check which are selected
+  checkboxes.forEach((checkbox) => {
+    if (checkbox.checked) {
+      selectedValues.push(0);
     } else {
-      const newDocument = await loadPage("./page-7.html");
-      newDocument.getElementById(answer).classList.add("wrong");
-      return;
+      selectedValues.push(1);
     }
+  });
+  console.log("input value", selectedValues);
+  const isValid = isMatch(selectedValues);
+  if (isValid) {
+    selectedValues = [];
+    return loadPage("./page-5.html");
   } else {
-    return;
+    await loadPage("./page-6.html");
+    checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    console.log(checkboxes);
+    checkboxes.forEach((checkbox, index) => {
+      checkbox.checked = selectedValues[index] === 0;
+      console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
+    });
+    return (selectedValues = []);
   }
-};
-
-const handlePlayButton = () => {
-  console.log("check handlePlayButton");
-  let video = document.getElementById("videoPlay");
-  console.log("check video", video);
-  video.play();
-  let thumbnailWrapper = document.getElementById("thumbnail-wrapper");
-
-  thumbnailWrapper.style.display = "flex";
-
-  thumbnailWrapper.addEventListener("click", () => {
-    console.log("check click");
-    video.play();
-  });
-  video.addEventListener("play", () => {
-    thumbnailWrapper.style.display = "none";
-  });
-  video.addEventListener("mouseover", () => {
-    video.controls = true;
-  });
-  video.addEventListener("mouseout", () => {
-    video.controls = false;
-  });
-  video.addEventListener("pause", () => {
-    thumbnailWrapper.style.display = "flex";
-  });
 };
