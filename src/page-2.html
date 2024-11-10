@@ -1,52 +1,71 @@
-<div class="bg-primary">
-  <div class="container mx-auto">
-    <!-- Header -->
-    <div class="py-[2.875rem] px-[4rem]">
-      <div class="flex justify-between gap-4 items-center">
-        <div
-          data-aos="fade-right"
-          class="flex items-end divide-x-2 divide-[#FA73B4]"
-        >
-          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          <img src="" alt="" />
+<div class="grid grid-cols-8 ">
+  <div data-aos="fade-right" class="col-span-3 bg-primary w-full h-screen overflow-hidden relative">
+    <div class="fixed left-0 right-0 top-0 bottom-0">
+      <img src="../assets/s2-s2.png" class=" h-full w-full" />
+    </div>
+  </div>
+  <div class="col-span-5" style="margin-left: -0.5px;">
+    <div class="mx-auto">
+      <!-- Header -->
+      <div class="bg-primary p-[2.875rem] space-y-10 px-5">
+        <div class="flex justify-between gap-4 items-center">
+          <div data-aos="fade-right" class="flex items-end divide-x-2 divide-[#FA73B4] invisible">
+            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+            <img src="" alt="" />
+          </div>
+          <!--  -->
+          <div data-aos="fade-left" class="cursor-pointer" onclick="loadPage('./page-1.html')">
+            <img src="../assets/icons/scenario02-badge.svg" alt="" srcset="" />
+          </div>
         </div>
-        <!--  -->
-        <div data-aos="fade-left" class="">
-          <img src="../assets/icons/badge2.svg" alt="" srcset="" />
+        <!-- Header title -->
+        <div data-aos="fade-up" class="relative">
+          <h1 class="text-white text-[2.5rem] xl:text-[3rem] font-bold">
+            A New Territory
+          </h1>
+          <div class="h-1 bg-[#D3BFF3] w-44 h-1 mt-0"></div>
         </div>
       </div>
-    </div>
-    <div class="flex justify-center">
-      <div class="flex items-start relative pr-[12rem]">
-        <div
-          data-aos="fade-left"
-          class="bg-[#F63E9F] pl-[5rem] pr-[8rem] py-14 rounded-[3.75rem] relative top-[5rem] left-[19rem] z-[1]"
-        >
-          <div class="space-y-14">
-            <div class="">
-              <p class="text-white text-4xl font-medium">Working with Shakib</p>
-              <div class="h-2 bg-yellow w-28 mt-2"></div>
-            </div>
-            <p class="text-white text-[5rem] font-bold">A Shaky Start</p>
-            <button
-              onclick="loadPage('./page-3.html')"
-              data-aos="zoom-in-right"
-              class="btn w-fit relative -bottom-[5rem]"
-              type="button"
-            >
-              <span>Let's Go</span>
-              <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+      <!-- Description -->
+      <div data-aos="fade-left"
+        class="bg-primary text-white text-base 2xl:text-[18px] min-[1792px]:text-[22px] font-medium pt-[2.875rem] px-5 flex flex-col gap-5 justify-start overflow-y-auto h-[35vh]">
+        <p class="">
+          Shakib was tasked with launching a limited-edition apple-flavored cigarette pack, featuring a light-green
+          cigarette paper. Both the flavor capsule and the ink needed to be imported— capsules from Ukraine and ink from
+          Malaysia.
+          <br>
+          <br>
+          Since Ukraine was a new territory, he reaches out to the Ukrainian team to get the capsules in the country
+          through the fastest possible route. Shakib pushed to fast-track the capsule shipment, despite warnings that
+          the route might pass through Russia.
+        </p>
+      </div>
+      <div class="bg-white">
+        <div class="px-5 py-2 2xl:mt-10">
+          <div data-aos="fade-down" class="flex items-center gap-2 mb-[0.5rem] ">
+            <img src="../assets/icons/horizontal_bar.svg" alt="" />
+            <p class="text-[#004F9F] text-[1rem] min-[1792px]:text-[1.5rem]">
+              Select the arrow button to learn more
+            </p>
+          </div>
+          <div class="flex gap-4">
+            <button onclick="loadPage('./page-1.html')">
+              <img class="btn-svg min-[1792px]:w-auto w-[90px]" src="../assets/icons/prev_btn.svg" alt="" />
+            </button>
+            <button onclick="loadPage('./page-3.html')">
+              <img class="btn-svg min-[1792px]:w-auto w-[90px]" src="../assets/icons/next_btn.svg" alt="" />
             </button>
           </div>
         </div>
-        <img
-          src="../assets/slider2user.png"
-          class="relative z-10 object-cover"
-          alt=""
-          srcset=""
-          data-aos="fade-up"
-        />
+        <!-- <button
+          onclick="loadPage('./page-3.html')"
+          class="btn w-[14rem] mb-4"
+          type="button"
+        >
+          <span>Next</span>
+          <img src="../assets/icons/arrow.svg" alt="" srcset="" />
+        </button> -->
       </div>
     </div>
   </div>
