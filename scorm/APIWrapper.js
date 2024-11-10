@@ -195,3 +195,26 @@ const handleSubmit = async () => {
     return (selectedValues = []);
   }
 };
+const handleDragStart = async (event) => {
+  console.log("check start", event.target.id);
+  event.dataTransfer.setData("text/plain", event.target.id);
+};
+
+const handleDragOver = async (event) => {
+  console.log("check start", event.target.id);
+
+  event.preventDefault();
+};
+
+const handleDrop = async (event) => {
+  event.preventDefault();
+  const draggedElementId = event.dataTransfer.getData("text/plain");
+  const draggedElement = document.getElementById(draggedElementId);
+  const targetElement = event.target.closest("div");
+
+  if (targetElement && draggedElement !== targetElement) {
+    const tempContent = draggedElement.innerHTML;
+    draggedElement.innerHTML = targetElement.innerHTML;
+    targetElement.innerHTML = tempContent;
+  }
+};

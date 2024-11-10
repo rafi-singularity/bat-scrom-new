@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 #root {
   font-family: "Poppins", sans-serif !important;
@@ -29,6 +28,20 @@
 } */
 .mcq:hover p {
   @apply text-white;
+}
+
+/* drag drop design */
+.dragDropInitialColor {
+  @apply bg-[#0E2B63] min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]   rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
+}
+.dragDropApprovedColor {
+  @apply border-[#50AF47] border-[2px]  bg-[#50AF47] min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]  rounded-[13px] relative p-4 overflow-hidden flex items-center justify-center;
+}
+.dragDropYellowBorder {
+  @apply min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
+}
+.dragDropBreachColor {
+  @apply border-[#CA380B] bg-[#CA380B]  border-[2px] min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
 }
 
 /* Incorrect */
