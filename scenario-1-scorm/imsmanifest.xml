@@ -10,9 +10,9 @@
 
     <organizations default="org1">
         <organization identifier="org1">
-            <title>Make Responsible Choices</title>
+            <title>A Shaky Start</title>
             <item identifier="item1" identifierref="resource1">
-                <title>Welcome to License to Manage! </title>
+                <title>A Shaky Start</title>
             </item>
         </organization>
     </organizations>
