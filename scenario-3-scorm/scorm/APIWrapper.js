@@ -139,10 +139,10 @@ const selectHandler = (selected) => {
 
   // check selected or not selected
   if (response.includes(selected.id)) {
-    selected.classList.remove("correct");
+    selected.classList.remove("selected");
     response.splice(response.indexOf(selected.id), 1);
   } else {
-    selected.classList.add("correct");
+    selected.classList.add("selected");
     response.push(selected.id);
   }
 };
