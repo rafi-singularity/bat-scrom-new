@@ -1,0 +1,53 @@
+<div class="bg-primary w-screen h-screen overflow-hidden">
+  <!-- Header -->
+  <div class="pt-[2.4375rem] px-[4rem] container mx-auto">
+    <div class="flex justify-end items-center">
+      <div data-aos="fade-left">
+        <img
+          class="cursor-pointer"
+          onclick="loadPage('./page-1.html')"
+          src="./assets/icons/scenario02-badge.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 h-full bg-primary px-[9.375rem]">
+    <div class="flex items-end">
+      <img
+        src="./assets/slider2user.png"
+        class="max-h-full object-contain"
+        alt=""
+      />
+    </div>
+    <div class="flex flex-col justify-center">
+      <h1 class="text-white font-bold text-[51px]" data-aos="fade-right">
+        Episode Summary
+      </h1>
+      <p class="text-white font-semibold text-[22px] mt-3" data-aos="fade-up">
+        You have reached the end of this episode. Here’s a quick glimpse of the
+        policies.
+      </p>
+      <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
+        <button onclick="loadPage('./page-9.html')" type="button">
+          <img
+            class="w-[95px] h-[95px]"
+            src="./assets/icons/slide11-1.svg"
+            alt=""
+          />
+        </button>
+        <button onclick="loadPage('./page-10.html')" type="button">
+          <img
+            class="w-[95px] h-[95px]"
+            src="./assets/icons/slide11-2.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <p class="text-white text-[20px] mt-[20px]">
+        Select the icon to learn more
+      </p>
+    </div>
+  </div>
+</div>
