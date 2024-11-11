@@ -20,7 +20,7 @@
         alt=""
       />
     </div>
-    <div class="h-[75vh] absolute z-50 left-[4rem] top-[3rem]">
+    <div class="2xl:h-[75vh] h-[70vh] absolute z-50 left-[4rem] top-[3rem]">
       <img
         data-aos="fade-right"
         class="h-full w-auto"
@@ -37,10 +37,16 @@
           </p>
         </div>
         <div class="flex gap-4">
-          <button onclick="loadPage('./page-2.html')">
+          <button
+            onclick="loadPage('./page-2.html')"
+            class="hover:scale-105 transition-all duration-150"
+          >
             <img src="../assets/icons/prev_btn.svg" alt="" />
           </button>
-          <button onclick="loadPage('./page-4.html')">
+          <button
+            onclick="loadPage('./page-4.html')"
+            class="hover:scale-105 transition-all duration-150"
+          >
             <img src="../assets/icons/next_btn.svg" alt="" />
           </button>
         </div>
