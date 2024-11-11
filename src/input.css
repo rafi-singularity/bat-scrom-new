@@ -71,6 +71,15 @@
   background-color: #50af47 !important;
   color: #ffffff !important;
 }
+.selected {
+  background-color: #004F9F !important;
+  color: #ffffff !important;
+}
+
+.selected p {
+  color: #ffffff !important;
+}
+
 .correct div {
   background-color: #ffffff3a;
   color: #ffffff !important;
