@@ -678,6 +678,18 @@ body {
   top: 40%;
 }
 
+.-top-0{
+  top: -0px;
+}
+
+.-top-\[12rem\]{
+  top: -12rem;
+}
+
+.top-\[12rem\]{
+  top: 12rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -777,6 +789,14 @@ body {
   margin-top: 40px;
 }
 
+.mt-\[4rem\]{
+  margin-top: 4rem;
+}
+
+.ml-\[6\.25rem\]{
+  margin-left: 6.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -840,6 +860,10 @@ body {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-2{
+  height: 0.5rem;
 }
 
 .min-h-screen{
@@ -907,6 +931,10 @@ body {
   width: 100vw;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .min-w-\[95px\]{
   min-width: 95px;
 }
@@ -927,6 +955,10 @@ body {
   max-width: 95px;
 }
 
+.max-w-\[16rem\]{
+  max-width: 16rem;
+}
+
 .-translate-y-10{
   --tw-translate-y: -2.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -944,6 +976,11 @@ body {
 
 .translate-x-\[45\%\]{
   --tw-translate-x: 45%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-40{
+  --tw-translate-y: -10rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1035,6 +1072,12 @@ body {
   margin-bottom: calc(20px * var(--tw-space-y-reverse));
 }
 
+.space-y-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
 .divide-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-x-reverse: 0;
   border-right-width: calc(2px * var(--tw-divide-x-reverse));
@@ -1113,6 +1156,16 @@ body {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F63E9F\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 62 159 / var(--tw-bg-opacity));
+}
+
+.bg-yellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 187 0 / var(--tw-bg-opacity));
 }
 
 .object-contain{
@@ -1222,6 +1275,38 @@ body {
 
 .pt-\[2\.875rem\]{
   padding-top: 2.875rem;
+}
+
+.pb-\[14rem\]{
+  padding-bottom: 14rem;
+}
+
+.pb-\[8rem\]{
+  padding-bottom: 8rem;
+}
+
+.pr-\[12rem\]{
+  padding-right: 12rem;
+}
+
+.pr-\[20rem\]{
+  padding-right: 20rem;
+}
+
+.pl-\[12rem\]{
+  padding-left: 12rem;
+}
+
+.pl-\[2rem\]{
+  padding-left: 2rem;
+}
+
+.pb-40{
+  padding-bottom: 10rem;
+}
+
+.pb-\[40\]{
+  padding-bottom: 40;
 }
 
 .font-poppins{
@@ -1557,6 +1642,14 @@ body {
     height: 55vh;
   }
 
+  .\32xl\:min-w-\[50rem\]{
+    min-width: 50rem;
+  }
+
+  .\32xl\:max-w-\[27rem\]{
+    max-width: 27rem;
+  }
+
   .\32xl\:translate-x-\[35\%\]{
     --tw-translate-x: 35%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1605,6 +1698,14 @@ body {
 
   .\32xl\:text-\[14px\]{
     font-size: 14px;
+  }
+
+  .\32xl\:text-\[80px\]{
+    font-size: 80px;
+  }
+
+  .\32xl\:text-\[5rem\]{
+    font-size: 5rem;
   }
 
   .\32xl\:leading-\[4\.875rem\]{
