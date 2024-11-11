@@ -862,6 +862,10 @@ body {
   width: 9rem;
 }
 
+.w-\[110px\]{
+  width: 110px;
+}
+
 .w-\[136px\]{
   width: 136px;
 }
@@ -901,14 +905,6 @@ body {
 
 .w-screen{
   width: 100vw;
-}
-
-.w-\[120px\]{
-  width: 120px;
-}
-
-.w-\[110px\]{
-  width: 110px;
 }
 
 .min-w-\[95px\]{
@@ -1294,22 +1290,6 @@ body {
   line-height: 1.25rem;
 }
 
-.text-\[60px\]{
-  font-size: 60px;
-}
-
-.text-\[50px\]{
-  font-size: 50px;
-}
-
-.text-\[45px\]{
-  font-size: 45px;
-}
-
-.text-\[42px\]{
-  font-size: 42px;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -1615,6 +1595,18 @@ body {
     font-size: 4rem;
   }
 
+  .\32xl\:text-\[6px\]{
+    font-size: 6px;
+  }
+
+  .\32xl\:text-\[16px\]{
+    font-size: 16px;
+  }
+
+  .\32xl\:text-\[14px\]{
+    font-size: 14px;
+  }
+
   .\32xl\:leading-\[4\.875rem\]{
     line-height: 4.875rem;
   }
@@ -1667,10 +1659,6 @@ body {
 }
 
 @media (min-width: 1792px){
-  .min-\[1792px\]\:mt-16{
-    margin-top: 4rem;
-  }
-
   .min-\[1792px\]\:h-\[25rem\]{
     height: 25rem;
   }
