@@ -131,34 +131,21 @@ pipwerks.SCORM.API.find = function (win) {
 // Scenario 1
 
 // MCQ
-// let answer = "";
-
+let answer = ["b", "c"];
+let response = [];
 const selectHandler = (selected) => {
-  const options = document.querySelectorAll(".mcq");
-  options.forEach((option) => {
-    option.classList.remove("correct");
-  });
-  selected.classList.add("correct");
-  answer = selected.id;
+  console.log(selected.id);
+  // const options = document.querySelectorAll(".mcq-main");
+
+  // check selected or not selected
+  if (response.includes(selected.id)) {
+    selected.classList.remove("selected");
+    response.splice(response.indexOf(selected.id), 1);
+  } else {
+    selected.classList.add("selected");
+    response.push(selected.id);
+  }
 };
-
-// const handleSubmit = async () => {
-//   if (answer !== "") {
-//     if (answer === "c") {
-//       loadPage("./page-6.html");
-//       return;
-//     } else {
-//       const newDocument = await loadPage("./page-7.html");
-//       newDocument.getElementById(answer).classList.add("wrong");
-//       return;
-//     }
-//   } else {
-//     return;
-//   }
-// };
-
-let answer = [0, 1, 1, 1];
-let selectedValues = [];
 
 function isMatch(inputArray) {
   // Check if the input array has the same length and elements as the correct answer
@@ -167,118 +154,19 @@ function isMatch(inputArray) {
     inputArray.every((value, index) => value === answer[index])
   );
 }
-
 const handleSubmit = async () => {
-  // Select all checkboxes
-  let checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  // Loop through checkboxes to check which are selected
-  checkboxes.forEach((checkbox) => {
-    if (checkbox.checked) {
-      selectedValues.push(0);
-    } else {
-      selectedValues.push(1);
-    }
-  });
-  console.log("input value", selectedValues);
-  const isValid = isMatch(selectedValues);
+  const ascResponse = response.sort();
+  console.log(ascResponse);
+  const isValid = isMatch(ascResponse);
+  console.log(isValid);
   if (isValid) {
-    selectedValues = [];
-    return loadPage("./page-5.html");
+    loadPage("./page-6.html");
+    return;
   } else {
-    await loadPage("./page-6.html");
-    checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    console.log(checkboxes);
-    checkboxes.forEach((checkbox, index) => {
-      checkbox.checked = selectedValues[index] === 0;
-      console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
+    const newDocument = await loadPage("./page-7.html");
+    response.map((elem) => {
+      return newDocument.getElementById(elem).classList.add("wrong");
     });
-    return (selectedValues = []);
-  }
-};
-
-const handleDragOver = async (event) => {
-  event.preventDefault();
-};
-let appropriate = [];
-let potential = [];
-let appropriateCorrectAnswer = ["answer1", "answer3", "answer5"];
-let potentialCorrectAnswer = ["answer2", "answer4", "answer6"];
-const handleDragStart = async (event) => {
-  event.dataTransfer.setData("text/plain", event.target.id);
-};
-const handleDrop = async (event) => {
-  event.preventDefault();
-  const appropriateElement = document
-    .getElementById("droppedAppropriate")
-    .querySelectorAll(".answer");
-  const potentialElement = document
-    .getElementById("droppedPotential")
-    .querySelectorAll(".answer");
-
-  for (let i = 0; i < appropriateElement.length; i++) {
-    appropriateElement[i].parentElement.classList = "dragDropInitialColor ";
-  }
-  for (let i = 0; i < potentialElement.length; i++) {
-    potentialElement[i].parentElement.classList = "dragDropInitialColor ";
-  }
-  const draggedElementId = event.dataTransfer.getData("text/plain");
-
-  const draggedElement = document.getElementById(draggedElementId);
-
-  const targetElement = event.target.closest("div");
-
-  if (targetElement && draggedElement !== targetElement) {
-    const tempContent = `${draggedElement.innerHTML}`;
-    draggedElement.innerHTML = targetElement.innerHTML;
-    targetElement.innerHTML = tempContent;
-    const newElement = document.createElement("div");
-    newElement.innerHTML = tempContent.trim();
-  }
-};
-function correctAnswer(inputArray, rightArray) {
-  return (
-    inputArray.length === rightArray.length &&
-    inputArray.every((value, index) => value === rightArray[index])
-  );
-}
-
-const handleAnswerSubmit = async () => {
-  const btnSubmit = document.getElementById("checkAnswer");
-  const btnContinue = document.getElementById("continue");
-  const isApproved = false;
-  let correctValue = 0;
-  const appropriateElement = document
-    .getElementById("droppedAppropriate")
-    .querySelectorAll(".answer");
-  const potentialElement = document
-    .getElementById("droppedPotential")
-    .querySelectorAll(".answer");
-
-  for (let i = 0; i < appropriateElement.length; i++) {
-    appropriateElement[i].parentElement.classList = "dragDropInitialColor ";
-    if (appropriateCorrectAnswer.includes(appropriateElement[i].id)) {
-      appropriateElement[i].parentElement.classList.add(
-        "dragDropApprovedColor"
-      );
-      correctValue++;
-    } else {
-      appropriateElement[i].parentElement.classList.add("dragDropBreachColor");
-    }
-  }
-  for (let i = 0; i < potentialElement.length; i++) {
-    potentialElement[i].parentElement.classList = "dragDropInitialColor ";
-
-    if (potentialCorrectAnswer.includes(potentialElement[i].id)) {
-      potentialElement[i].parentElement.classList.add("dragDropApprovedColor");
-      correctValue++;
-    } else {
-      potentialElement[i].parentElement.classList.add("dragDropBreachColor");
-    }
-  }
-  if (correctValue === 6) {
-    btnContinue.style.display = "block";
-    btnSubmit.style.display = "none";
-  } else {
-    btnSubmit.innerText = "Try Again";
+    return;
   }
 };
