@@ -14,7 +14,7 @@
 }
 
 .btn-svg{
-  @apply bg-[]hover:shadow-lg hover:scale-105 transition-all duration-200
+  @apply hover:shadow-lg hover:scale-105 transition-all duration-200
 }
 
 .btnMcq {
