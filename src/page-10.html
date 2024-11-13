@@ -1,154 +1,243 @@
-<div class="bg-white">
-  <!-- Header -->
-  <div class="pt-[2.875rem] px-[9.375rem] bg-primary">
-    <div class="flex justify-end gap-4 items-center">
-      <div
-        onclick="loadPage('./page-1.html')"
-        data-aos="fade-left"
-        class="min-[1792px]:w-[255px] w-[180px] cursor-pointer"
-      >
-        <img src="../assets/icons/badge2.svg" alt="" srcset="" />
-      </div>
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+  <div class="h-[93vh] flex">
+    <div class="w-full bg-[#298429] h-full"></div>
+    <div class="w-[16.33vw] bg-primary h-full"></div>
+  </div>
+</div>
+
+<div class="container mx-auto relative">
+  <div class="flex justify-end gap-4 items-center mt-[50px]">
+    <!-- Badge -->
+    <div
+      class="cursor-pointer"
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+    >
+      <img src="../assets/icons/badge2.svg" alt="" />
     </div>
+  </div>
+  <button
+    class="btnMcq float-right absolute -bottom-6 right-0 z-20 xl-zoom:text-[26px] text-[18px]"
+    type="button"
+    onclick="handleSubmit()"
+  >
+    Submit
+  </button>
+  <div>
     <p
-      class="text-white min-[1792px]:text-[70px] text-[40px] font-bold uppercase"
+      class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
       data-aos="fade-right"
     >
-      Decision Time!
+      Decision Time
       <svg
-        width="157"
-        height="6"
-        viewBox="0 0 157 6"
+        width="167"
+        height="9"
+        viewBox="0 0 167 9"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect
-          x="0.794678"
-          y="0.100952"
-          width="155.437"
-          height="5.49432"
-          fill="#FFBB00"
-        />
+        <rect x="0.917969" y="0.395844" width="166" height="8" fill="#97DE97" />
       </svg>
     </p>
   </div>
-  <div class="bg-primary px-[9.375rem] text-white">
-    <div class="grid grid-cols-2 h-[65vh] relative z-50">
-      <div class="flex flex-col 2xl:gap-[3rem] gap-[2rem]">
-        <p
-          class="max-w-[36rem] 2xl:text-[22px] text-[14px] mt-5"
-          data-aos="fade-up"
-        >
-          Shakib shares his approach to handling the recent assignment. As his
-          line manager, which of the following guidelines would best reflect the
-          correct course of action?
-        </p>
-
-        <div
-          class="flex justify-start items-center border-l-4 pl-2 border-[#FFBB00]"
-        >
-          <p
-            class="max-w-[27rem] 2xl:text-[18px] italic text-[12px] font-medium"
-            data-aos="fade-left"
-          >
-            Select all that apply and click Submit. There may be more than one
-            correct answer.
-          </p>
-        </div>
-      </div>
-      <div class="space-y-4 -mt-10">
-        <!-- MCQ -->
-        <div
-          id="a"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
-          data-aos="fade-up"
-        >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            A
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
-          >
-            Shakib’s quick thinking and decisiveness demonstrate initiative.
-            Commend him for his fast delivery and proceed to the next task.
-          </p>
-        </div>
-        <div
-          id="b"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
-          data-aos="fade-up"
-        >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            B
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
-          >
-            Rapide is a reputable market research agency with a previously
-            low-risk rating. Therefore, immediately completing the AFC
-            assessment and mitigation plans is not critical.
-          </p>
-        </div>
-        <div
-          id="c"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
-          data-aos="fade-up"
-        >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            C
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
-          >
-            Considering Shakib’s previous positive experiences with Rapide, it
-            was appropriate to contact and select them for the project without
-            further due diligence.
-          </p>
-        </div>
-        <div
-          id="d"
-          onclick=" selectHandler(this)"
-          class="flex items-center gap-5 bg-white group hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md"
-          data-aos="fade-up"
-        >
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
-          >
-            D
-          </div>
-          <p
-            class="text-[#646870] group-hover:text-white min-[1630px]:text-xl text-[13px]"
-          >
-            Since the survey cost was already within the approved budget, Shakib
-            was justified in moving forward with Rapide without seeking a second
-            competitive bid.
-          </p>
-        </div>
-      </div>
-      <button
-        class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 z-20"
-        type="button"
-        onclick="handleSubmit()"
+  <div class="grid grid-cols-2">
+    <div class="mt-[39px]">
+      <p
+        class="xl-zoom:text-[22px] xl-zoom:text-[16px] text-[10px] font-medium text-white"
       >
-        Submit
-      </button>
+        You will be presented with a few scenarios which you have to classify as
+        potential risks or appropriate content.
+      </p>
+      <div
+        class="flex justify-start items-center border-l-4 pl-2 border-white text-white mt-5 mb-[30px]"
+      >
+        <p class="max-w-[27rem] xl-zoom:text-[20px] text-[14px] italic">
+          Drag and drop the boxes according to the <br />
+          correct response
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-2 w-[90%] z-50">
+        <div
+          class="dragDropInitialColor border-[2px] border-[#50AF47] cursor-pointer"
+          draggable="true"
+          ondragstart="handleDragStart(event)"
+          ondrop="handleDrop(event)"
+          ondragover="handleDragOver(event)"
+          id="item1"
+        >
+          <p
+            class="xl-zoom:text-[16px] text-[10px] answer"
+            data-aos="fade-down"
+            id="answer1"
+          >
+            No user can place an order for a product unless they are registered.
+            The self-registration helps with the Age Verification process.
+          </p>
+        </div>
+        <div
+          class="dragDropInitialColor border-[2px] border-[#50AF47]"
+          draggable="true"
+          ondragstart="handleDragStart(event)"
+          ondrop="handleDrop(event)"
+          ondragover="handleDragOver(event)"
+          id="item2"
+        >
+          <p
+            class="xl-zoom:text-[16px] text-[10px] answer"
+            data-aos="fade-down"
+            id="answer2"
+          >
+            The homepage did not have the Self-Declared Age Verification (SDAV)
+            message, “Are you above 18?”
+          </p>
+        </div>
+        <div
+          class="dragDropInitialColor border-[2px] border-[#50AF47]"
+          draggable="true"
+          ondragstart="handleDragStart(event)"
+          ondrop="handleDrop(event)"
+          ondragover="handleDragOver(event)"
+          id="item3"
+        >
+          <p
+            class="xl-zoom:text-[16px] text-[10px] answer"
+            data-aos="fade-down"
+            id="answer3"
+          >
+            Any follower identified as Underage should be blocked from following
+            the social media account.
+          </p>
+        </div>
+        <div
+          class="dragDropInitialColor border-[2px] border-[#50AF47]"
+          draggable="true"
+          ondragstart="handleDragStart(event)"
+          ondrop="handleDrop(event)"
+          ondragover="handleDragOver(event)"
+          id="item4"
+        >
+          <p
+            class="xl-zoom:text-[16px] text-[10px] answer"
+            data-aos="fade-down"
+            id="answer4"
+          >
+            The static image of candy next to vapor devices.
+          </p>
+        </div>
+        <div
+          class="dragDropInitialColor border-[2px] border-[#50AF47]"
+          draggable="true"
+          ondragstart="handleDragStart(event)"
+          ondrop="handleDrop(event)"
+          ondragover="handleDragOver(event)"
+          id="item5"
+        >
+          <p
+            class="xl-zoom:text-[16px] text-[10px] answer"
+            data-aos="fade-down"
+            id="answer5"
+          >
+            All listed vapor products had the warning, “This product contains
+            nicotine and is addictive.
+          </p>
+        </div>
+        <div
+          class="dragDropInitialColor border-[2px] border-[#50AF47]"
+          draggable="true"
+          ondragstart="handleDragStart(event)"
+          ondrop="handleDrop(event)"
+          ondragover="handleDragOver(event)"
+          id="item6"
+        >
+          <p
+            class="xl-zoom:text-[16px] text-[10px] answer"
+            data-aos="fade-down"
+            id="answer6"
+          >
+            The brand ambassador being a popular figure in pop-culture means
+            they have a huge teen following.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="bg-white px-[9.375rem]">
-    <img
-      src="../assets/slider8user.png"
-      class="absolute bottom-0 z-10 min-[1792px]:h-[25rem] h-[20rem]"
-      alt=""
-      data-aos="fade-up"
-    />
+
+    <div class="grid grid-cols-2 gap-[17px]">
+      <div
+        class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]"
+      >
+        <div class="p-3">
+          <div class="mb-[25px]">
+            <div class="text-[#0E2B63] text-2xl font-semibold mb-[14px]">
+              Appropriate
+            </div>
+            <div class="h-[5px] w-[36px] bg-[#0E2B63]"></div>
+          </div>
+          <div class="space-y-2" id="droppedAppropriate">
+            <div
+              class="dragDropInitialColor"
+              draggable="true"
+              ondragstart="handleDragStart(event)"
+              ondrop="handleDrop(event)"
+              ondragover="handleDragOver(event)"
+              id="droppedItem1"
+            ></div>
+            <div
+              class="dragDropInitialColor"
+              draggable="true"
+              ondragstart="handleDragStart(event)"
+              ondrop="handleDrop(event)"
+              ondragover="handleDragOver(event)"
+              id="droppedItem2"
+            ></div>
+            <div
+              class="dragDropInitialColor"
+              draggable="true"
+              ondragstart="handleDragStart(event)"
+              ondrop="handleDrop(event)"
+              ondragover="handleDragOver(event)"
+              id="droppedItem3"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white rounded-3xl border-[2px] border-dashed border-[#EF7D00]"
+      >
+        <div class="p-3">
+          <div class="mb-[25px]">
+            <div class="text-[#EF7D00] text-2xl font-semibold mb-[14px]">
+              Potential breach
+            </div>
+            <div class="h-[5px] w-[36px] bg-[#EF7D00]"></div>
+          </div>
+          <div class="space-y-2" id="droppedPotential">
+            <div
+              class="dragDropInitialColor"
+              draggable="true"
+              ondragstart="handleDragStart(event)"
+              ondrop="handleDrop(event)"
+              ondragover="handleDragOver(event)"
+              id="droppedItem4"
+            ></div>
+            <div
+              class="dragDropInitialColor"
+              draggable="true"
+              ondragstart="handleDragStart(event)"
+              ondrop="handleDrop(event)"
+              ondragover="handleDragOver(event)"
+              id="droppedItem5"
+            ></div>
+            <div
+              class="dragDropInitialColor"
+              draggable="true"
+              ondragstart="handleDragStart(event)"
+              ondrop="handleDrop(event)"
+              ondragover="handleDragOver(event)"
+              id="droppedItem6"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

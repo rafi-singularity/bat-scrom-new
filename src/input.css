@@ -32,16 +32,16 @@
 
 /* drag drop design */
 .dragDropInitialColor {
-  @apply bg-[#0E2B63] min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]   rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
+  @apply bg-[#205820] text-white xl-zoom:h-[120px] h-[80px]   rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
 }
 .dragDropApprovedColor {
-  @apply border-[#50AF47] border-[2px]  bg-[#50AF47] min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]  rounded-[13px] relative p-4 overflow-hidden flex items-center justify-center;
+  @apply border-[#50AF47] border-[2px]  bg-[#50AF47] xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 overflow-hidden flex items-center justify-center;
 }
 .dragDropYellowBorder {
-  @apply min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
+  @apply xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
 }
 .dragDropBreachColor {
-  @apply border-[#CA380B] bg-[#CA380B]  border-[2px] min-[1600px]:h-[120px] min-[1400px]:h-[110px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
+  @apply border-[#CA380B] bg-[#CA380B]  border-[2px] xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
 }
 
 /* Incorrect */
