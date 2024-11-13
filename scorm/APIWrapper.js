@@ -128,10 +128,6 @@ pipwerks.SCORM.API.find = function (win) {
   pipwerks.SCORM.API.isFound = API !== null;
 };
 
-// Scenario 1
-
-// MCQ
-// let answer = "";
 
 const selectHandler = (selected) => {
   const options = document.querySelectorAll(".mcq");
@@ -142,20 +138,6 @@ const selectHandler = (selected) => {
   answer = selected.id;
 };
 
-// const handleSubmit = async () => {
-//   if (answer !== "") {
-//     if (answer === "c") {
-//       loadPage("./page-6.html");
-//       return;
-//     } else {
-//       const newDocument = await loadPage("./page-7.html");
-//       newDocument.getElementById(answer).classList.add("wrong");
-//       return;
-//     }
-//   } else {
-//     return;
-//   }
-// };
 
 let answer = [0, 1, 1, 1];
 let selectedValues = [];
@@ -199,10 +181,11 @@ const handleSubmit = async () => {
 const handleDragOver = async (event) => {
   event.preventDefault();
 };
-let appropriate = [];
-let potential = [];
+
 let appropriateCorrectAnswer = ["answer1", "answer3", "answer5"];
 let potentialCorrectAnswer = ["answer2", "answer4", "answer6"];
+
+
 const handleDragStart = async (event) => {
   event.dataTransfer.setData("text/plain", event.target.id);
 };
@@ -211,6 +194,7 @@ const handleDrop = async (event) => {
   const appropriateElement = document
     .getElementById("droppedAppropriate")
     .querySelectorAll(".answer");
+
   const potentialElement = document
     .getElementById("droppedPotential")
     .querySelectorAll(".answer");
@@ -243,9 +227,6 @@ function correctAnswer(inputArray, rightArray) {
 }
 
 const handleAnswerSubmit = async () => {
-  const btnSubmit = document.getElementById("checkAnswer");
-  const btnContinue = document.getElementById("continue");
-  const isApproved = false;
   let correctValue = 0;
   const appropriateElement = document
     .getElementById("droppedAppropriate")
@@ -254,17 +235,27 @@ const handleAnswerSubmit = async () => {
     .getElementById("droppedPotential")
     .querySelectorAll(".answer");
 
-  for (let i = 0; i < appropriateElement.length; i++) {
-    appropriateElement[i].parentElement.classList = "dragDropInitialColor ";
-    if (appropriateCorrectAnswer.includes(appropriateElement[i].id)) {
-      appropriateElement[i].parentElement.classList.add(
-        "dragDropApprovedColor"
-      );
-      correctValue++;
-    } else {
-      appropriateElement[i].parentElement.classList.add("dragDropBreachColor");
-    }
+  if (correctValue === 6) {
+    await loadPage("./page-7.html");
+    appropriateElement.forEach((item, index) => {
+      const targetDiv = document.getElementById(`droppedItem${index + 1}`);
+      targetDiv.appendChild(item);
+      console.log(targetDiv);
+    })
+  } else {
+    await loadPage("./page-6.html");
+    appropriateElement.forEach((item, index) => {
+      const targetDiv = document.getElementById(`droppedItem${index + 1}`);
+      targetDiv.appendChild(item);
+      console.log(item);
+    })
+    potentialElement.forEach((item, index) => {
+      const targetDiv = document.getElementById(`droppedItem${index + 4}`);
+      targetDiv.appendChild(item);
+      console.log(targetDiv);
+    })
   }
+
   for (let i = 0; i < potentialElement.length; i++) {
     potentialElement[i].parentElement.classList = "dragDropInitialColor ";
 
@@ -275,9 +266,15 @@ const handleAnswerSubmit = async () => {
       potentialElement[i].parentElement.classList.add("dragDropBreachColor");
     }
   }
-  if (correctValue === 6) {
-    loadPage("./page-7.html");
-  } else {
-    loadPage("./page-6.html");
+  for (let i = 0; i < appropriateElement.length; i++) {
+    appropriateElement[i].parentElement.classList = "dragDropInitialColor ";
+    if (appropriateCorrectAnswer.includes(appropriateElement[i].id)) {
+      appropriateElement[i].parentElement.classList.add(
+        "dragDropApprovedColor"
+      );
+      correctValue++;
+    } else {
+      appropriateElement[i].parentElement.classList.add("dragDropBreachColor");
+    }
   }
 };

@@ -2,12 +2,18 @@
   <div class="z-50 pt-4">
     <div class="flex justify-end gap-4 items-center">
       <!-- Badge -->
-      <div class="cursor-pointer z-50" onclick="loadPage('./page-1.html')" data-aos="fade-left">
+      <div
+        class="cursor-pointer z-50"
+        onclick="loadPage('./page-1.html')"
+        data-aos="fade-left"
+      >
         <img src="../assets/icons/badge2.svg" alt="" />
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-2 min-[1752px]:mt-28 min-[1400px]:mt-[2rem] mt-[1rem]">
+  <div
+    class="grid grid-cols-2 min-[1752px]:mt-28 min-[1400px]:mt-[2rem] mt-[1rem]"
+  >
     <div class="relative">
       <div class="flex justify-start items-center text-white mb-[30px]">
         <p class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]">
@@ -15,18 +21,26 @@
         </p>
       </div>
 
-      <p class="min-[1792px]:text-[22px] pe-20 text-[12px] font-medium" data-aos="fade-right">
-        Our products cannot be marketed with images, themes, or individuals that appeal to the youth. It is important to
-        ensure our content is inaccessible by the Underage group.
-        Click next to learn more.
+      <p
+        class="min-[1792px]:text-[22px] pe-20 text-[12px] font-medium"
+        data-aos="fade-right"
+      >
+        Our products cannot be marketed with images, themes, or individuals that
+        appeal to the youth. It is important to ensure our content is
+        inaccessible by the Underage group. Click next to learn more.
       </p>
-      <img src="../assets/icons/cross.svg" alt=""
-        class="absolute right-32 min-[1792px]:mt-12 mt-2 min-[1792px]:w-[191px] w-[136px]" data-aos="zoom-out-down" />
-
+      <img
+        src="../assets/icons/cross.svg"
+        alt=""
+        class="absolute right-32 min-[1792px]:mt-12 mt-2 min-[1792px]:w-[191px] w-[136px]"
+        data-aos="zoom-out-down"
+      />
     </div>
 
     <div class="grid grid-cols-2 gap-[17px]">
-      <div class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]">
+      <div
+        class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]"
+      >
         <div class="p-3">
           <div class="mb-[25px]">
             <div class="text-[#0E2B63] text-2xl font-semibold mb-[14px]">
@@ -35,16 +49,15 @@
             <div class="h-[5px] w-[36px] bg-[#0E2B63]"></div>
           </div>
           <div class="space-y-2" id="droppedAppropriate">
-            <div class="dragDropInitialColor" draggable="true" ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)" ondragover="handleDragOver(event)" id="droppedItem1"></div>
-            <div class="dragDropInitialColor" draggable="true" ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)" ondragover="handleDragOver(event)" id="droppedItem2"></div>
-            <div class="dragDropInitialColor" draggable="true" ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)" ondragover="handleDragOver(event)" id="droppedItem3"></div>
+            <div class="dragDropInitialColor" id="droppedItem1"></div>
+            <div class="dragDropInitialColor" id="droppedItem2"></div>
+            <div class="dragDropInitialColor" id="droppedItem3"></div>
           </div>
         </div>
       </div>
-      <div class="bg-white rounded-3xl border-[2px] border-dashed border-[#EF7D00]">
+      <div
+        class="bg-white rounded-3xl border-[2px] border-dashed border-[#EF7D00]"
+      >
         <div class="p-3">
           <div class="mb-[25px]">
             <div class="text-[#EF7D00] text-2xl font-semibold mb-[14px]">
@@ -53,25 +66,29 @@
             <div class="h-[5px] w-[36px] bg-[#EF7D00]"></div>
           </div>
           <div class="space-y-2" id="droppedPotential">
-            <div class="dragDropInitialColor" draggable="true" ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)" ondragover="handleDragOver(event)" id="droppedItem4"></div>
-            <div class="dragDropInitialColor" draggable="true" ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)" ondragover="handleDragOver(event)" id="droppedItem5"></div>
-            <div class="dragDropInitialColor" draggable="true" ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)" ondragover="handleDragOver(event)" id="droppedItem6"></div>
+            <div class="dragDropInitialColor" id="droppedItem4"></div>
+            <div class="dragDropInitialColor" id="droppedItem5"></div>
+            <div class="dragDropInitialColor" id="droppedItem6"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <button onclick="handleAnswerSubmit()"
+  <button
+    onclick="handleAnswerSubmit()"
     class="btnMcq mt-10 float-right -bottom-6 right-0 z-20 mx-[3.85rem] absolute min-[1792px]:text-lg text-sm"
-    type="button" id="checkAnswer">
+    type="button"
+    id="checkAnswer"
+  >
     Submit
   </button>
-  <button onclick=" loadPage('./page-6.html')"
+  <button
+    onclick=" loadPage('./page-6.html')"
     class="btnMcq mt-10 float-right -bottom-6 right-0 z-20 mx-[3.85rem] absolute min-[1792px]:text-lg text-sm"
-    type="button" id="continue" style="display: none">
+    type="button"
+    id="continue"
+    style="display: none"
+  >
     Continue
   </button>
 </div>
