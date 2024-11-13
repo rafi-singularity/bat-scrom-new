@@ -1,0 +1,253 @@
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+  <img
+    src="./assets/slider8user.png"
+    class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[25rem] h-[20rem]"
+    alt=""
+    data-aos="fade-up"
+  />
+  <div class="h-[85vh] flex">
+    <div class="w-full bg-primary h-full"></div>
+    <div class="w-[16.33vw] bg-[#713CB4] h-full"></div>
+  </div>
+</div>
+
+<div class="container mx-auto relative">
+  <button
+    class="btnMcq float-right absolute -bottom-6 right-0 z-20 xl-zoom:text-[26px] text-[18px]"
+    type="button"
+    onclick="handleSubmit()"
+  >
+    Submit
+  </button>
+  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
+    <img
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+      src="./assets/icons/scenario02-badge.png"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
+    <div class="col-span-1">
+      <p
+        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
+        data-aos="fade-right"
+      >
+        Decision Time
+        <svg
+          width="167"
+          height="9"
+          viewBox="0 0 167 9"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="0.124756" y="0.375" width="166" height="8" fill="#D3BFF3" />
+        </svg>
+      </p>
+      <div class="flex flex-col gap-[3rem] text-white">
+        <p
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
+          data-aos="fade-up"
+        >
+          Do you think Shakib’s activities were compliant? There can <br />
+          be more than one correct answer.
+        </p>
+
+        <div class="flex justify-start items-center">
+          <p
+            class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-white border-l-4 ps-3"
+            data-aos="fade-left"
+          >
+            Select all that apply and click Submit. There may be more <br />
+            than one correct answer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-1 h-full flex justify-center items-center">
+      <div class="space-y-4">
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
+          <!-- <div class="">A</div> -->
+          <p class="">
+            Sourcing the capsule from that region in Ukraine could be a be a
+            sanctions breach, but since the idea has merit, the task should be
+            expedited.
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle1" class="hidden peer" />
+
+            <!-- Accept Button -->
+            <label for="toggle1" class="cursor-pointer peer-checked:hidden">
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+
+            <!-- Reject Button -->
+            <label
+              for="toggle1"
+              class="cursor-pointer hidden peer-checked:block"
+            >
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+          </div>
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
+          <!-- <div>B</div> -->
+          <p>
+            Routing through Russia is a sanctions breach in the SOBC policy and
+            should be escalated or flagged at once. Shakib should contact the
+            Legal Team to seek advice on this transaction.
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle2" class="hidden peer" />
+
+            <!-- Accept Button -->
+            <label for="toggle2" class="cursor-pointer peer-checked:hidden">
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+
+            <!-- Reject Button -->
+            <label
+              for="toggle2"
+              class="cursor-pointer hidden peer-checked:block"
+            >
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+          </div>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
+          <!-- <div>C</div> -->
+          <p class="">
+            Any information that is not publicly available cannot be used for
+            business decisions. Shakib should avoid acting on the information he
+            received from the Customs Department.
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle3" class="hidden peer" />
+
+            <!-- Accept Button -->
+            <label for="toggle3" class="cursor-pointer peer-checked:hidden">
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+
+            <!-- Reject Button -->
+            <label
+              for="toggle3"
+              class="cursor-pointer hidden peer-checked:block"
+            >
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+          </div>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
+          <!-- <div>D</div> -->
+          <p>
+            Competition information often raises complex legal issues. Shakib
+            should have gone to the Legal team with the information first and
+            not take any actions with it.
+          </p>
+          <div class="flex justify-center items-center space-x-4">
+            <input type="checkbox" id="toggle4" class="hidden peer" />
+
+            <!-- Accept Button -->
+            <label for="toggle4" class="cursor-pointer peer-checked:hidden">
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+
+            <!-- Reject Button -->
+            <label
+              for="toggle4"
+              class="cursor-pointer hidden peer-checked:block"
+            >
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

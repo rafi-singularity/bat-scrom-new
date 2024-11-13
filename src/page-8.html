@@ -3,7 +3,7 @@
   <div class="pt-[50px] container mx-auto">
     <div class="flex justify-end items-center">
       <div data-aos="fade-left">
-        <img src="../assets/icons/scenario02-badge.png" alt="" />
+        <img onclick="loadPage('./page-1.html')" class="cursor-pointer" src="../assets/icons/scenario02-badge.png" alt="" />
       </div>
     </div>
   </div>
@@ -34,11 +34,7 @@
           Procurement Policy and other relevant company policies provide.
         </p>
         <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
-          <button
-            class="btn-svg"
-            onclick="loadPage('./page-9.html')"
-            type="button"
-          >
+          <button class="btn-svg" onclick="handleSummery('btn1')" type="button">
             <img
               class="w-[72px] h-[72px]"
               src="../assets/icons/slide11-1.png"
@@ -46,8 +42,9 @@
             />
           </button>
           <button
+            id="summeryBtn"
             class="btn-svg"
-            onclick="loadPage('./page-10.html')"
+            onclick="handleSummery('btn2')"
             type="button"
           >
             <img
