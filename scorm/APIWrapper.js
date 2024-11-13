@@ -185,7 +185,6 @@ const handleDragOver = async (event) => {
 let appropriateCorrectAnswer = ["answer1", "answer3", "answer5"];
 let potentialCorrectAnswer = ["answer2", "answer4", "answer6"];
 
-
 const handleDragStart = async (event) => {
   event.dataTransfer.setData("text/plain", event.target.id);
 };
@@ -235,12 +234,17 @@ const handleAnswerSubmit = async () => {
     .getElementById("droppedPotential")
     .querySelectorAll(".answer");
 
+
   if (correctValue === 6) {
     await loadPage("./page-7.html");
     appropriateElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 1}`);
       targetDiv.appendChild(item);
       console.log(targetDiv);
+    })
+    potentialElement.forEach((item, index) => {
+      const targetDiv = document.getElementById(`droppedItem${index + 4}`);
+      targetDiv.appendChild(item);
     })
   } else {
     await loadPage("./page-6.html");
@@ -252,7 +256,6 @@ const handleAnswerSubmit = async () => {
     potentialElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 4}`);
       targetDiv.appendChild(item);
-      console.log(targetDiv);
     })
   }
 
@@ -261,7 +264,6 @@ const handleAnswerSubmit = async () => {
 
     if (potentialCorrectAnswer.includes(potentialElement[i].id)) {
       potentialElement[i].parentElement.classList.add("dragDropApprovedColor");
-      correctValue++;
     } else {
       potentialElement[i].parentElement.classList.add("dragDropBreachColor");
     }
@@ -272,7 +274,6 @@ const handleAnswerSubmit = async () => {
       appropriateElement[i].parentElement.classList.add(
         "dragDropApprovedColor"
       );
-      correctValue++;
     } else {
       appropriateElement[i].parentElement.classList.add("dragDropBreachColor");
     }
