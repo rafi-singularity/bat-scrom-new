@@ -276,9 +276,8 @@ const handleAnswerSubmit = async () => {
     }
   }
   if (correctValue === 6) {
-    btnContinue.style.display = "block";
-    btnSubmit.style.display = "none";
+    loadPage("./page-7.html");
   } else {
-    btnSubmit.innerText = "Try Again";
+    loadPage("./page-6.html");
   }
 };
