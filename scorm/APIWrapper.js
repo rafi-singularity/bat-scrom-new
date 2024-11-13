@@ -131,7 +131,7 @@ pipwerks.SCORM.API.find = function (win) {
 // Scenario 1
 
 // MCQ
-let answer = ["b", "c"];
+let answer = ['b', 'c'];
 let response = [];
 const selectHandler = (selected) => {
   console.log(selected.id);
@@ -149,10 +149,8 @@ const selectHandler = (selected) => {
 
 function isMatch(inputArray) {
   // Check if the input array has the same length and elements as the correct answer
-  return (
-    inputArray.length === answer.length &&
-    inputArray.every((value, index) => value === answer[index])
-  );
+  return inputArray.length === answer.length &&
+    inputArray.every((value, index) => value === answer[index]);
 }
 const handleSubmit = async () => {
   const ascResponse = response.sort();
@@ -163,10 +161,10 @@ const handleSubmit = async () => {
     loadPage("./page-6.html");
     return;
   } else {
-    const newDocument = await loadPage("./page-7.html");
-    response.map((elem) => {
+    const newDocument = await loadPage("./page-5.html");
+    response.map(elem => {
       return newDocument.getElementById(elem).classList.add("wrong");
-    });
+    })
     return;
   }
 };

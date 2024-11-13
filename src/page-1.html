@@ -1,65 +1,76 @@
-<div class="bg-primary h-full overflow-hidden">
-  <div class="bg-primary h-full overflow-hidden">
-    <div class="container mx-auto">
-      <!-- Header -->
-      <div class="py-[2.875rem] px-[4rem]">
-        <div class="flex justify-between gap-4 items-center">
-          <!-- Logos -->
-          <div
-            data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#703EAB]"
-          >
-            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          </div>
-          <!-- Badge -->
-          <div
-            class="cursor-pointer"
-            onclick="loadPage('./page-1.html')"
-            data-aos="fade-left"
-          >
-            <img src="../assets/icons/badge2.svg" alt="" />
-          </div>
+<div class="relative">
+  <div class="bg-primary fixed bottom-0 right-0 w-full h-screen"></div>
+  <div class="container mx-auto h-screen relative">
+    <!-- Header -->
+    <div class="mt-[50px]">
+      <div class="flex justify-between gap-4 items-center">
+        <!-- Logos -->
+        <div
+          data-aos="fade-right"
+          class="flex items-end divide-x-2 divide-[#703EAB]"
+        >
+          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+        </div>
+        <!-- Badge -->
+        <div
+          class="cursor-pointer"
+          onclick="loadPage('./page-1.html')"
+          data-aos="fade-left"
+        >
+          <img src="../assets/icons/badge2.svg" alt="" />
         </div>
       </div>
+    </div>
 
-      <!-- Content Section -->
-      <div class="mx-auto relative h-[calc(100vh-247px)] flex items-center">
-        <!-- Text Content -->
-        <div class="relative w-[70%] mx-auto">
-          <div
-            data-aos="fade-left"
-            class="bg-secondary pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] relative w-fit"
-          >
-            <div class="space-y-10 min-[1400px]:pb-4">
-              <div>
-                <p class="text-white text-4xl font-medium">
-                  Working with Shakib
-                </p>
-                <div class="h-1 bg-[#FFBB00] w-32 mt-2"></div>
-              </div>
+    <!-- Text Content -->
+    <div
+      class="absolute xl-zoom:top-[19%] lg-zoom:top-[22%] xl-zoom:left-[7%] lg-zoom:left-[9%]"
+    >
+      <div class="relative w-auto mx-auto">
+        <div
+          data-aos="fade-left"
+          class="bg-secondary pl-[120px] p-[3rem] pr-[32rem] rounded-[3.75rem] h-fit relative w-fit"
+        >
+          <div class="">
+            <div class="xl-zoom:mb-[25px] mb-[25px] xl-zoom:pt-[13px]">
               <p
-                class="text-white 2xl:text-[80px] text-[55px] 2xl:leading-[100px] font-bold 2xl:pb-10 pr-[14rem]"
+                class="text-white xl:text-[38px] xl-zoom:leading-[68px] xl-zoom:text-[38px] lg-zoom:text-[26px] font-medium"
               >
-                The Right <br />
-                Intention
+                Working with Sakib
               </p>
+              <div
+                class="bg-[#004F9F] xl-zoom:w-[7.5rem] w-[4.5rem] h-2 mt-2"
+              ></div>
             </div>
+            <p
+              class="text-white xl-zoom:pb-[40px] lg-zoom:pb-[40px] xl:text-[80px] xl-zoom:text-[80px] lg-zoom:text-[54px] font-bold"
+            >
+            The Right <br />
+                Intention
+            </p>
             <button
               onclick="loadPage('./page-2.html')"
-              class="btn w-fit absolute -bottom-[6%] z-20"
+              class="btn w-fit absolute -bottom-[6%] z-[1000]"
               type="button"
             >
               <span>Start Episode</span>
               <img src="../assets/icons/arrow.svg" alt="" />
             </button>
-            <img
-              src="../assets/slider2user.png"
-              class="w-auto object-contain absolute top-0 min-[1752px]:-translate-y-[5rem] min-[1400px]:-translate-y-[7rem] -translate-y-[5rem] translate-x-[45%] 2xl:translate-x-[50%]"
-              alt="Slider Image"
-            />
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-end">
+      <div
+        class="relative flex items-center justify-end xl-zoom:h-full lg-zoom:h-[40rem] w-auto"
+      >
+        <img
+          src="../assets/slider2user.png"
+          class="h-full w-auto"
+          alt="Slider Image"
+        />
       </div>
     </div>
   </div>

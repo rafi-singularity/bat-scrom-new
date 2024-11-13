@@ -1,238 +1,65 @@
-<div class="bg-primary text-white px-[4rem] relative h-[85vh]">
-  <div class="z-50 pt-4">
-    <div class="flex justify-end gap-4 items-center">
-      <!-- Badge -->
-      <div
-        class="cursor-pointer z-50"
-        onclick="loadPage('./page-1.html')"
-        data-aos="fade-left"
-      >
-        <img src="../assets/icons/badge2.svg" alt="" />
-      </div>
-    </div>
-  </div>
-  <div class="grid grid-cols-2 absolute top-[3rem]">
-    <p
-      class="font-bold min-[1792px]:text-[26px] text-[17px] mb-[30px]"
-      data-aos="fade-down"
-    >
-      You will be presented with a few scenarios which you have to classify as
-      potential risks or appropriate content.
-    </p>
-  </div>
-  <div
-    class="grid grid-cols-2 min-[1752px]:mt-32 min-[1400px]:mt-[3rem] mt-[2rem]"
-  >
-    <div>
-      <div
-        class="flex justify-start items-center border-l-4 pl-2 border-[#50AF47] text-white mt-5 mb-[30px]"
-      >
-        <p
-          class="max-w-[27rem] min-[1752px]:text-[20px] min-[1400px]:text-[14px] italic text-[12px] font-medium"
-        >
-          Drag and drop the boxes according to the <br />
-          correct response
-        </p>
-      </div>
-      <div class="grid grid-cols-2 gap-2 w-[90%] z-50">
-        <div
-          class="dragDropInitialColor border-[2px] border-[#50AF47] cursor-pointer"
-          draggable="true"
-          ondragstart="handleDragStart(event)"
-          ondrop="handleDrop(event)"
-          ondragover="handleDragOver(event)"
-          id="item1"
-        >
-          <p
-            class="min-[1600px]:text-[16px] min-[1400px]:text-[14px] text-[10px] answer"
-            data-aos="fade-down"
-            id="answer1"
-          >
-            No user can place an order for a product unless they are registered.
-            The self-registration helps with the Age Verification process.
-          </p>
-        </div>
-        <div
-          class="dragDropInitialColor border-[2px] border-[#50AF47]"
-          draggable="true"
-          ondragstart="handleDragStart(event)"
-          ondrop="handleDrop(event)"
-          ondragover="handleDragOver(event)"
-          id="item2"
-        >
-          <p
-            class="min-[1600px]:text-[16px] min-[1400px]:text-[14px] text-[10px] answer"
-            data-aos="fade-down"
-            id="answer2"
-          >
-            The homepage did not have the Self-Declared Age Verification (SDAV)
-            message, “Are you above 18?”
-          </p>
-        </div>
-        <div
-          class="dragDropInitialColor border-[2px] border-[#50AF47]"
-          draggable="true"
-          ondragstart="handleDragStart(event)"
-          ondrop="handleDrop(event)"
-          ondragover="handleDragOver(event)"
-          id="item3"
-        >
-          <p
-            class="min-[1600px]:text-[16px] min-[1400px]:text-[14px] text-[10px] answer"
-            data-aos="fade-down"
-            id="answer3"
-          >
-            Any follower identified as Underage should be blocked from following
-            the social media account.
-          </p>
-        </div>
-        <div
-          class="dragDropInitialColor border-[2px] border-[#50AF47]"
-          draggable="true"
-          ondragstart="handleDragStart(event)"
-          ondrop="handleDrop(event)"
-          ondragover="handleDragOver(event)"
-          id="item4"
-        >
-          <p
-            class="min-[1600px]:text-[16px] min-[1400px]:text-[14px] text-[10px] answer"
-            data-aos="fade-down"
-            id="answer4"
-          >
-            The static image of candy next to vapor devices.
-          </p>
-        </div>
-        <div
-          class="dragDropInitialColor border-[2px] border-[#50AF47]"
-          draggable="true"
-          ondragstart="handleDragStart(event)"
-          ondrop="handleDrop(event)"
-          ondragover="handleDragOver(event)"
-          id="item5"
-        >
-          <p
-            class="min-[1600px]:text-[16px] min-[1400px]:text-[14px] text-[10px] answer"
-            data-aos="fade-down"
-            id="answer5"
-          >
-            All listed vapor products had the warning, “This product contains
-            nicotine and is addictive.
-          </p>
-        </div>
-        <div
-          class="dragDropInitialColor border-[2px] border-[#50AF47]"
-          draggable="true"
-          ondragstart="handleDragStart(event)"
-          ondrop="handleDrop(event)"
-          ondragover="handleDragOver(event)"
-          id="item6"
-        >
-          <p
-            class="min-[1600px]:text-[16px] min-[1400px]:text-[14px] text-[10px] answer"
-            data-aos="fade-down"
-            id="answer6"
-          >
-            The brand ambassador being a popular figure in pop-culture means
-            they have a huge teen following.
-          </p>
-        </div>
-      </div>
-    </div>
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+   
+  <div class="h-[85vh] flex">
+   
+    <div class="w-full bg-primary h-full">
 
-    <div class="grid grid-cols-2 gap-[17px]">
-      <div
-        class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]"
-      >
-        <div class="p-3">
-          <div class="mb-[25px]">
-            <div class="text-[#0E2B63] text-2xl font-semibold mb-[14px]">
-              Appropriate
-            </div>
-            <div class="h-[5px] w-[36px] bg-[#0E2B63]"></div>
-          </div>
-          <div class="space-y-2" id="droppedAppropriate">
-            <div
-              class="dragDropInitialColor"
-              draggable="true"
-              ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)"
-              ondragover="handleDragOver(event)"
-              id="droppedItem1"
-            ></div>
-            <div
-              class="dragDropInitialColor"
-              draggable="true"
-              ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)"
-              ondragover="handleDragOver(event)"
-              id="droppedItem2"
-            ></div>
-            <div
-              class="dragDropInitialColor"
-              draggable="true"
-              ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)"
-              ondragover="handleDragOver(event)"
-              id="droppedItem3"
-            ></div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-white rounded-3xl border-[2px] border-dashed border-[#EF7D00]"
-      >
-        <div class="p-3">
-          <div class="mb-[25px]">
-            <div class="text-[#EF7D00] text-2xl font-semibold mb-[14px]">
-              Potential breach
-            </div>
-            <div class="h-[5px] w-[36px] bg-[#EF7D00]"></div>
-          </div>
-          <div class="space-y-2" id="droppedPotential">
-            <div
-              class="dragDropInitialColor"
-              draggable="true"
-              ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)"
-              ondragover="handleDragOver(event)"
-              id="droppedItem4"
-            ></div>
-            <div
-              class="dragDropInitialColor"
-              draggable="true"
-              ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)"
-              ondragover="handleDragOver(event)"
-              id="droppedItem5"
-            ></div>
-            <div
-              class="dragDropInitialColor"
-              draggable="true"
-              ondragstart="handleDragStart(event)"
-              ondrop="handleDrop(event)"
-              ondragover="handleDragOver(event)"
-              id="droppedItem6"
-            ></div>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="w-[16.33vw] bg-secondary h-full">
+
     </div>
   </div>
-  <button
-    onclick="handleAnswerSubmit()"
-    class="btnMcq mt-10 float-right -bottom-6 right-0 z-20 mx-[3.85rem] absolute min-[1792px]:text-lg text-sm"
-    type="button"
-    id="checkAnswer"
-  >
-    Submit
-  </button>
-  <button
-    onclick=" loadPage('./page-6.html')"
-    class="btnMcq mt-10 float-right -bottom-6 right-0 z-20 mx-[3.85rem] absolute min-[1792px]:text-lg text-sm"
-    type="button"
-    id="continue"
-    style="display: none"
-  >
-    Continue
-  </button>
+</div>
+
+<div class="container mx-auto relative">
+  <button class="btnMcq float-right absolute -bottom-6 right-0 z-20 2xl:text-md text-sm" type="button"
+  onclick="loadPage('./page-7.html')">
+  Continue
+</button>
+  <div class="w-full flex justify-end pt-[50px]">
+    <img class="cursor-pointer" onclick="loadPage('./page-1.html')" data-aos="fade-left" src="../assets/icons/badge2.svg" alt="" srcset="" />
+  </div>
+  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
+    <div class="col-span-1 flex flex-col justify-start xl-zoom:mt-[90px] relative">
+      <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold" data-aos="fade-right">
+          That’s  incorrect!
+      </p>
+      <div class="flex flex-col gap-[3rem] text-white">
+        <p class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5" data-aos="fade-up">
+          Community investment should not be undertaken without proper governance. Moreover, the allocated funds should not be used for any improper purposes and should be in line with all financial reports.      </div>
+      <img
+      src="../assets/icons/cross.svg"
+      alt=""
+      class="absolute bottom-[10%] right-1 min-[1792px]:w-[191px] w-[136px]"
+      data-aos="zoom-out-down"
+    />
+    </div>
+    <div class="col-span-1 h-full flex justify-center items-center">
+
+      <div class="space-y-4">
+        <div id="a" onclick=" selectHandler(this)" class="mcq-main" data-aos="fade-up">
+          <div class="serial">A</div>
+          <p>
+            For emergencies such as this, petty cash was the right way to go. He
+            had the right intentions at heart.    </p>
+        </div>
+        <div id="b" onclick=" selectHandler(this)" class="mcq-main correct" data-aos="fade-up">
+          <div>B</div>
+          <p>
+            Before proceeding to guide Adnan on how to make the contribution,
+            Shakib should have consulted Legal and CORA as contributions like
+            this is governed by the Community Investment Framework.
+          </p>
+        </div>
+        <div id="c" onclick=" selectHandler(this)" class="mcq-main correct" data-aos="fade-up">
+          <div>C</div>
+          <p>
+            No matter who the recipient is, any sort of community investment
+            must follow the right due diligence and be recorded.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
