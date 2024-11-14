@@ -1,53 +1,79 @@
-<div class="bg-primary">
+<div class="">
+  <div class="bg-primary w-screen fixed top-0 bottom-0 left-0 right-0"></div>
   <!-- Header -->
-  <div class="py-[2.875rem] px-[4rem]">
-    <div class="flex justify-between gap-4 items-center">
-      <div
-        data-aos="fade-right"
-        class="flex items-end divide-x-2 divide-[#FA73B4]"
-      >
-        <img src="./assets/icons/bat_logo.svg" alt="" class="pr-4" />
-        <img src="./assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-        <img src="" alt="" />
-      </div>
-      <!--  -->
-      <div data-aos="fade-left" class="">
-        <img src="./assets/icons/badge2.svg" alt="" srcset="" />
+  <div class="mt-[50px] container mx-auto">
+    <div class="flex justify-end items-center">
+      <div data-aos="fade-left">
+        <img
+          class="cursor-pointer"
+          onclick="loadPage('./page-1.html')"
+          src="../assets/icons/badge2.svg"
+          alt=""
+        />
       </div>
     </div>
   </div>
-  <div class="flex justify-center">
-    <div class="flex items-start relative pr-[12rem]">
-      <div
-        data-aos="fade-left"
-        class="bg-[#F63E9F] pl-[5rem] pr-[8rem] py-14 rounded-[3.75rem] relative top-[5rem] left-[24rem] z-[1]"
-      >
-        <div class="">
-          <div class="">
-            <p class="text-white text-[5rem] font-bold pt-24 leading-[5rem]">
-              You are Shakib's <br />
-              Line Manager
-            </p>
-            <div class="h-2 bg-yellow w-28"></div>
-          </div>
-          <button
-            data-aos="zoom-in-right"
-            class="btn w-fit relative -bottom-[5rem]"
-            type="button"
-            onclick="loadPage('./page-8.html')"
-          >
-            <span>Let's Go</span>
-            <img src="./assets/icons/arrow.svg" alt="" srcset="" />
+
+  <div
+    class="grid grid-cols-2 xl-zoom:gap-x-0 gap-x-5 h-[calc(100vh-105px)] container mx-auto z-10 relative"
+  >
+    <div class="flex items-end h-full">
+      <img src="../assets/slider2user.png" class="" alt="" />
+    </div>
+    <div class="" style="margin-top: 80px">
+      <div class="" style="margin-top: 80px">
+        <h1
+          class="text-white font-bold xl-zoom:text-[58px] lg-zoom:text-[43.5px]"
+          data-aos="fade-right"
+        >
+          Episode Summary
+        </h1>
+        <p
+          class="text-white xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-3"
+          data-aos="fade-up"
+        >
+          You have reached the end of this episode. Let’s take a look at what
+          Procurement Policy and other relevant company policies provide.
+        </p>
+        <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
+          <button class="btn-svg" onclick="handleSummery('btn1')" type="button">
+            <img
+              class="w-[95px] h-[95px]"
+              src="../assets/icons/slide11-1.svg"
+              alt=""
+            />
+          </button>
+          <button class="btn-svg" onclick="handleSummery('btn2')" type="button">
+            <img
+              class="w-[95px] h-[95px]"
+              src="../assets/icons/slide11-2.svg"
+              alt=""
+            />
           </button>
         </div>
+        <p
+          class="text-white xl-zoom:text-[20px] lg-zoom:text-[15px] mt-[22px] italic flex items-center gap-2"
+        >
+          <span>
+            <svg
+              width="5"
+              height="20"
+              viewBox="0 0 5 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.368164"
+                y="0.150391"
+                width="3.94421"
+                height="19.698"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Select the icon to learn more
+        </p>
       </div>
-      <img
-        data-aos="fade-up"
-        src="./assets/slider7user.png"
-        class="relative z-10 -mt-14"
-        alt=""
-        srcset=""
-      />
     </div>
   </div>
 </div>

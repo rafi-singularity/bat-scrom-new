@@ -1,89 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
-    <!-- <link rel="stylesheet" href="aos.css" /> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Document</title>
-  </head>
-  <body class="overflow-x-hidden">
-    <div id="root" class="w-screen h-screen">
-      <div class="grid md:grid-cols-2 grid-cols-1">
-        <div class=" ">
-          <div class="bg-[#E72582] relative">
-            <img
-              src="./assets/icons/polygon.svg"
-              class="absolute right-[-4.75rem] top-[40%] z-50"
-              alt=""
-            />
-            <div
-              data-aos="fade-down"
-              class="h-[562px] md:px-[150px] py-[350px] relative top-[-14.25rem]"
-            >
-              <h1 class="text-white text-[4.5rem] font-bold">
-                A Quick Turnaround
-              </h1>
-              <img
-                src="./assets/icons/underline_1.svg"
-                class="mb-[1.125rem]"
-                alt=""
-              />
-              <p class="text-white font-medium text-[22px]">
-                Shakib worked with Rapide in his earlier workplace and knew they
-                delivered the brief on the dot. There was a catch though.
-                Rapide’s AFC risk assessment and contract have already expired.
-                <br />
-                Despite the risk, Shakib contacts Rapide and agrees upon a price
-                of BDT 300,000 for the research readiness. He continues to raise
-                a manual PO and gets the work started.
-              </p>
-            </div>
-          </div>
-          <div class="bg-white px-[9.4375rem] py-[2.3125rem]">
-            <div class="flex items-center gap-2 mb-[1.15rem]">
-              <img
-                src="./assets/icons/horizontal_bar.svg"
-                alt=""
-                data-aos="fade-down"
-              />
-              <p class="text-[#004F9F] text-[1.5rem]" data-aos="fade-right">
-                Select the arrow button to learn more
-              </p>
-            </div>
-            <div class="flex gap-4">
-              <button data-aos="fade-right" onclick="loadPage('./page-4.html')">
-                <img src="./assets/icons/prev_btn.svg" alt="" />
-              </button>
-              <button data-aos="fade-left" onclick="loadPage('./page-6.html')">
-                <img src="./assets/icons/next_btn.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="w-full h-screen overflow-hidden relative"
-          data-aos="fade-left"
-        >
-          <!-- Header -->
-          <img
-            src="./assets/icons/badge2.svg"
-            class="absolute top-[3.125rem] left-[35rem]"
-            alt=""
-          />
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+   
+  <div class="h-[85vh] flex">
+   
+    <div class="w-full bg-primary h-full">
 
-          <img src="./assets/slide5_img.png" class="object-cover w-full" />
+    </div>
+    <div class="w-[16.33vw] bg-secondary h-full">
+
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto relative">
+  <button class="btnMcq float-right absolute -bottom-6 right-0 z-20 2xl:text-md text-sm" type="button"
+  onclick="loadPage('./page-7.html')">
+  Continue
+</button>
+  <div class="w-full flex justify-end pt-[50px]">
+    <img class="cursor-pointer" onclick="loadPage('./page-1.html')" data-aos="fade-left" src="../assets/icons/badge2.svg" alt="" srcset="" />
+  </div>
+  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
+    <div class="col-span-1 flex flex-col justify-start xl-zoom:mt-[90px] relative">
+      <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold" data-aos="fade-right">
+          That’s  incorrect!
+      </p>
+      <div class="flex flex-col gap-[3rem] text-white">
+        <p class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5" data-aos="fade-up">
+          Community investment should not be undertaken without proper governance. Moreover, the allocated funds should not be used for any improper purposes and should be in line with all financial reports.      </div>
+      <img
+      src="../assets/icons/cross.svg"
+      alt=""
+      class="absolute bottom-[10%] right-1 min-[1792px]:w-[191px] w-[136px]"
+      data-aos="zoom-out-down"
+    />
+    </div>
+    <div class="col-span-1 h-full flex justify-center items-center">
+
+      <div class="space-y-4">
+        <div id="a" onclick=" selectHandler(this)" class="mcq-main" data-aos="fade-up">
+          <div class="serial">A</div>
+          <p>
+            For emergencies such as this, petty cash was the right way to go. He
+            had the right intentions at heart.    </p>
+        </div>
+        <div id="b" onclick=" selectHandler(this)" class="mcq-main correct" data-aos="fade-up">
+          <div>B</div>
+          <p>
+            Before proceeding to guide Adnan on how to make the contribution,
+            Shakib should have consulted Legal and CORA as contributions like
+            this is governed by the Community Investment Framework.
+          </p>
+        </div>
+        <div id="c" onclick=" selectHandler(this)" class="mcq-main correct" data-aos="fade-up">
+          <div>C</div>
+          <p>
+            No matter who the recipient is, any sort of community investment
+            must follow the right due diligence and be recorded.
+          </p>
         </div>
       </div>
+
     </div>
-    <img
-      src="./assets/bottom-bar.svg"
-      class="absolute bottom-0 left-0 right-0"
-    />
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
+  </div>
+</div>

@@ -1,64 +1,76 @@
-<div class="grid grid-cols-8 bg-primary">
-  <div
-    data-aos="fade-right"
-    class="col-span-3 w-full h-screen overflow-hidden relative"
-  >
-    <div class="fixed left-0 right-0 top-0 bottom-0">
-      <img src="../assets/slide1.png" class="object-cover w-full" />
-    </div>
-  </div>
-  <div class="col-span-5">
-    <div class="container mx-auto">
-      <!-- Header -->
-      <div class="bg-[#F63E9F] p-[2.875rem] space-y-10">
-        <div class="flex justify-between gap-4 items-center">
-          <div
-            data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#FA73B4]"
-          >
-            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-            <img src="" alt="" />
-          </div>
-          <!--  -->
-          <div data-aos="fade-left" class="">
-            <img src="../assets/icons/badge1.svg" alt="" srcset="" />
-          </div>
+<div class="relative">
+  <div class="bg-primary fixed bottom-0 right-0 w-full h-screen"></div>
+  <div class="container mx-auto h-screen overflow-y-hidden relative">
+    <!-- Header -->
+    <div class="mt-[50px]">
+      <div class="flex justify-between gap-4 items-center">
+        <!-- Logos -->
+        <div
+          data-aos="fade-right"
+          class="flex items-end divide-x-2 divide-[#703EAB]"
+        >
+          <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
+          <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
         </div>
-        <!-- Header title -->
-        <div data-aos="fade-up" class="relative">
-          <h1 class="text-white text-[2.5rem] xl:text-[3rem] font-bold">
-            Cronicles of Shakib
-          </h1>
-          <img src="../assets/icons/underline.svg" alt="" />
+        <!-- Badge -->
+        <div
+          class="cursor-pointer"
+          onclick="loadPage('./page-1.html')"
+          data-aos="fade-left"
+        >
+          <img src="../assets/icons/badge2.svg" alt="" />
         </div>
       </div>
-      <!-- Description -->
-      <div
-        class="text-white text-[22px] font-medium p-[2.875rem] flex flex-col gap-5 justify-start overflow-y-auto h-[60vh]"
-      >
-        <p data-aos="fade-down" class="">
-          Without further ado, let’s get this journey started! During the
-          training, you will be role-playing multiple characters, but the story
-          will revolve around a character named Shakib. Shakib has been recently
-          appointed as the new Brand Deployment Executive in the Activation
-          Team. Without further ado, let’s get started!
-        </p>
-        <p data-aos="fade-down" class="">
-          Vaping devices have been an up-and-coming product in the market and
-          your company wants to join the bandwagon. With prior experience in
-          brand activation, he has been tagged with the latest Vuse launch into
-          the market and asked to conduct a survey on the vaping scenario of the
-          market.
-        </p>
-        <button
-          onclick="loadPage('./page-2.html')"
-          class="btn w-fit mb-4"
-          type="button"
+    </div>
+
+    <div class="absolute top-[105px] bottom-0 w-full">
+      <div class="flex items-end justify-end h-full">
+        <div
+          class="relative flex items-end justify-end h-full w-fit max-w-full max-h-full"
         >
-          <span>Let's Go</span>
-          <img src="../assets/icons/arrow.svg" alt="" srcset="" />
-        </button>
+          <img
+            src="../assets/slider2user.png"
+            class="object-contain max-w-full max-h-full z-10"
+            alt="Slider Image"
+          />
+          <div
+            class="absolute xl-zoom:top-[20%] lg-zoom:top-[20%] xl-zoom:right-[60%] lg-zoom:right-[50%]"
+          >
+            <div class="relative w-auto mx-auto">
+              <div
+                data-aos="fade-left"
+                class="bg-secondary pl-[120px] p-[3rem] pr-[22rem] rounded-[3.75rem] h-fit relative w-fit"
+              >
+                <div class="">
+                  <div class="xl-zoom:mb-[30px] mb-[25px] xl-zoom:pt-[13px]">
+                    <p
+                      class="text-white xl-zoom:leading-[68px] xl-zoom:text-[38px] lg-zoom:text-[26px] font-medium"
+                    >
+                      Working with Sakib
+                    </p>
+                    <div
+                      class="bg-[#004F9F] xl-zoom:w-[7.5rem] w-[4.5rem] h-2 mt-1"
+                    ></div>
+                  </div>
+                  <p
+                    class="text-white xl-zoom:pb-[40px] lg-zoom:pb-[40px] xl-zoom:leading-[95px] lg-zoom:leading-[60px] xl:text-[80px] xl-zoom:text-[80px] lg-zoom:text-[54px] font-bold text-nowrap"
+                  >
+                  The Right <br />
+                  Intention
+                  </p>
+                  <button
+                    onclick="loadPage('./page-2.html')"
+                    class="btn w-fit absolute -bottom-[6%] z-[1000]"
+                    type="button"
+                  >
+                    <span>Start Episode</span>
+                    <img src="../assets/icons/arrow.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
