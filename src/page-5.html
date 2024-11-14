@@ -1,78 +1,123 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <img src="../assets/slider8user.png" class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[25rem] h-[20rem]" alt=""
-      data-aos="fade-up" />
+  <img
+    src="../assets/slider8user.png"
+    class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[25rem] h-[20rem]"
+    alt=""
+    data-aos="fade-up"
+  />
   <div class="h-[85vh] flex">
-   
-    <div class="w-full bg-primary h-full">
-
-    </div>
-    <div class="w-[16.33vw] bg-secondary h-full">
-
-    </div>
+    <div class="w-full bg-primary h-full"></div>
+    <div class="w-[16.33vw] bg-secondary h-full"></div>
   </div>
 </div>
 
 <div class="container mx-auto relative">
-  <button class="btnMcq float-right absolute -bottom-6 right-0 z-20 2xl:text-md text-sm" type="button"
-  onclick="handleSubmit()">
-  Submit
-</button>
+  <button
+    class="btnMcq float-right absolute -bottom-6 right-0 z-50 2xl:text-md text-sm"
+    type="button"
+    onclick="handleSubmit()"
+  >
+    Submit
+  </button>
   <div class="w-full flex justify-end pt-[50px]">
-    <img class="cursor-pointer" onclick="loadPage('./page-1.html')" data-aos="fade-left" src="../assets/icons/scenario02-badge.svg" alt="" srcset="" />
+    <img
+      class="cursor-pointer"
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+      src="../assets/icons/scenario02-badge.svg"
+      alt=""
+      srcset=""
+    />
   </div>
   <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
-    <div class="col-span-1 ">
-      <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase" data-aos="fade-right">
+    <div class="col-span-1">
+      <p
+        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
+        data-aos="fade-right"
+      >
         Decision Time
-        <svg width="167" height="9" viewBox="0 0 167 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="167"
+          height="9"
+          viewBox="0 0 167 9"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect x="0.124756" y="0.375" width="166" height="8" fill="#50AF47" />
         </svg>
       </p>
       <div class="flex flex-col gap-[3rem] text-white">
-        <p class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5" data-aos="fade-up">
-          Do you think Shakib’s activities were compliant? There can <br> be more than one correct answer.
+        <p
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
+          data-aos="fade-up"
+        >
+          Do you think Shakib’s activities were compliant? There can <br />
+          be more than one correct answer.
         </p>
 
         <div class="flex justify-start items-center">
-          <p class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-[#5F78A9] border-l-4 ps-3" data-aos="fade-left">
-            Select all that apply and click Submit. There may be more <br> than one correct answer.
+          <p
+            class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-[#5F78A9] border-l-4 ps-3"
+            data-aos="fade-left"
+          >
+            Select all that apply and click Submit. There may be more <br />
+            than one correct answer.
           </p>
         </div>
       </div>
     </div>
     <div class="col-span-1 h-full flex justify-center items-center">
-
       <div class="space-y-4">
-        <div id="a" onclick=" selectHandler(this)" class="mcq-main" data-aos="fade-up">
-          <div class="serial">A</div>
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
+          <div class="">A</div>
           <p>
-            Since Velox is a crowd favourite, Shakib can automatically presume it is a low-risk software and give Shams
-            permission for integration. Moreover, the one-off spend of BDT12mn is already covered by the PO.
+            Since Velox is a crowd favourite, Shakib can automatically presume
+            it is a low-risk software and give Shams permission for integration.
+            Moreover, the one-off spend of BDT12mn is already covered by the PO.
           </p>
         </div>
-        <div id="b" onclick=" selectHandler(this)" class="mcq-main" data-aos="fade-up">
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
           <div>B</div>
           <p>
-            No business transaction is allowed without going ahead with the AFC. Shakib should have consulted with legal
-            first and set up a contract.
+            No business transaction is allowed without going ahead with the AFC.
+            Shakib should have consulted with legal first and set up a contract.
           </p>
         </div>
-        <div id="c" onclick=" selectHandler(this)" class="mcq-main" data-aos="fade-up">
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
           <div>C</div>
           <p>
-            Shakib should have consulted someone from the IDT department as Velox would need access to the BAT networks
-            and system information.
+            Shakib should have consulted someone from the IDT department as
+            Velox would need access to the BAT networks and system information.
           </p>
         </div>
-        <div id="d" onclick=" selectHandler(this)" class="mcq-main" data-aos="fade-up">
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
           <div>D</div>
           <p>
-            Providing the Velox team with our system access would not require an NDA as the software is being morphed
-            into one of our own.
+            Providing the Velox team with our system access would not require an
+            NDA as the software is being morphed into one of our own.
           </p>
         </div>
       </div>
-
     </div>
   </div>
 </div>

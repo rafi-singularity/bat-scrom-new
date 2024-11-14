@@ -1,0 +1,107 @@
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+  <div class="h-[85vh] flex">
+    <div class="w-full bg-primary h-full"></div>
+    <div class="w-[16.33vw] bg-secondary h-full"></div>
+  </div>
+</div>
+
+<div class="container mx-auto relative">
+  <button
+    class="btnMcq float-right absolute -bottom-6 right-0 z-20 2xl:text-md text-sm"
+    type="button"
+    onclick="loadPage('./page-8.html')"
+  >
+    Continue
+  </button>
+  <div class="w-full flex justify-end pt-[50px]">
+    <img
+      class="cursor-pointer"
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+      src="./assets/icons/scenario02-badge.svg"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
+    <div
+      class="col-span-1 flex flex-col justify-start xl-zoom:mt-[90px] lg-zoom:mt-[65px] relative"
+    >
+      <p
+        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold"
+        data-aos="fade-right"
+      >
+        That’s correct!
+      </p>
+      <div class="flex flex-col gap-[3rem] text-white">
+        <p
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
+          data-aos="fade-up"
+        >
+          AFC should be the first action point while dealing with a new vendor.
+          Shakib should have consulted his business partners in Legal and IDT
+          before setting up a contract with Velox.
+        </p>
+      </div>
+      <img
+        src="./assets/icons/tick.svg"
+        alt=""
+        class="absolute bottom-[10%] right-1 min-[1792px]:w-[191px] w-[136px]"
+        data-aos="zoom-out-down"
+      />
+    </div>
+    <div class="col-span-1 h-full flex justify-center items-center">
+      <div class="space-y-4">
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
+          <div class="serial">A</div>
+          <p>
+            Since Velox is a crowd favourite, Shakib can automatically presume
+            it is a low-risk software and give Shams permission for integration.
+            Moreover, the one-off spend of BDT12mn is already covered by the PO.
+          </p>
+        </div>
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq-main correct"
+          data-aos="fade-up"
+        >
+          <div>B</div>
+          <p>
+            No business transaction is allowed without going ahead with the AFC.
+            Shakib should have consulted with legal first and set up a contract.
+          </p>
+        </div>
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq-main correct"
+          data-aos="fade-up"
+        >
+          <div>C</div>
+          <p>
+            Shakib should have consulted someone from the IDT department as
+            Velox would need access to the BAT networks and system information.
+          </p>
+        </div>
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
+          <div>D</div>
+          <p>
+            Providing the Velox team with our system access would not require an
+            NDA as the software is being morphed into one of our own.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
