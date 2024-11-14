@@ -989,6 +989,26 @@ video {
   width: 100vw;
 }
 
+.w-\[7\.5rem\]{
+  width: 7.5rem;
+}
+
+.w-\[a\.5rem\]{
+  width: a.5rem;
+}
+
+.w-\[5\.5rem\]{
+  width: 5.5rem;
+}
+
+.w-\[6rem\]{
+  width: 6rem;
+}
+
+.w-\[8rem\]{
+  width: 8rem;
+}
+
 .min-w-\[80px\]{
   min-width: 80px;
 }
@@ -1236,6 +1256,11 @@ video {
 .bg-yellow{
   --tw-bg-opacity: 1;
   background-color: rgb(255 187 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#D3BFF3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 191 243 / var(--tw-bg-opacity));
 }
 
 .object-contain{
@@ -2035,6 +2060,14 @@ video {
 
   .xl-zoom\:w-\[9\.5rem\]{
     width: 9.5rem;
+  }
+
+  .xl-zoom\:w-\[10rem\]{
+    width: 10rem;
+  }
+
+  .xl-zoom\:w-\[9rem\]{
+    width: 9rem;
   }
 
   .xl-zoom\:gap-x-0{
