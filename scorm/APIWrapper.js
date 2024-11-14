@@ -128,7 +128,6 @@ pipwerks.SCORM.API.find = function (win) {
   pipwerks.SCORM.API.isFound = API !== null;
 };
 
-
 const selectHandler = (selected) => {
   const options = document.querySelectorAll(".mcq");
   options.forEach((option) => {
@@ -137,7 +136,6 @@ const selectHandler = (selected) => {
   selected.classList.add("correct");
   answer = selected.id;
 };
-
 
 let answer = [0, 1, 1, 1];
 let selectedValues = [];
@@ -234,29 +232,28 @@ const handleAnswerSubmit = async () => {
     .getElementById("droppedPotential")
     .querySelectorAll(".answer");
 
-
   if (correctValue === 6) {
     await loadPage("./page-7.html");
     appropriateElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 1}`);
       targetDiv.appendChild(item);
       console.log(targetDiv);
-    })
+    });
     potentialElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 4}`);
       targetDiv.appendChild(item);
-    })
+    });
   } else {
     await loadPage("./page-6.html");
     appropriateElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 1}`);
       targetDiv.appendChild(item);
       console.log(item);
-    })
+    });
     potentialElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 4}`);
       targetDiv.appendChild(item);
-    })
+    });
   }
 
   for (let i = 0; i < potentialElement.length; i++) {
@@ -277,5 +274,15 @@ const handleAnswerSubmit = async () => {
     } else {
       appropriateElement[i].parentElement.classList.add("dragDropBreachColor");
     }
+  }
+};
+const handleSummery = (data) => {
+  if (data == "btn1") {
+    isSummery = true;
+    loadPage("./page-9.html");
+  } else if (data == "btn2") {
+    if (isSummery) {
+      loadPage("./page-10.html");
+    } else return;
   }
 };
