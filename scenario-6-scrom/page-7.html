@@ -1,83 +1,90 @@
-<div class="grid md:grid-cols-4 grid-cols-1">
-  <div class="col-span-3">
-    <div class="bg-white relative">
-      <div class="bg-[#2F912F] h-[4.39vh]"></div>
-      <!-- <img
-        src="./assets/icons/slide13_polygon.png"
-        class="absolute right-[0rem] z-50"
-        alt=""
-        style="top: 22.1%"
-        data-aos="fade-left"
-      /> -->
-      <div
-        data-aos="fade-down"
-        class="h-[93.42vh] flex justify-center flex-col md:px-[140px]"
-      >
-        <div class="mb-3">
-          <img src="./assets/icons/slide11-1.svg" alt="" />
-          <h1
-            class="min-[1630px]:text-[3.5rem] text-wrap text-[2.25rem] font-bold min-[1630px]:leading-[4.875rem] text-[#0E2B63] mt-4"
-          >
-            Responsible Marketing Framework
-          </h1>
-        </div>
-        <p
-          class="text-[#004F9F] font-medium min-[1630px]:text-[20px] min-[1400px]:text-[16px] text-[13px]"
-        >
-          The Group adheres to a set of standards to hold ourselves accountable
-          against our tobacco, nicotine and zero nicotine products and brands.
-          We cannot market our product with images, themes, characters, or
-          hashtags that appeal to the youth.
-          <br />
-          <br />
-          Using objects such as toys, balloons, and candy is prohibited. The
-          image on the landing page is a strong example of such non-adherence.
-          The fun, vibrant visuals used appeals to the underage crowd and should
-          be avoided. Moreover, 75% of the followers of any chosen brand
-          ambassador of our products should be adults. A pop-culture icon is
-          likely to have a huge teen following.
-          <br />
-          <br />
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+  <div class="xl-zoom:h-[88vh] h-[82vh] flex">
+    <div class="w-full bg-[#298429] h-full"></div>
+    <div class="w-[16.33vw] bg-primary h-full"></div>
+  </div>
+</div>
 
-          Moreover, with no age restrictions in place, any accounts tagged in
-          the posts could easily be of somebody underage. Any follower
-          identified as underage should be blocked from following our accounts.
-          Learn more about Responsible Marketing Framework from The Policy Hub!
+<div class="container mx-auto relative">
+  <div class="flex justify-end gap-4 items-center mt-[50px]">
+    <!-- Badge -->
+    <div
+      class="cursor-pointer"
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+    >
+      <img src="./assets/icons/badge2.svg" alt="" />
+    </div>
+  </div>
+  <button
+    class="btnMcq float-right absolute xl-zoom:-bottom-[10rem] -bottom-[7rem] right-0 z-20 xl-zoom:text-[26px] text-[18px] max-w-[235px] w-full"
+    type="button"
+    onclick="loadPage('./page-8.html')"
+    id="checkAnswer"
+  >
+    Continue
+  </button>
+
+  <div class="xl-zoom:mt-[111px] mt-[70px]">
+    <div class="grid grid-cols-2 gap-[120px]">
+      <div class="relative">
+        <p
+          class="font-bold xl-zoom:text-[70px] text-[40px] mb-[30px] text-white"
+        >
+          That’s correct!
         </p>
-        <div class="flex mt-6 justify-between items-center">
-          <div class="">
-            <img
-              src="./assets/icons/policy-hub.svg"
-              alt=""
-              style="border-radius: 8px"
-              class="mx-auto"
-            />
-            <p style="font-size: 22px; text-align: center">Policy Hub</p>
+        <div class="mt-[37px]">
+          <p class="xl-zoom:text-[22px] text-[14px] font-medium text-white">
+            Our products cannot be marketed with images, themes, or individuals
+            that appeal to the youth. It is important to ensure our content is
+            inaccessible by the Underage group. Click next to learn more
+          </p>
+        </div>
+        <div class="absolute xl-zoom:-bottom-[4rem] -bottom-[2rem] right-0">
+          <img
+            src="./assets/icons/tick.svg"
+            alt=""
+            class="z-20 xl-zoom:w-[191px] w-[116px]"
+            data-aos="zoom-out-down"
+          />
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-[17px]">
+        <div
+          class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]"
+        >
+          <div class="p-3">
+            <div class="mb-[25px]">
+              <div class="text-[#0E2B63] text-2xl font-semibold mb-[14px]">
+                Appropriate
+              </div>
+              <div class="h-[5px] w-[36px] bg-[#0E2B63]"></div>
+            </div>
+            <div class="space-y-2" id="droppedAppropriate">
+              <div class="dragDropInitialColor" id="droppedItem1"></div>
+              <div class="dragDropInitialColor" id="droppedItem2"></div>
+              <div class="dragDropInitialColor" id="droppedItem3"></div>
+            </div>
           </div>
-          <div class="flex gap-4 justify-end">
-            <button onclick="loadPage('./page-6.html')" type="button">
-              <img src="./assets/icons/back-gray.svg" alt="" />
-            </button>
-            <button onclick="loadPage('./page-1.html')" class="float-right">
-              <img src="./assets/icons/end_btn.svg" alt="" />
-            </button>
+        </div>
+        <div
+          class="bg-white rounded-3xl border-[2px] border-dashed border-[#EF7D00]"
+        >
+          <div class="p-3">
+            <div class="mb-[25px]">
+              <div class="text-[#EF7D00] text-2xl font-semibold mb-[14px]">
+                Potential breach
+              </div>
+              <div class="h-[5px] w-[36px] bg-[#EF7D00]"></div>
+            </div>
+            <div class="space-y-2" id="droppedPotential">
+              <div class="dragDropInitialColor" id="droppedItem4"></div>
+              <div class="dragDropInitialColor" id="droppedItem5"></div>
+              <div class="dragDropInitialColor" id="droppedItem6"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="col-span-1 w-full h-screen overflow-hidden relative"
-    data-aos="fade-left"
-  >
-    <!-- Header -->
-    <img
-      onclick="loadPage('./page-1.html')"
-      src="./assets/icons/badge2.svg"
-      class="absolute right-8 top-8 z-50 cursor-pointer"
-      alt=""
-    />
-
-    <img src="./assets/slide7_img.png" class="h-full object-cover" />
   </div>
 </div>

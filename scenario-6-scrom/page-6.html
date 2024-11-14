@@ -1,54 +1,90 @@
-<div class="bg-white w-screen min-h-screen">
-  <!-- Header -->
-  <div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-    <div class="flex justify-end gap-4 items-center">
-      <div
-        data-aos="fade-left"
-        class="cursor-pointer"
-        onclick="loadPage('./page-1.html')"
-      >
-        <img src="./assets/icons/badge2.svg" alt="" srcset="" />
-      </div>
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+  <div class="xl-zoom:h-[88vh] h-[82vh] flex">
+    <div class="w-full bg-[#298429] h-full"></div>
+    <div class="w-[16.33vw] bg-primary h-full"></div>
+  </div>
+</div>
+
+<div class="container mx-auto relative">
+  <div class="flex justify-end gap-4 items-center mt-[50px]">
+    <!-- Badge -->
+    <div
+      class="cursor-pointer"
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+    >
+      <img src="./assets/icons/badge2.svg" alt="" />
     </div>
   </div>
-  <div
-    class="grid grid-cols-2 h-[100vh] bg-primary px-[9.375rem] min-[1752px]:pt-0 pt-4"
+  <button
+    class="btnMcq float-right absolute xl-zoom:-bottom-[10rem] -bottom-[7rem] right-0 z-20 xl-zoom:text-[26px] text-[18px] max-w-[235px] w-full"
+    type="button"
+    onclick="loadPage('./page-8.html')"
+    id="checkAnswer"
   >
-    <div class="h-screen flex items-end">
-      <img src="./assets/slider2user.png" class="bottom-0" alt="" srcset="" />
-    </div>
-    <div class="flex flex-col justify-center">
-      <h1
-        class="text-white font-bold text-[58px] text-nowrap"
-        data-aos="fade-right"
-      >
-        Episode Summary
-      </h1>
-      <p class="text-white font-medium text-[22px] mt-4" data-aos="fade-up">
-        You have reached the end of this episode. Tap the icons to learn more
-        about the policies.
-      </p>
-      <div class="flex gap-7 mt-[40px]" data-aos="zoom-out">
-        <button
-          onclick="loadPage('./page-7.html')"
-          type="button"
-          class="bg-white h-[7rem] w-[7rem] p-4 rounded-xl"
-        >
-          <img
-            src="./assets/icons/slide11-1.svg"
-            alt=""
-            class="h-full w-auto mx-auto"
-          />
-        </button>
-      </div>
-      <div
-        class="flex justify-start items-center border-l-4 pl-2 border-white text-white mt-5"
-      >
+    Continue
+  </button>
+
+  <div class="xl-zoom:mt-[111px] mt-[70px]">
+    <div class="grid grid-cols-2 gap-[120px]">
+      <div class="relative">
         <p
-          class="max-w-[27rem] min-[1752px]:text-[18px] italic text-[12px] font-medium"
+          class="font-bold xl-zoom:text-[70px] text-[40px] mb-[30px] text-white"
         >
-          Select the icon to learn more
+          That’s incorrect!
         </p>
+        <div class="mt-[37px]">
+          <p class="xl-zoom:text-[22px] text-[14px] font-medium text-white">
+            Our products cannot be marketed with images, themes, or individuals
+            that appeal to the youth. It is important to ensure our content is
+            inaccessible by the Underage group. Click next to learn more.
+          </p>
+        </div>
+        <div class="absolute xl-zoom:-bottom-[4rem] -bottom-[2rem] right-0">
+          <img
+            src="./assets/icons/cross.svg"
+            alt=""
+            class="z-20 xl-zoom:w-[191px] w-[116px]"
+            data-aos="zoom-out-down"
+          />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-[17px]">
+        <div
+          class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]"
+        >
+          <div class="p-3">
+            <div class="mb-[25px]">
+              <div class="text-[#0E2B63] text-2xl font-semibold mb-[14px]">
+                Appropriate
+              </div>
+              <div class="h-[5px] w-[36px] bg-[#0E2B63]"></div>
+            </div>
+            <div class="space-y-2" id="droppedAppropriate">
+              <div class="dragDropInitialColor" id="droppedItem1"></div>
+              <div class="dragDropInitialColor" id="droppedItem2"></div>
+              <div class="dragDropInitialColor" id="droppedItem3"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-3xl border-[2px] border-dashed border-[#EF7D00]"
+        >
+          <div class="p-3">
+            <div class="mb-[25px]">
+              <div class="text-[#EF7D00] text-2xl font-semibold mb-[14px]">
+                Potential breach
+              </div>
+              <div class="h-[5px] w-[36px] bg-[#EF7D00]"></div>
+            </div>
+            <div class="space-y-2" id="droppedPotential">
+              <div class="dragDropInitialColor" id="droppedItem4"></div>
+              <div class="dragDropInitialColor" id="droppedItem5"></div>
+              <div class="dragDropInitialColor" id="droppedItem6"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
