@@ -1,22 +1,24 @@
-<div class="bg-primary w-screen h-screen overflow-hidden">
+<div class="">
+  <div class="bg-primary w-screen fixed top-0 bottom-0 left-0 right-0"></div>
   <!-- Header -->
-  <div class="pt-[50px] container mx-auto">
+  <div class="mt-[50px] container mx-auto">
     <div class="flex justify-end items-center">
       <div data-aos="fade-left">
-        <img class="cursor-pointer" onclick="loadPage('./page-1.html')" src="../assets/icons/badge2.svg" alt="" />
+        <img
+          class="cursor-pointer"
+          onclick="loadPage('./page-1.html')"
+          src="../assets/icons/badge2.svg"
+          alt=""
+        />
       </div>
     </div>
   </div>
 
   <div
-    class="grid grid-cols-2 xl-zoom:gap-x-0 gap-x-5 h-full bg-primary container mx-auto"
+    class="grid grid-cols-2 xl-zoom:gap-x-0 gap-x-5 h-[calc(100vh-105px)] container mx-auto z-10 relative"
   >
-    <div class="flex items-center">
-      <img
-        src="../assets/slider2user.png"
-        class="max-h-full object-contain xl-zoom:-mt-[1rem] mt-[4rem]"
-        alt=""
-      />
+    <div class="flex items-end h-full">
+      <img src="../assets/slider2user.png" class="" alt="" />
     </div>
     <div class="" style="margin-top: 80px">
       <div class="" style="margin-top: 80px">
@@ -34,22 +36,14 @@
           Procurement Policy and other relevant company policies provide.
         </p>
         <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
-          <button
-            class="btn-svg"
-            onclick="loadPage('./page-8.html')"
-            type="button"
-          >
+          <button class="btn-svg" onclick="handleSummery('btn1')" type="button">
             <img
               class="w-[95px] h-[95px]"
               src="../assets/icons/slide11-1.svg"
               alt=""
             />
           </button>
-          <button
-            class="btn-svg"
-            onclick="loadPage('./page-9.html')"
-            type="button"
-          >
+          <button class="btn-svg" onclick="handleSummery('btn2')" type="button">
             <img
               class="w-[95px] h-[95px]"
               src="../assets/icons/slide11-2.svg"

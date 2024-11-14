@@ -168,3 +168,16 @@ const handleSubmit = async () => {
     return;
   }
 };
+
+let isSummery = false;
+
+const handleSummery = (data) => {
+  if (data == 'btn1') {
+    isSummery = true;
+    loadPage('./page-8.html');
+  } else if (data == 'btn2') {
+    if (isSummery) {
+      loadPage('./page-9.html');
+    } else return;
+  }
+}
