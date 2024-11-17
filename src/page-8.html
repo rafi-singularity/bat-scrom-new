@@ -1,53 +1,70 @@
-<div class="bg-white w-screen min-h-screen">
+<div class="">
+  <div class="bg-primary w-screen fixed top-0 bottom-0 left-0 right-0"></div>
   <!-- Header -->
-  <div class="absolute top-4 right-[9.375rem] pt-[2.875rem]">
-    <div class="flex justify-end gap-4 items-center">
-      <div
-        data-aos="fade-left"
-        class="cursor-pointer"
-        onclick="loadPage('./page-1.html')"
-      >
-        <img src="../assets/icons/badge2.svg" alt="" srcset="" />
+  <div class="mt-[50px] container mx-auto">
+    <div class="flex justify-end items-center">
+      <div data-aos="fade-left">
+        <img
+          class="cursor-pointer"
+          onclick="loadPage('./page-1.html')"
+          src="../assets/icons/badge2.svg"
+          alt=""
+        />
       </div>
     </div>
   </div>
+
   <div
-    class="grid grid-cols-2 h-[100vh] bg-primary px-[9.375rem] min-[1752px]:pt-0 pt-4"
+    class="grid grid-cols-2 xl-zoom:gap-x-0 gap-x-5 h-[calc(100vh-105px)] container mx-auto z-10 relative"
   >
-    <div class="h-screen flex items-end">
-      <img src="../assets/slider2user.png" class="bottom-0" alt="" srcset="" />
+    <div class="flex items-end h-full">
+      <img src="../assets/slider2user.png" class="" alt="" />
     </div>
-    <div class="flex flex-col justify-center">
-      <h1
-        class="text-white font-bold text-[58px] text-nowrap"
-        data-aos="fade-right"
-      >
-        Episode Summary
-      </h1>
-      <p class="text-white font-semibold text-[22px] mt-4" data-aos="fade-up">
-        You have reached the end of this episode. Shakib has breached the
-        Anti-Bribery and Corruption Policy through his actions. Let’s look at
-        this policy in more detail.
-      </p>
-      <div class="flex gap-7 mt-[40px]" data-aos="zoom-out">
-        <button
-          onclick="loadPage('./page-9.html')"
-          type="button"
-          class="bg-white h-[7rem] w-[7rem] p-4 rounded-xl btn-svg"
+    <div class="" style="margin-top: 80px">
+      <div class="" style="margin-top: 80px">
+        <h1
+          class="text-white font-bold xl-zoom:text-[58px] lg-zoom:text-[43.5px]"
+          data-aos="fade-right"
         >
-          <img
-            src="../assets/icons/slide11-1.svg"
-            alt=""
-            class="h-full w-auto mx-auto"
-          />
-        </button>
-      </div>
-      <div
-        class="flex justify-start items-center border-l-4 pl-2 border-white text-white mt-5"
-      >
+          Episode Summary
+        </h1>
         <p
-          class="max-w-[27rem] min-[1752px]:text-[18px] italic text-[12px] font-medium"
+          class="text-white xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-3"
+          data-aos="fade-up"
         >
+          You have reached the end of this episode. Shakib has breached the
+          Anti-Bribery and Corruption Policy through his actions. Let’s look at
+          this policy in more detail.
+        </p>
+        <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
+          <button class="btn-svg" onclick="handleSummery('btn1')" type="button">
+            <img
+              class="w-[95px] h-[95px]"
+              src="../assets/icons/slide11-1.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <p
+          class="text-white xl-zoom:text-[20px] lg-zoom:text-[15px] mt-[22px] italic flex items-center gap-2"
+        >
+          <span>
+            <svg
+              width="5"
+              height="20"
+              viewBox="0 0 5 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.368164"
+                y="0.150391"
+                width="3.94421"
+                height="19.698"
+                fill="white"
+              />
+            </svg>
+          </span>
           Select the icon to learn more
         </p>
       </div>

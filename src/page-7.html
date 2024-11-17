@@ -1,102 +1,97 @@
-<div class="bg-[#E1F6FD] absolute top-0 right-0 left-0 bottom-0 h-screen">
-  <div class="relative">
-    <div
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+  <div class="h-[87vh] flex">
+    <div class="w-full bg-[#1D92C3] h-full"></div>
+    <div class="w-[16.33vw] bg-primary h-full"></div>
+  </div>
+</div>
+
+<div class="container mx-auto relative">
+  <button
+    class="btnMcq float-right absolute -bottom-[4.2rem] right-0 z-20 max-w-[235px] w-full"
+    type="button"
+    onclick="loadPage('./page-8.html')"
+  >
+    Continue
+  </button>
+  <div class="w-full flex justify-end pt-[50px]">
+    <img
+      class="cursor-pointer"
       onclick="loadPage('./page-1.html')"
-      class="absolute top-0 py-[2rem] right-0 px-[4rem] z-50 w-full cursor-pointer"
-    >
+      data-aos="fade-left"
+      src="../assets/icons/badge2.svg"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <div
+    class="grid grid-cols-2 gap-[100px] h-[calc(85vh-165px)] xl-zoom:mt-[40px] mt-[30px]"
+  >
+    <div class="col-span-1 flex flex-col justify-start relative">
+      <p
+        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold xl-zoom:mt-0 mt-[10px]"
+        data-aos="fade-right"
+      >
+        That’s incorrect!
+      </p>
+      <div class="flex flex-col gap-[3rem] text-white">
+        <p
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
+          data-aos="fade-up"
+        >
+          <span class="font-bold">Option “B” & “C” is the correct answer</span
+          ><br /><br />
+          Shakib wilfully obtained confidential information from a Public
+          Official, an action that breaches our SoBC Policy. We must engage with
+          openness, transparency, and integrity. Moreover, he offered a ‘gift’
+          to a Public Official to extract information out of him. This exchange
+          may warrant a disciplinary action such as a verbal or written warning,
+          or even a termination of his contract.
+        </p>
+      </div>
       <img
-        class="float-right min-[1792px]:w-[255px] w-[180px]"
-        src="../assets/icons/badge2.svg"
+        src="../assets/icons/cross.svg"
         alt=""
-        srcset=""
+        class="absolute xl-zoom:bottom-[4%] bottom-0 right-1 min-[1792px]:w-[191px] w-[136px]"
+        data-aos="zoom-out-down"
       />
     </div>
-    <div
-      class="w-[100%] bg-primary h-[90vh] absolute top-0 bottom-0 left-0 right-0"
-    >
-      <div class="bg-[#1D92C3] w-[80%] h-[90vh]"></div>
-    </div>
-
-    <!-- Header -->
-
-    <div class="grid grid-cols-2 h-[90vh] relative z-10">
-      <div class="text-white px-[9.375rem] relative">
-        <div class="pt-[6rem] max-w-[40.875rem]">
-          <p
-            class="font-bold min-[1792px]:text-[70px] text-[40px] mb-[30px]"
-            data-aos="fade-down"
-          >
-            That’s incorrect!
+    <div class="col-span-1 h-full flex justify-center items-center">
+      <div class="space-y-4">
+        <div id="a" class="mcq" data-aos="fade-up">
+          <div class="">A</div>
+          <p class="">
+            Shakib is being collaborative by supporting the Regulatory Affairs
+            team to meet their regulatory engagement goals. We need to work
+            together as one team, no matter what it takes.
           </p>
-          <p
-            class="min-[1630px]:text-[22px] text-[14px] font-medium"
-            data-aos="fade-right"
-          >
-            <span class="font-bold">Option “B” & “C” is the correct answer</span
-            ><br /><br />
-            Shakib wilfully obtained confidential information from a Public
-            Official, an action that breaches our SoBC Policy. We must engage
-            with openness, transparency, and integrity. Moreover, he offered a
-            ‘gift’ to a Public Official to extract information out of him. This
-            exchange may warrant a disciplinary action such as a verbal or
-            written warning, or even a termination of his contract.
+        </div>
+        <div id="b" class="mcq correct" data-aos="fade-up">
+          <div class="">B</div>
+          <p class="">
+            The information is not yet public, so Shakib has induced a Public
+            Official to breach a duty of confidentiality. Shakib should not have
+            asked Tahmid for the report and should have refused to accept the
+            report even if Tahmid had offered it.
           </p>
-          <img
-            src="../assets/icons/cross.svg"
-            alt=""
-            class="absolute right-32 min-[1792px]:mt-16 mt-2 min-[1792px]:w-[191px] w-[136px]"
-            data-aos="zoom-out-down"
-          />
+        </div>
+        <div id="c" class="mcq correct" data-aos="fade-up">
+          <div class="">C</div>
+          <p class="">
+            Shakib could be said to have offered the Formula 1 ticket as a gift
+            to Tahmid to obtain a favour on behalf of the business. It is
+            completely unacceptable for anyone connected to the business to be
+            involved in any activity relating to bribery and corruption, even
+            for the sake of achieving business results.
+          </p>
+        </div>
+        <div id="d" class="mcq" data-aos="fade-up">
+          <div class="">D</div>
+          <p class="">
+            Shakib is being proactive by getting the draft regulation; one
+            should be able to use on one’s social network in times like this.
+          </p>
         </div>
       </div>
-      <div
-        class="flex flex-col justify-center items-center px-[60px] min-[1792px]:pt-[5rem] pt-[1rem]"
-      >
-        <div class="space-y-4">
-          <!-- MCQ -->
-          <div id="a" class="mcq" data-aos="fade-up">
-            <div class="">A</div>
-            <p class="">
-              Shakib is being collaborative by supporting the Regulatory Affairs
-              team to meet their regulatory engagement goals. We need to work
-              together as one team, no matter what it takes.
-            </p>
-          </div>
-          <div id="b" class="mcq correct" data-aos="fade-up">
-            <div class="">B</div>
-            <p class="">
-              The information is not yet public, so Shakib has induced a Public
-              Official to breach a duty of confidentiality. Shakib should not
-              have asked Tahmid for the report and should have refused to accept
-              the report even if Tahmid had offered it.
-            </p>
-          </div>
-          <div id="c" class="mcq correct" data-aos="fade-up">
-            <div class="">C</div>
-            <p class="">
-              Shakib could be said to have offered the Formula 1 ticket as a
-              gift to Tahmid to obtain a favour on behalf of the business. It is
-              completely unacceptable for anyone connected to the business to be
-              involved in any activity relating to bribery and corruption, even
-              for the sake of achieving business results.
-            </p>
-          </div>
-          <div id="d" class="mcq" data-aos="fade-up">
-            <div class="">D</div>
-            <p class="">
-              Shakib is being proactive by getting the draft regulation; one
-              should be able to use on one’s social network in times like this.
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        onclick="loadPage('./page-8.html')"
-        class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 mx-[4rem] z-20"
-        type="button"
-      >
-        Continue
-      </button>
     </div>
   </div>
 </div>
