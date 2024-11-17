@@ -149,7 +149,7 @@ const handleSubmit = async () => {
     } else {
       selectedValues.push(1);
     }
-  }); console.log('input value', selectedValues);
+  });
   const isValid = isMatch(selectedValues);
   if (isValid) {
     selectedValues = []
