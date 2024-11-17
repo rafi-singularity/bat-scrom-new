@@ -163,12 +163,14 @@ const handlePlayButton = () => {
   console.log("check video", video);
   video.play();
   let thumbnailWrapper = document.getElementById("thumbnail-wrapper");
+  let startButton = document.getElementById("startButton");
 
   thumbnailWrapper.style.display = "flex";
 
   thumbnailWrapper.addEventListener("click", () => {
     console.log("check click");
     video.play();
+    startButton.style.display = "none";
   });
   video.addEventListener("play", () => {
     thumbnailWrapper.style.display = "none";
@@ -179,7 +181,21 @@ const handlePlayButton = () => {
   video.addEventListener("mouseout", () => {
     video.controls = false;
   });
+
   video.addEventListener("pause", () => {
     thumbnailWrapper.style.display = "flex";
   });
+  video.addEventListener("ended", () => {
+    startButton.style.display = "flex";
+  });
+};
+const handleSummery = (data) => {
+  if (data == "btn1") {
+    isSummery = true;
+    loadPage("./page-14.html");
+  } else if (data == "btn2") {
+    if (isSummery) {
+      loadPage("./page-15.html");
+    } else return;
+  }
 };

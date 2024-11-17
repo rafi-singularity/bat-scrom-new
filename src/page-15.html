@@ -1,7 +1,7 @@
-<div class="grid md:grid-cols-4 grid-cols-1">
+<div class="fixed grid md:grid-cols-5 grid-cols-1 gap-x-[3rem]">
   <div class="col-span-3">
     <div class="bg-white relative">
-      <div class="bg-[#E72582] h-[4.39vh]"></div>
+      <div class="bg-[#E72582] h-[22px] fixed left-0 right-0"></div>
       <!-- <img
         src="../assets/icons/slide13_polygon.png"
         class="absolute right-[0rem] z-50"
@@ -11,17 +11,26 @@
       /> -->
       <div
         data-aos="fade-down"
-        class="h-[93.42vh] flex justify-center flex-col md:px-[140px]"
+        class="h-[93.42vh] flex justify-center flex-col pl-[100px]"
       >
-        <div class="mb-3">
-          <img src="../assets/icons/slide11-2.svg" alt="" />
+        <div class="flex flex-col items-start gap-1 mb-[26px] mt-[4rem]">
+          <div class="mb-[50px]">
+            <img
+              class=""
+              src="../assets/icons/slide11-2.png"
+              alt=""
+              aria-colspan=" "
+            />
+          </div>
           <h1
-            class="2xl:text-[3.5rem] text-wrap text-[2.25rem] font-bold 2xl:leading-[4.875rem]"
+            class="xl-zoom:text-[48px] text-wrap lg-zoom:text-[36px] font-bold xl-zoom:leading-[68px] lg-zoom:leading-[51px] text-[#0E2B63]"
           >
             Third Party Anti-Financial Crimes Procedure
           </h1>
         </div>
-        <p class="text-[#004F9F] font-medium 2xl:text-[20px] text-[14px]">
+        <p
+          class="text-[#004F9F] font-medium xl-zoom:text-[22px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] text-justify"
+        >
           The AFC Procedure aims to reduce legal and commercial risks posed by
           third-party relationships. While FastTrack had a strong reputation,
           their expired risk assessment meant they could have posed potential
@@ -33,29 +42,52 @@
           have allowed the company to evaluate any new risks and implement
           necessary controls, safeguarding the business from external threats.
         </p>
-        <div class="flex gap-4 mt-12 justify-end">
-          <button onclick="loadPage('./page-13.html')" type="button">
-            <img src="../assets/icons/back-gray.svg" alt="" />
-          </button>
-          <button onclick="loadPage('./page-1.html')" class="float-right">
-            <img src="../assets/icons/end_btn.svg" alt="" />
-          </button>
+        <div class="flex mt-10 justify-end items-center">
+          <div class="flex gap-4 justify-end items-center">
+            <button
+              onclick="loadPage('./page-13.html')"
+              type="button"
+              class="flex items-center justify-end hover:scale-105 transition-all duration-300 ease-in-out xl-zoom:h-[50px] lg-zoom:h-[50px]"
+            >
+              <img
+                src="../assets/icons/back-gray.svg"
+                data-aos="fade-up"
+                alt=""
+                class="h-full w-auto"
+              />
+            </button>
+            <button
+              onclick="loadPage('./page-1.html')"
+              class="float-right hover:scale-105 transition-all duration-300 ease-in-out xl-zoom:w-[320px] lg-zoom:w-[240px] xl-zoom:h-[60px] lg-zoom:h-[60px]"
+            >
+              <img
+                src="../assets/icons/end_btn.svg"
+                data-aos="fade-up"
+                alt=""
+                class="h-full w-full"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    class="col-span-1 w-full h-screen overflow-hidden relative"
+    class="col-span-2 w-full h-screen overflow-hidden relative"
     data-aos="fade-left"
   >
     <!-- Header -->
+
+    <img src="../assets/slide15_img.png" class="w-full h-full object-cover" />
+  </div>
+</div>
+<div class="container mx-auto">
+  <div class="flex justify-end relative">
     <img
-      onclick="loadPage('./page-1.html')"
       src="../assets/icons/badge2.svg"
-      class="absolute top-[3.125rem] 2xl:left-[25%] left-[10%] z-50 cursor-pointer"
+      class="absolute top-[50px] cursor-pointer"
+      onclick="loadPage('./page-1.html')"
       alt=""
     />
-
-    <img src="../assets/slide13_img.png" class="w-full h-full" />
   </div>
 </div>
