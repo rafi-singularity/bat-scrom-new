@@ -134,7 +134,7 @@ pipwerks.SCORM.API.find = function (win) {
 let answer = "";
 
 const selectHandler = (selected) => {
-  const options = document.querySelectorAll(".mcq");
+  const options = document.querySelectorAll(".mcq-main");
   options.forEach((option) => {
     option.classList.remove("correct");
   });
