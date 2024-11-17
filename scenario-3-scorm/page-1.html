@@ -1,62 +1,74 @@
-<div class="bg-primary h-full overflow-hidden">
-  <div class="bg-primary h-full overflow-hidden">
-    <div class="container mx-auto">
-      <!-- Header -->
-      <div class="py-[2.875rem] px-[4rem]">
-        <div class="flex justify-between gap-4 items-center">
-          <!-- Logos -->
-          <div
-            data-aos="fade-right"
-            class="flex items-end divide-x-2 divide-[#703EAB]"
-          >
-            <img src="../assets/icons/bat_logo.svg" alt="" class="pr-4" />
-            <img src="../assets/icons/rdm_logo.svg" alt="" class="pl-4" />
-          </div>
-          <!-- Badge -->
-          <div
-            class="cursor-pointer"
-            onclick="loadPage('./page-1.html')"
-            data-aos="fade-left"
-          >
-            <img src="../assets/icons/badge2.svg" alt="" />
-          </div>
+<div class="relative">
+  <div class="bg-primary fixed bottom-0 right-0 w-full h-screen"></div>
+  <div class="container mx-auto h-screen overflow-y-hidden relative">
+    <!-- Header -->
+    <div class="mt-[50px]">
+      <div class="flex justify-between gap-4 items-center">
+        <!-- Logos -->
+        <div
+          data-aos="fade-right"
+          class="flex items-end divide-x-2 divide-[#703EAB]"
+        >
+          <img src="./assets/icons/bat_logo.svg" alt="" class="pr-4" />
+          <img src="./assets/icons/rdm_logo.svg" alt="" class="pl-4" />
+        </div>
+        <!-- Badge -->
+        <div
+          class="cursor-pointer"
+          onclick="loadPage('./page-1.html')"
+          data-aos="fade-left"
+        >
+          <img src="./assets/icons/badge2.svg" alt="" />
         </div>
       </div>
+    </div>
 
-      <!-- Content Section -->
-      <div class="mx-auto relative h-[calc(100vh-247px)] flex items-center">
-        <!-- Text Content -->
-        <div class="relative w-[80%] mx-auto">
+    <div class="absolute top-[105px] bottom-0 w-full">
+      <div class="flex items-end justify-end h-full">
+        <div
+          class="relative flex items-end justify-end h-full w-fit max-w-full max-h-full"
+        >
+          <img
+            src="./assets/slider2user.png"
+            class="object-contain max-w-full max-h-full z-10"
+            alt="Slider Image"
+          />
           <div
-            data-aos="fade-left"
-            class="bg-secondary pl-[5rem] pr-[8rem] rounded-[3.75rem] h-fit p-[3rem] relative w-fit"
+            class="absolute xl-zoom:top-[14%] lg-zoom:top-[16%] xl-zoom:right-[60%] lg-zoom:right-[50%]"
           >
-            <div class="space-y-10">
-              <div>
-                <p class="text-white text-4xl font-medium">
-                  Working with Shakib
-                </p>
-                <div class="h-1 bg-[#004F9F] w-36 mt-2"></div>
+            <div class="relative w-auto mx-auto">
+              <div
+                data-aos="fade-left"
+                class="bg-secondary xl-zoom:pl-[104px] pl-[100px] p-[3rem] pr-[210px] rounded-[3.75rem] h-fit relative w-fit"
+              >
+                <div class="">
+                  <div class="xl-zoom:mb-[45px] mb-[25px] xl-zoom:pt-[13px]">
+                    <p
+                      class="text-white xl:text-[34px] xl-zoom:leading-[68px] xl-zoom:text-[34px] lg-zoom:text-[26px] font-medium"
+                    >
+                      Working with Shakib
+                    </p>
+                    <div
+                      class="bg-[#004F9F] xl-zoom:w-[8.7rem] w-[6.6rem] h-2 mt-2"
+                    ></div>
+                  </div>
+                  <p
+                    class="text-nowrap text-white xl-zoom:pb-[40px] lg-zoom:pb-[40px] xl-zoom:leading-[100px] lg-zoom:leading-[70px] xl:text-[80px] xl-zoom:text-[80px] lg-zoom:text-[60px] font-bold"
+                  >
+                    Make Responsible<br />
+                    Choices
+                  </p>
+                  <button
+                    onclick="loadPage('./page-2.html')"
+                    class="btn w-fit absolute -bottom-[6%] z-[1000]"
+                    type="button"
+                  >
+                    <span>Start Episode</span>
+                    <img src="./assets/icons/arrow.svg" alt="" />
+                  </button>
+                </div>
               </div>
-              <p
-                class="text-white text-[3rem] 2xl:text-[4rem] font-bold leading-[70px] pb-10"
-              >
-                Make Responsible <br />Choices
-              </p>
-              <button
-                onclick="loadPage('./page-2.html')"
-                class="btn w-fit absolute -bottom-[6%] z-20"
-                type="button"
-              >
-                <span>Start Episode</span>
-                <img src="../assets/icons/arrow.svg" alt="" />
-              </button>
             </div>
-            <img
-              src="../assets/slider2user.png"
-              class="w-auto object-contain absolute top-0 -translate-y-20 translate-x-[45%] 2xl:translate-x-[50%]"
-              alt="Slider Image"
-            />
           </div>
         </div>
       </div>

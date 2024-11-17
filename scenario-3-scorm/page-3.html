@@ -1,47 +1,52 @@
 <div class="bg-[#E1F6FD] absolute top-0 right-0 left-0 bottom-0 h-screen">
-  <div class="px-5 mx-auto">
+  <div class="px-[100px] mx-auto">
     <div
       class="w-full right-0 ml-auto h-[70%] overflow-hidden absolute top-0 left-0"
     >
       <img
         data-aos="fade-left"
-        src="../assets/slide3_img.png"
+        src="./assets/slide3_img.png"
         class="object-cover w-full"
       />
     </div>
     <!-- Header -->
-    <div
-      onclick="loadPage('./page-1.html')"
-      class="py-[2rem] 2xl:py-[2.875rem] px-[4rem] cursor-pointer"
-    >
+    <div onclick="loadPage('./page-1.html')" class="cursor-pointer mt-[50px]">
       <img
-        src="../assets/icons/badge2.svg"
+        src="./assets/icons/badge2.svg"
         class="ml-auto relative z-10"
         alt=""
       />
     </div>
-    <div class="h-[75vh] absolute z-50 left-[4rem] top-[3rem]">
+    <div
+      class="xl-zoom:h-[75vh] h-[73vh] absolute z-50 left-[100px] xl-zoom:top-[3rem] top-[3rem]"
+    >
       <img
         data-aos="fade-right"
         class="h-full w-auto"
-        src="../assets/slide3_chat.png"
+        src="./assets/slide3_chat.png"
         alt=""
       />
       <div
-        class="w-full absolute z-50 min-[1630px]:left-[2rem] left-[1.5rem] min-[1630px]:-bottom-[8rem] -bottom-[5rem]"
+        class="w-full absolute z-50 xl-zoom:left-[2rem] left-[1.5rem] xl-zoom:-bottom-[8rem] -bottom-[6rem]"
       >
-        <div class="flex items-center gap-2 min-[1630px]:mb-[1.15rem]">
-          <img src="../assets/icons/horizontal_bar.svg" alt="" />
+        <div class="flex items-center gap-2 xl-zoom:mb-[25px] mb-[15px]">
+          <img src="./assets/icons/horizontal_bar.svg" alt="" />
           <p class="text-[#004F9F] min-[1630px]:text-[1.5rem]">
             Select the arrow button to Continue
           </p>
         </div>
         <div class="flex gap-4">
-          <button class="btn-svg" onclick="loadPage('./page-2.html')">
-            <img src="../assets/icons/prev_btn.svg" alt="" />
+          <button
+            class="hover:scale-105 transition duration-200 xl-zoom:w-[100px] xl-zoom:h-[60px] lg-zoom:w-[75px] lg-zoom:h-[45px]"
+            onclick="loadPage('./page-2.html')"
+          >
+            <img src="./assets/icons/prev_btn.svg" alt="" />
           </button>
-          <button class="btn-svg" onclick="loadPage('./page-4.html')">
-            <img src="../assets/icons/next_btn.svg" alt="" />
+          <button
+            class="hover:scale-105 transition duration-200 xl-zoom:w-[100px] xl-zoom:h-[60px] lg-zoom:w-[75px] lg-zoom:h-[45px]"
+            onclick="loadPage('./page-4.html')"
+          >
+            <img src="./assets/icons/next_btn.svg" alt="" />
           </button>
         </div>
       </div>
