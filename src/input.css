@@ -19,13 +19,10 @@
   @apply flex items-center justify-between gap-5 bg-white transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md;
 }
 .mcq div {
-  
 }
 .mcq p {
   @apply text-[#646870] min-[1792px]:text-xl text-[10px];
 }
-
-
 
 /* Incorrect */
 /* .wrong {
@@ -62,4 +59,10 @@
 /* No Scrollbar */
 ::-webkit-scrollbar {
   display: none;
+}
+.wrongBorder {
+  @apply border-2 border-[#FF1914] rounded-[15px];
+}
+.rightBorder {
+  @apply border-2 border-[#4fcf2f] rounded-[15px];
 }
