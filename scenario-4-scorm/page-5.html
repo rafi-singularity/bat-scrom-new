@@ -2,39 +2,43 @@
   class="bg-[#E1F6FD] absolute top-0 right-0 left-0 bottom-0 h-screen overflow-hidden"
 >
   <!-- Header -->
-  <div class="min-[1630px]:pt-[2.875rem] pt-[1.5rem] px-[9.375rem] bg-primary">
+  <div class="pt-[50px] px-[100px] bg-primary">
     <div class="flex justify-end gap-4 items-center">
       <div
         onclick="loadPage('./page-1.html')"
         data-aos="fade-left"
-        class="min-[1792px]:w-[255px] w-[180px] cursor-pointer"
+        class="cursor-pointer"
       >
         <img src="./assets/icons/badge2.svg" alt="" srcset="" />
       </div>
     </div>
-    <p
-      class="text-white min-[1792px]:text-[70px] text-[40px] font-bold uppercase"
-      data-aos="fade-right"
-    >
-      Decision Time!
-      <svg
-        width="167"
-        height="9"
-        viewBox="0 0 167 9"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="0.956787" y="0.375" width="166" height="8" fill="#3F7ADD" />
-      </svg>
-    </p>
   </div>
-  <div class="bg-primary px-[9.375rem] text-white">
-    <div class="grid grid-cols-2 h-[65vh] relative z-50">
-      <div
-        class="flex flex-col 2xl:gap-[3rem] min-[1630px]:gap-[2rem] gap-[1rem]"
-      >
+  <div class="bg-primary px-[100px] text-white">
+    <div class="grid grid-cols-2 h-[75vh] relative z-50">
+      <div class="flex flex-col gap-[36px]">
         <p
-          class="max-w-[36rem] 2xl:text-[22px] text-[14px] min-[1630px]:mt-5 mt-3"
+          class="text-white text-[70px] font-bold uppercase"
+          data-aos="fade-right"
+        >
+          Decision Time!
+          <svg
+            width="167"
+            height="9"
+            viewBox="0 0 167 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.956787"
+              y="0.375"
+              width="166"
+              height="8"
+              fill="#3F7ADD"
+            />
+          </svg>
+        </p>
+        <p
+          class="max-w-[36rem] text-[22px] min-[1630px]:mt-5 mt-3"
           data-aos="fade-up"
         >
           Which of these suggestions should you as Shakib’s line manager approve
@@ -45,15 +49,14 @@
           class="flex justify-start items-center border-l-4 pl-2 border-white"
         >
           <p
-            class="max-w-[27rem] min-[1752px]:text-[18px] italic text-[12px] font-medium"
+            class="max-w-[30rem] min-[1752px]:text-[20px] italic text-[20px] text-[#EFEFEF] font-normal"
             data-aos="fade-left"
           >
-            Select the buttons to approve or reject the activities, <br />
-            then submit
+            Select the buttons to approve or reject the activities, then submit
           </p>
         </div>
       </div>
-      <div class="space-y-4 -mt-10">
+      <div class="space-y-4 mt-auto mb-20">
         <!-- MCQ -->
         <div
           id="a"
@@ -203,7 +206,7 @@
         </div>
       </div>
       <button
-        class="btnMcq float-right absolute -bottom-6 py-[2rem] right-0 z-20"
+        class="btnMcq float-right absolute -bottom-6 py-[2rem] w-[235px] right-0 z-20"
         type="button"
         onclick="handleSubmit()"
       >

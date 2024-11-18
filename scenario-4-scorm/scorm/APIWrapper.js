@@ -149,7 +149,7 @@ const handleSubmit = async () => {
     } else {
       selectedValues.push(1);
     }
-  }); console.log('input value', selectedValues);
+  });
   const isValid = isMatch(selectedValues);
   if (isValid) {
     selectedValues = []
@@ -161,6 +161,13 @@ const handleSubmit = async () => {
     console.log(checkboxes);
     checkboxes.forEach((checkbox, index) => {
       checkbox.checked = selectedValues[index] === 0;
+      const parentDiv = checkbox.closest(".answer");
+      if (selectedValues[index] !== answer[index]) {
+        parentDiv.classList.add("wrongBorder");
+      } else {
+        parentDiv.classList.add("rightBorder");
+      }
+
       console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
     })
     return selectedValues = [];

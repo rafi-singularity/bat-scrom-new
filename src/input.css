@@ -14,8 +14,8 @@
 .btn {
   @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
-.btn-svg{
-  @apply hover:scale-105 transition-all duration-200
+.btn-svg {
+  @apply hover:scale-105 transition-all duration-200;
 }
 .btnMcq {
   @apply bg-blue leading-[32px] text-white text-[24px]  rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
@@ -103,4 +103,10 @@
 .preloader.fade-out {
   opacity: 0; /* Fade out effect */
   visibility: hidden; /* Hide element when fully transparent */
+}
+.wrongBorder {
+  @apply border-2 border-[#FF1914] rounded-[15px];
+}
+.rightBorder {
+  @apply border-2 border-[#4fcf2f] rounded-[15px];
 }
