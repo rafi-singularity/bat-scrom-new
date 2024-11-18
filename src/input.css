@@ -26,7 +26,7 @@
 .mcq div {
 }
 .mcq p {
-  @apply text-[#646870] min-[1752px]:text-lg min-[1652px]:text-[15px] text-[12px];
+  @apply text-[#646870] min-[1752px]:text-lg min-[1652px]:text-[15px] text-[14px];
 }
 /* .mcq:hover div {
   @apply text-white bg-[#4cc8f1];
@@ -70,4 +70,11 @@
 /* No Scrollbar */
 ::-webkit-scrollbar {
   display: none;
+}
+/* Incorrect */
+.wrongBorder {
+  @apply border-2 border-[#FF1914] rounded-[15px];
+}
+.rightBorder {
+  @apply border-2 border-[#36ad2b] rounded-[15px];
 }
