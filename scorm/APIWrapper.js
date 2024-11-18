@@ -5,14 +5,14 @@ pipwerks.SCORM = {
   handleExitMode: true,
   API: {
     handle: null,
-    isFound: false
+    isFound: false,
   },
   connection: {
-    isActive: false
+    isActive: false,
   },
   data: {
     completionStatus: null,
-    exitStatus: null
+    exitStatus: null,
   },
   debug: {
     isActive: true,
@@ -20,8 +20,8 @@ pipwerks.SCORM = {
       if (pipwerks.debug.isActive) {
         console.log(msg);
       }
-    }
-  }
+    },
+  },
 };
 
 pipwerks.SCORM.init = function () {
@@ -30,14 +30,19 @@ pipwerks.SCORM.init = function () {
     var API = pipwerks.SCORM.API.getHandle();
     if (API !== null) {
       if (pipwerks.SCORM.version === "1.2") {
-        success = (API.LMSInitialize("") === "true");
+        success = API.LMSInitialize("") === "true";
       }
     }
     if (success) {
       pipwerks.SCORM.connection.isActive = true;
-      pipwerks.SCORM.data.completionStatus = pipwerks.SCORM.get("cmi.core.lesson_status");
+      pipwerks.SCORM.data.completionStatus = pipwerks.SCORM.get(
+        "cmi.core.lesson_status"
+      );
       if (pipwerks.SCORM.handleCompletionStatus) {
-        if (pipwerks.SCORM.data.completionStatus === "not attempted" || pipwerks.SCORM.data.completionStatus === "unknown") {
+        if (
+          pipwerks.SCORM.data.completionStatus === "not attempted" ||
+          pipwerks.SCORM.data.completionStatus === "unknown"
+        ) {
           pipwerks.SCORM.set("cmi.core.lesson_status", "incomplete");
         }
       }
@@ -65,7 +70,7 @@ pipwerks.SCORM.set = function (parameter, value) {
     var API = pipwerks.SCORM.API.getHandle();
     if (API !== null) {
       if (pipwerks.SCORM.version === "1.2") {
-        success = (API.LMSSetValue(parameter, value) === "true");
+        success = API.LMSSetValue(parameter, value) === "true";
       }
     }
   }
@@ -78,7 +83,7 @@ pipwerks.SCORM.save = function () {
     var API = pipwerks.SCORM.API.getHandle();
     if (API !== null) {
       if (pipwerks.SCORM.version === "1.2") {
-        success = (API.LMSCommit("") === "true");
+        success = API.LMSCommit("") === "true";
       }
     }
   }
@@ -91,7 +96,7 @@ pipwerks.SCORM.quit = function () {
     var API = pipwerks.SCORM.API.getHandle();
     if (API !== null) {
       if (pipwerks.SCORM.version === "1.2") {
-        success = (API.LMSFinish("") === "true");
+        success = API.LMSFinish("") === "true";
       }
       if (success) {
         pipwerks.SCORM.connection.isActive = false;
@@ -120,19 +125,19 @@ pipwerks.SCORM.API.find = function (win) {
     console.log("SCORM API not found.");
   }
   pipwerks.SCORM.API.handle = API;
-  pipwerks.SCORM.API.isFound = (API !== null);
+  pipwerks.SCORM.API.isFound = API !== null;
 };
-
 
 // Question Section
 let answer = [0, 1, 1, 1];
 let selectedValues = [];
 
-
 function isMatch(inputArray) {
   // Check if the input array has the same length and elements as the correct answer
-  return inputArray.length === answer.length &&
-    inputArray.every((value, index) => value === answer[index]);
+  return (
+    inputArray.length === answer.length &&
+    inputArray.every((value, index) => value === answer[index])
+  );
 }
 
 const handleSubmit = async () => {
@@ -145,35 +150,41 @@ const handleSubmit = async () => {
     } else {
       selectedValues.push(1);
     }
-  }); console.log('input value', selectedValues);
+  });
+  console.log("input value", selectedValues);
   const isValid = isMatch(selectedValues);
   if (isValid) {
-    selectedValues = []
-    return loadPage('./page-7.html');
-
+    selectedValues = [];
+    return loadPage("./page-7.html");
   } else {
-    await loadPage('./page-6.html');
+    await loadPage("./page-6.html");
     checkboxes = document.querySelectorAll('input[type="checkbox"]');
     console.log(checkboxes);
     checkboxes.forEach((checkbox, index) => {
+      const parentDiv = checkbox.closest(".mcq");
+      if (selectedValues[index] !== answer[index]) {
+        parentDiv.classList.add("wrongBorder");
+      } else {
+        parentDiv.classList.add("rightBorder");
+      }
       checkbox.checked = selectedValues[index] === 0;
       console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
-    })
-    return selectedValues = [];
+    });
+    return (selectedValues = []);
   }
-}
+};
 
 // Summery
 
 let isSummery = false;
 
 const handleSummery = (data) => {
-  if (data == 'btn1') {
+  if (data == "btn1") {
     isSummery = true;
-    loadPage('./page-9.html');
-  } else if (data == 'btn2') {
+    loadPage("./page-9.html");
+  } else if (data == "btn2") {
     if (isSummery) {
-      loadPage('./page-10.html');
+      loadPage("./page-10.html");
     } else return;
   }
-}
+};
