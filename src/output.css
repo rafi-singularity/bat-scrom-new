@@ -823,6 +823,10 @@ video {
   height: 0.5rem;
 }
 
+.h-\[122px\]{
+  height: 122px;
+}
+
 .h-\[20rem\]{
   height: 20rem;
 }
@@ -888,6 +892,22 @@ video {
   height: 100vh;
 }
 
+.h-\[45px\]{
+  height: 45px;
+}
+
+.h-\[40px\]{
+  height: 40px;
+}
+
+.h-\[47px\]{
+  height: 47px;
+}
+
+.h-\[22px\]{
+  height: 22px;
+}
+
 .max-h-full{
   max-height: 100%;
 }
@@ -906,6 +926,10 @@ video {
 
 .w-36{
   width: 9rem;
+}
+
+.w-\[122px\]{
+  width: 122px;
 }
 
 .w-\[136px\]{
@@ -1355,6 +1379,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#0E2B63\]{
+  --tw-text-opacity: 1;
+  color: rgb(14 43 99 / var(--tw-text-opacity));
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1363,8 +1392,22 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200{
   transition-duration: 200ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #root {
@@ -1404,6 +1447,10 @@ video {
 }
 
 .btn-svg{
+  border-radius: 13px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.5rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -1413,6 +1460,9 @@ video {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .btnMcq{
@@ -1748,6 +1798,18 @@ video {
 
   .lg-zoom\:h-\[48px\]{
     height: 48px;
+  }
+
+  .lg-zoom\:h-\[60px\]{
+    height: 60px;
+  }
+
+  .lg-zoom\:h-\[55px\]{
+    height: 55px;
+  }
+
+  .lg-zoom\:h-\[50px\]{
+    height: 50px;
   }
 
   .lg-zoom\:w-\[240px\]{
