@@ -6,14 +6,14 @@
     data-aos="fade-up"
   />
   <div class="h-[85vh] flex">
-    <div class="w-full bg-primary h-full"></div>
-    <div class="w-[16.33vw] bg-secondary h-full"></div>
+    <div class="w-full bg-[#1D92C3] h-full"></div>
+    <div class="w-[16.33vw] bg-primary h-full"></div>
   </div>
 </div>
 
 <div class="container mx-auto relative">
   <button
-    class="btnMcq float-right absolute -bottom-6 right-0 z-20 2xl:text-md text-sm"
+    class="btnMcq float-right absolute xl-zoom:-bottom-[15.3rem] -bottom-[10.8rem]  right-0 z-20 2xl:text-md text-sm"
     type="button"
     onclick="handleSubmit()"
   >
@@ -29,26 +29,20 @@
       srcset=""
     />
   </div>
-  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
+  <p
+    class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
+    data-aos="fade-right"
+  >
+    Decision Time
+    <div
+    class="bg-[#00B1EB] xl-zoom:w-[11rem] w-[8.5rem] h-2 mt-1"
+  ></div>
+  </p>
+  <div class="grid grid-cols-2 gap-[100px] mt-[43px]">
     <div class="col-span-1">
-      <p
-        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
-        data-aos="fade-right"
-      >
-        Decision Time
-        <svg
-          width="167"
-          height="9"
-          viewBox="0 0 167 9"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect x="0.65686" y="0.375" width="166" height="8" fill="#00B1EB" />
-        </svg>
-      </p>
-      <div class="flex flex-col gap-[3rem] text-white">
+      <div class="flex flex-col text-white space-y-[36px]">
         <p
-          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px]"
           data-aos="fade-up"
         >
           What do you think Shakib should have done in this scenario? Tick the
@@ -71,7 +65,7 @@
         <div
           id="a"
           onclick=" selectHandler(this)"
-          class="mcq-main"
+          class="mcq-main "
           data-aos="fade-up"
         >
           <div class="serial">A</div>
