@@ -38,7 +38,7 @@
   @apply bg-[#205820] text-white xl-zoom:h-[120px] h-[80px]   rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
 }
 .dragDropApprovedColor {
-  @apply border-[#50AF47] border-[2px]  bg-[#50AF47] xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 overflow-hidden flex items-center justify-center;
+  @apply border-[#205820] border-[2px]  bg-[#205820] xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 overflow-hidden flex items-center justify-center;
 }
 .dragDropYellowBorder {
   @apply xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
