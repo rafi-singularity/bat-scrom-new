@@ -2,22 +2,23 @@
   <div class="container mx-auto">
     <!-- Header -->
 
-    <div class="z-50 mt-[66px]">
-      <div class="flex justify-end gap-4 items-center">
-        <!-- Badge -->
-        <div
-          class="cursor-pointer z-50"
-          onclick="loadPage('./page-1.html')"
-          data-aos="fade-left"
-        >
-          <img src="../assets/icons/badge2.svg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="w-2/5 mr-auto h-screen overflow-hidden fixed top-0 left-0 z-50">
+    <!-- Badge -->
+    <div
+      class="cursor-pointer absolute top-[56px] right-[100px] z-50 h-fit w-fit overflow-hidden mr-auto"
+      onclick="loadPage('./page-1.html')"
+    >
       <img
         data-aos="fade-left"
-        src="../assets/s2-s2.png"
+        src="../assets/badge.png"
+        alt=""
+        class="w-full h-full"
+      />
+    </div>
+
+    <div class="w-2/5 mr-auto h-screen overflow-hidden absolute top-0 left-0">
+      <img
+        data-aos="fade-left"
+        src="../assets/s2-s2(2).png"
         class="object-cover w-full h-full"
       />
     </div>
@@ -50,7 +51,7 @@
     <div
       class="p-5 absolute right-0 min-[1630px]:bottom-[6rem] bottom-[4rem] z-10 w-3/5 px-[100px]"
     >
-      <div class="flex items-center gap-2 mb-[1.15rem]">
+      <div class="flex items-center gap-2 mb-[25px]">
         <img src="../assets/icons/horizontal_bar.svg" alt="" />
         <p class="text-[#004F9F] xl-zoom:text-[24px] lg-zoom:text-[18px]">
           Select the arrow button to Continue
@@ -80,9 +81,9 @@
       </div>
     </div>
 
-    <div class="bg-primary absolute top-0 right-0 w-full h-[70vh]">
+    <div class="bg-primary absolute top-0 right-0 w-3/5 h-[70vh]">
       <div class="absolute -left-[74px] top-[25%] rotate-180">
-        <!-- <svg
+        <svg
           width="76"
           height="136"
           viewBox="0 0 76 136"
@@ -93,7 +94,7 @@
             d="M75.4311 67.8384L-3.09785 135.087L-3.09784 0.589688L75.4311 67.8384Z"
             fill="#5A328A"
           />
-        </svg> -->
+        </svg>
       </div>
     </div>
   </div>
