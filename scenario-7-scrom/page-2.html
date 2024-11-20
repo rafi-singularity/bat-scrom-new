@@ -10,14 +10,26 @@
           onclick="loadPage('./page-1.html')"
           data-aos="fade-left"
         >
-          <img src="./assets/icons/badge2.svg" alt="" />
+          <img src=".assets/icons/badge2.svg" alt="" />
         </div>
       </div>
     </div>
-    <div class="w-2/5 mr-auto h-screen overflow-hidden fixed top-0 left-0 z-50">
+
+    <!-- <div
+      class="cursor-pointer"
+      onclick="loadPage('./page-1.html')"
+      class="py-[2rem] 2xl:py-[2.875rem] px-[4rem] cursor-pointer"
+    >
+      <img
+        src=".assets/icons/badge2.svg"
+        class="ml-auto absolute right-8 top-8 z-10"
+        alt=""
+      />
+    </div> -->
+    <div class="w-2/5 mr-auto h-screen overflow-hidden absolute top-0 left-0">
       <img
         data-aos="fade-left"
-        src="./assets/s2-s2.png"
+        src=".assets/s2-s2(2).png"
         class="object-cover w-full h-full"
       />
     </div>
@@ -48,10 +60,10 @@
       </p>
     </div>
     <div
-      class="p-5 absolute right-0 min-[1630px]:bottom-[6rem] bottom-[4rem] z-10 w-3/5 px-[100px]"
+      class="p-5 absolute right-0 xl-zoom:bottom-[4rem] bottom-[3rem] z-10 w-3/5 px-[100px]"
     >
-      <div class="flex items-center gap-2 mb-[1.15rem]">
-        <img src="./assets/icons/horizontal_bar.svg" alt="" />
+      <div class="flex items-center gap-2 mb-[25px]">
+        <img src=".assets/icons/horizontal_bar.svg" alt="" />
         <p class="text-[#004F9F] xl-zoom:text-[24px] lg-zoom:text-[18px]">
           Select the arrow button to Continue
         </p>
@@ -61,20 +73,20 @@
           onclick="loadPage('./page-1.html')"
           class="hover:scale-105 transition duration-200 xl-zoom:w-[100px] xl-zoom:h-[60px] lg-zoom:w-[75px] lg-zoom:h-[45px]"
         >
-          <img src="./assets/icons/prev_btn.svg" alt="" class="w-full h-full" />
+          <img src=".assets/icons/prev_btn.svg" alt="" class="w-full h-full" />
         </button>
         <button
           onclick="loadPage('./page-3.html')"
           class="hover:scale-105 transition duration-200 xl-zoom:w-[100px] xl-zoom:h-[60px] lg-zoom:w-[75px] lg-zoom:h-[45px]"
         >
-          <img src="./assets/icons/next_btn.svg" alt="" class="w-full h-full" />
+          <img src=".assets/icons/next_btn.svg" alt="" class="w-full h-full" />
         </button>
       </div>
     </div>
 
-    <div class="bg-primary absolute top-0 right-0 w-full h-[70vh]">
+    <div class="bg-primary absolute top-0 right-0 w-3/5 h-[70vh]">
       <div class="absolute -left-[74px] top-[25%] rotate-180">
-        <!-- <svg
+        <svg
           width="76"
           height="136"
           viewBox="0 0 76 136"
@@ -85,7 +97,7 @@
             d="M75.4311 67.8384L-3.09785 135.087L-3.09784 0.589688L75.4311 67.8384Z"
             fill="#5A328A"
           />
-        </svg> -->
+        </svg>
       </div>
     </div>
   </div>

@@ -5,13 +5,13 @@ module.exports = {
     container: {
       // padding: "100px",
       screens: {
-        md: "768px",
+        md: "980px",
         // => @media (min-width: 1280px) { ... }
 
-        lg: "1336px",
+        lg: "1236px",
         // => @media (min-width: 1536px) { ... }
 
-        xl: "1720px",
+        xl: "1620px",
         // => @media (min-width: 1745px) { ... }
       },
     },
