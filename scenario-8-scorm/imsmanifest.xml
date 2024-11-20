@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <manifest identifier="sample_scorm_course" version="1.2"
     xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
     xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
-                        http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1
+    imscp_v1p1.xsd
+    http://www.adlnet.org/xsd/adlcp_v1p3
+    adlcp_v1p3.xsd">
 
     <organizations default="org1">
         <organization identifier="org1">
