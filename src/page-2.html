@@ -2,19 +2,30 @@
   <div class="container mx-auto">
     <!-- Header -->
 
-    <!-- Badge -->
-    <div
-      class="cursor-pointer absolute top-[56px] right-[100px] z-50 h-fit w-fit overflow-hidden mr-auto"
-      onclick="loadPage('./page-1.html')"
-    >
-      <img
-        data-aos="fade-left"
-        src="../assets/badge.png"
-        alt=""
-        class="w-full h-full"
-      />
+    <div class="z-50 mt-[66px]">
+      <div class="flex justify-end gap-4 items-center">
+        <!-- Badge -->
+        <div
+          class="cursor-pointer z-50"
+          onclick="loadPage('./page-1.html')"
+          data-aos="fade-left"
+        >
+          <img src="../assets/icons/badge2.svg" alt="" />
+        </div>
+      </div>
     </div>
 
+    <!-- <div
+      class="cursor-pointer"
+      onclick="loadPage('./page-1.html')"
+      class="py-[2rem] 2xl:py-[2.875rem] px-[4rem] cursor-pointer"
+    >
+      <img
+        src="../assets/icons/badge2.svg"
+        class="ml-auto absolute right-8 top-8 z-10"
+        alt=""
+      />
+    </div> -->
     <div class="w-2/5 mr-auto h-screen overflow-hidden absolute top-0 left-0">
       <img
         data-aos="fade-left"
@@ -49,7 +60,7 @@
       </p>
     </div>
     <div
-      class="p-5 absolute right-0 min-[1630px]:bottom-[6rem] bottom-[4rem] z-10 w-3/5 px-[100px]"
+      class="p-5 absolute right-0 xl-zoom:bottom-[4rem] bottom-[3rem] z-10 w-3/5 px-[100px]"
     >
       <div class="flex items-center gap-2 mb-[25px]">
         <img src="../assets/icons/horizontal_bar.svg" alt="" />

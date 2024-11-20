@@ -188,3 +188,26 @@ const handleSummery = (data) => {
     } else return;
   }
 };
+const badge = document.getElementById('badge');
+const main = document.getElementById('main');
+
+// Function to enable/disable pointer-events
+function togglePointerEvents(zooming) {
+  if (zooming) {
+    main.classList.add('no-pointer'); // Disable pointer events on badge
+  } else {
+    main.classList.remove('no-pointer'); // Enable pointer events
+  }
+}
+
+// Simulate zoom detection (replace this with your actual zoom logic)
+let isZoomed = false;
+document.addEventListener('keydown', (event) => {
+  if (event.key === '+') { // Simulating zoom in
+    isZoomed = true;
+    togglePointerEvents(true);
+  } else if (event.key === '-') { // Simulating zoom out
+    isZoomed = false;
+    togglePointerEvents(false);
+  }
+});

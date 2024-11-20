@@ -13,7 +13,7 @@
 
 <div class="container mx-auto relative">
   <button
-    class="btnMcq float-right absolute -bottom-6 right-0 z-20 xl-zoom:text-[26px] text-[18px]"
+    class="btnMcq float-right absolute xl-zoom:bottom-[3rem] bottom-[1.7rem] right-0 z-20 xl-zoom:text-[26px] text-[22px]"
     type="button"
     onclick="handleSubmit()"
   >
@@ -28,17 +28,18 @@
       srcset=""
     />
   </div>
-  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
-    <div class="col-span-1">
-      <p
-        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
-        data-aos="fade-right"
-      >
-        Decision Time
-        <div
-        class="bg-[#D3BFF3] xl-zoom:w-[10.5rem] w-[8rem] h-2 mt-2"
-      ></div>
-      </p>
+  <div class=" absolute top-[4rem] left-0"><p
+    class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
+    data-aos="fade-right"
+  >
+    Decision Time
+    <div
+    class="bg-[#D3BFF3] xl-zoom:w-[10.5rem] w-[8rem] h-2 mt-2"
+  ></div>
+  </p></div>
+  
+  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)] xl-zoom:mt-[75px] mt-[50px]">
+    <div class="col-span-1 pt-[50px]">
       <div class="flex flex-col gap-[3rem] text-white">
         <p
           class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
@@ -59,7 +60,7 @@
         </div>
       </div>
     </div>
-    <div class="col-span-1 h-full flex justify-center items-center">
+    <div class="col-span-1 h-full flex justify-center items-start">
       <div class="space-y-4">
         <div
           id="a"

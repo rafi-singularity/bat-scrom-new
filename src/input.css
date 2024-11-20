@@ -8,6 +8,20 @@
   font-family: "Poppins", sans-serif !important;
   @apply overflow-x-hidden overflow-y-hidden;
 }
+.badge {
+  position: fixed; /* Keeps it anchored to the viewport */
+  z-index: 9999; /* Ensures it appears above other elements */
+  transform: none; /* Prevent scaling or transformations */
+  will-change: transform; /* Optimizes rendering for fixed elements */
+}
+
+/* Apply zoom effects to other content */
+.zoomed-content {
+  transform: scale(1.2); /* Apply zoom */
+  transform-origin: center; /* Control where zoom is applied */
+}
+
+/* Basic styling for images */
 
 .btn {
   @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
