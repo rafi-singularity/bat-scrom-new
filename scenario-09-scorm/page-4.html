@@ -1,9 +1,9 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
   <img
     src="./assets/slider8user.png"
-    class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[25rem] h-[20rem]"
+    class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[30rem] h-[25rem]"
     alt=""
-    data-aos="fade-up"
+    data-aos="fade-down"
   />
   <div class="h-[85vh] flex">
     <div class="w-full bg-[#1D92C3] h-full"></div>
@@ -13,45 +13,44 @@
 
 <div class="container mx-auto relative">
   <button
-    class="btnMcq float-right absolute xl-zoom:-bottom-[15.3rem] -bottom-[10.8rem]  right-0 z-20 2xl:text-md text-sm"
+    class="btnMcq float-right absolute xl-zoom:bottom-[5.7rem] bottom-[4.2rem]  right-0 z-20 xl-zoom:text-[26px] text-[18px] max-w-[235px] w-full"
     type="button"
     onclick="handleSubmit()"
   >
     Submit
   </button>
-  <div class="w-full flex justify-end pt-[50px]">
+  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
     <img
-      class="cursor-pointer"
       onclick="loadPage('./page-1.html')"
       data-aos="fade-left"
       src="./assets/icons/badge2.svg"
       alt=""
       srcset=""
     />
-  </div>
-  <p
-    class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
-    data-aos="fade-right"
-  >
-    Decision Time
-    <div
-    class="bg-[#00B1EB] xl-zoom:w-[11rem] w-[8.5rem] h-2 mt-1"
-  ></div>
-  </p>
-  <div class="grid grid-cols-2 gap-[100px] mt-[43px]">
+  </div>  <p
+  class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
+  data-aos="fade-right"
+>
+  Decision Time
+  <div
+  class="bg-[#00B1EB] xl-zoom:w-[11rem] w-[8.5rem] h-2 mt-1"
+></div>
+</p>
+  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
     <div class="col-span-1">
-      <div class="flex flex-col text-white space-y-[36px]">
+     
+      <div class="flex flex-col text-white space-y-[36px] mt-[43px]">
         <p
-          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px]"
-          data-aos="fade-up"
-        >
-          What do you think Shakib should have done in this scenario? Tick the
-          right answers. There can be more than one correct answer.
+        class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px]"
+        data-aos="fade-up"
+      >
+        What do you think Shakib should have done in this scenario? Tick the
+        right answers. There can be more than one correct answer.
         </p>
 
         <div class="flex justify-start items-center">
           <p
-            class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-white border-l-4 ps-3"
+          class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-white border-l-4 ps-3"
             data-aos="fade-left"
           >
             Select all that apply and click Submit. There may be more <br />
@@ -60,8 +59,8 @@
         </div>
       </div>
     </div>
-    <div class="col-span-1 h-full flex justify-center items-center">
-      <div class="space-y-4">
+    <div class="col-span-1 h-full flex justify-center items-start">
+      <div class="space-y-4 mt-[43px]">
         <div
           id="a"
           onclick=" selectHandler(this)"
@@ -99,6 +98,7 @@
             must follow the right due diligence and be recorded.
           </p>
         </div>
+      </div>
       </div>
     </div>
   </div>
