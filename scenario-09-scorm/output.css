@@ -590,16 +590,8 @@ video {
   position: relative;
 }
 
-.-bottom-\[14\.1rem\]{
-  bottom: -14.1rem;
-}
-
 .-bottom-\[15rem\]{
   bottom: -15rem;
-}
-
-.-bottom-\[16rem\]{
-  bottom: -16rem;
 }
 
 .-bottom-\[6\%\]{
@@ -702,12 +694,12 @@ video {
   top: calc(16vh);
 }
 
-.bottom-\[3\.1rem\]{
-  bottom: 3.1rem;
+.bottom-\[12\.5rem\]{
+  bottom: 12.5rem;
 }
 
-.bottom-\[3\.2rem\]{
-  bottom: 3.2rem;
+.bottom-\[13rem\]{
+  bottom: 13rem;
 }
 
 .z-10{
@@ -803,10 +795,6 @@ video {
   margin-top: 22px;
 }
 
-.mt-\[30px\]{
-  margin-top: 30px;
-}
-
 .mt-\[35px\]{
   margin-top: 35px;
 }
@@ -825,6 +813,26 @@ video {
 
 .mt-\[70px\]{
   margin-top: 70px;
+}
+
+.mb-\[46px\]{
+  margin-bottom: 46px;
+}
+
+.mb-\[51px\]{
+  margin-bottom: 51px;
+}
+
+.mb-\[60px\]{
+  margin-bottom: 60px;
+}
+
+.-mt-2{
+  margin-top: -0.5rem;
+}
+
+.mb-\[50px\]{
+  margin-bottom: 50px;
 }
 
 .flex{
@@ -1245,6 +1253,38 @@ video {
   padding-top: 9px;
 }
 
+.pt-\[20px\]{
+  padding-top: 20px;
+}
+
+.pt-\[15px\]{
+  padding-top: 15px;
+}
+
+.pt-\[31px\]{
+  padding-top: 31px;
+}
+
+.pt-\[\]{
+  padding-top: ;
+}
+
+.pt-\[25px\]{
+  padding-top: 25px;
+}
+
+.pt-\[2px\]{
+  padding-top: 2px;
+}
+
+.pt-\[22px\]{
+  padding-top: 22px;
+}
+
+.pt-\[18px\]{
+  padding-top: 18px;
+}
+
 .text-justify{
   text-align: justify;
 }
@@ -1263,11 +1303,6 @@ video {
 
 .text-\[52\.5px\]{
   font-size: 52.5px;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -1880,10 +1915,6 @@ video {
 }
 
 @media (min-width: 1600px){
-  .xl-zoom\:-bottom-\[17\.8rem\]{
-    bottom: -17.8rem;
-  }
-
   .xl-zoom\:-bottom-\[20rem\]{
     bottom: -20rem;
   }
@@ -1936,6 +1967,10 @@ video {
     top: 22%;
   }
 
+  .xl-zoom\:bottom-\[16\.7rem\]{
+    bottom: 16.7rem;
+  }
+
   .xl-zoom\:mb-\[25px\]{
     margin-bottom: 25px;
   }
@@ -1966,6 +2001,14 @@ video {
 
   .xl-zoom\:mt-\[90px\]{
     margin-top: 90px;
+  }
+
+  .xl-zoom\:-mt-0{
+    margin-top: -0px;
+  }
+
+  .xl-zoom\:mb-\[60px\]{
+    margin-bottom: 60px;
   }
 
   .xl-zoom\:h-\[48rem\]{
@@ -2033,6 +2076,10 @@ video {
     padding-top: 13px;
   }
 
+  .xl-zoom\:pt-\[31px\]{
+    padding-top: 31px;
+  }
+
   .xl-zoom\:text-\[20px\]{
     font-size: 20px;
   }
@@ -2087,6 +2134,10 @@ video {
 
   .xl-zoom\:leading-\[68px\]{
     line-height: 68px;
+  }
+
+  .xl-zoom\:leading-\[90px\]{
+    line-height: 90px;
   }
 }
 
