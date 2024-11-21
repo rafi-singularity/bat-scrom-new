@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src//*.{html,js}"],
   theme: {
     container: {
       // padding: "100px",
       screens: {
-        md: "1080px",
+        md: "980px",
         // => @media (min-width: 1280px) { ... }
 
-        lg: "1336px",
+        lg: "1236px",
         // => @media (min-width: 1536px) { ... }
 
-        xl: "1720px",
+        xl: "1620px",
         // => @media (min-width: 1745px) { ... }
       },
     },
