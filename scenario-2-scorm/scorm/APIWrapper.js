@@ -168,3 +168,27 @@ const handleSubmit = async () => {
         return selectedValues = [];
     }
 }
+
+let isSummery = false;
+
+const handleSummery = (data) => {
+  if (data == "btn1") {
+    isSummery = true;
+    loadPage("./page-9.html");
+  } else if (data == "btn2") {
+    if (isSummery) {
+      loadPage("./page-10.html");
+    } else return;
+  }
+};
+const badge = document.getElementById('badge');
+const main = document.getElementById('main');
+
+// Function to enable/disable pointer-events
+function togglePointerEvents(zooming) {
+  if (zooming) {
+    main.classList.add('no-pointer'); // Disable pointer events on badge
+  } else {
+    main.classList.remove('no-pointer'); // Enable pointer events
+  }
+}

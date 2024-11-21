@@ -12,7 +12,7 @@
         <organization identifier="org1">
             <title>A Sudden Change in Direction</title>
             <item identifier="item1" identifierref="resource1">
-                <title>Seizing the Opportunity</title>
+                <title>A Sudden Change in Direction</title>
             </item>
         </organization>
     </organizations>
