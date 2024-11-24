@@ -10,9 +10,9 @@
 
     <organizations default="org1">
         <organization identifier="org1">
-            <title>The Right Approach</title>
+            <title>The Right Approach </title>
             <item identifier="item1" identifierref="resource1">
-                <title>The Right Approach</title>
+                <title>The Right Approach </title>
             </item>
         </organization>
     </organizations>

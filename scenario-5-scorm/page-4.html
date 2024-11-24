@@ -1,65 +1,71 @@
-<div class="bg-white">
-  <div class="absolute left-0 right-0 top-0 h-[85vh] bg-[#FF9016]">
-    <button
-      class="btnMcq float-right absolute -bottom-5 right-[100px] z-20 text-md w-[235px]"
-      type="button"
-      onclick="handleSubmit()"
-    >
-      Submit
-    </button>
-    <div class="bg-primary w-[85%] h-full"></div>
+<div class="bg-white fixed top-0 bottom-0 left-0 right-0">
+  <img
+    src="./assets/slider8user.png"
+    class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[30rem] h-[25rem]"
+    alt=""
+    data-aos="fade-down"
+  />
+  <div class="h-[85vh] flex">
+    <div class="w-full bg-primary h-full"></div>
+    <div class="w-[16.33vw] bg-[#FF9016] h-full"></div>
   </div>
-  <!-- Header -->
-  <div class="pt-[50px] px-[100px]">
-    <div class="flex justify-end gap-4 items-center">
-      <div
-        data-aos="fade-left"
-        onclick="loadPage('./page-1.html')"
-        class="min-[1792px]:w-[255px] w-[180px] cursor-pointer"
-      >
-        <img src="./assets/icons/badge2.svg" alt="" srcset="" />
-      </div>
-    </div>
-    <p
-      class="text-white min-[1792px]:text-[70px] text-[40px] font-bold uppercase"
-      data-aos="fade-right"
-    >
-      Decision Time!
-      <svg
-        width="167"
-        height="9"
-        viewBox="0 0 167 9"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="0.957031" y="0.175781" width="166" height="8" fill="#FDA23E" />
-      </svg>
-    </p>
+</div>
+
+<div class="container mx-auto relative">
+  <button
+    class="btnMcq float-right absolute xl-zoom:bottom-[3rem] bottom-[1.7rem] right-0 z-20 xl-zoom:text-[26px] text-[22px]"
+    type="button"
+    onclick="handleSubmit()"
+  >
+    Submit
+  </button>
+  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
+    <img
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+      src="./assets/icons/badge2.svg"
+      alt=""
+      srcset=""
+    />
   </div>
-  <div class="px-[100px] text-white">
-    <div class="grid grid-cols-2 gap-10">
-      <div class="flex flex-col 2xl:gap-[3rem] gap-[2rem]">
+  <div class=" absolute top-[4rem] left-0"><p
+    class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
+    data-aos="fade-right"
+  >
+    Decision Time
+    <div
+    class="bg-[#FDA23E] xl-zoom:w-[10.5rem] w-[8rem] h-2"
+  ></div>
+  </p></div>
+  
+  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)] xl-zoom:mt-[75px] mt-[50px]">
+    <div class="col-span-1 pt-[40px]">
+      <div class="flex flex-col gap-[1.25rem] text-white">
         <p
-          class="max-w-[36rem] 2xl:text-[22px] text-[14px] mt-5 font-medium"
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] -mt-5"
           data-aos="fade-up"
         >
-          Which of the following options stands for the correct guidance from a
+        Which of the following options stands for the correct guidance from a
           responsible colleague and what are the potential breaches?
         </p>
 
         <div class="flex justify-start items-center">
           <p
-            class="max-w-[27rem] 2xl:text-[14px] italic text-[12px] border-l-4 pl-2 border-white"
+            class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-white border-l-4 ps-3"
             data-aos="fade-left"
           >
-            Select the buttons to approve or reject the activities,<br />then
-            submit
+          Select the buttons to approve or reject the activities, <br> then submit.
           </p>
         </div>
       </div>
+    </div>
+    <div class="col-span-1 h-full flex justify-center items-start">
       <div class="space-y-4">
-        <!-- MCQ -->
-        <div id="a" class="mcq" data-aos="fade-up">
+        <div
+          id="a"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
           <!-- <div class="">A</div> -->
           <p class="">
             Tell Samia that she can only reach out to her immediate Line Manager
@@ -71,11 +77,15 @@
 
             <!-- Accept Button -->
             <label for="toggle1" class="cursor-pointer peer-checked:hidden">
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Accept.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
             </label>
 
             <!-- Reject Button -->
@@ -83,15 +93,23 @@
               for="toggle1"
               class="cursor-pointer hidden peer-checked:block"
             >
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Reject.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
             </label>
           </div>
         </div>
-        <div id="b" class="mcq" data-aos="fade-up">
+        <div
+          id="b"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
           <!-- <div>B</div> -->
           <p>
             Let Samia know that Speaking Up could potentially negatively impact
@@ -102,11 +120,15 @@
 
             <!-- Accept Button -->
             <label for="toggle2" class="cursor-pointer peer-checked:hidden">
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Accept.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
             </label>
 
             <!-- Reject Button -->
@@ -114,17 +136,25 @@
               for="toggle2"
               class="cursor-pointer hidden peer-checked:block"
             >
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Reject.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
             </label>
           </div>
         </div>
-        <div id="c" class="mcq" data-aos="fade-up">
+        <div
+          id="c"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
           <!-- <div>C</div> -->
-          <p>
+          <p class="">
             Educate Samia on the Speak Up portal, toll-free hotline, and the
             Local Designated Officers she can reach out to. She can also raise
             her complaints anonymously.
@@ -134,11 +164,15 @@
 
             <!-- Accept Button -->
             <label for="toggle3" class="cursor-pointer peer-checked:hidden">
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Accept.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
             </label>
 
             <!-- Reject Button -->
@@ -146,15 +180,23 @@
               for="toggle3"
               class="cursor-pointer hidden peer-checked:block"
             >
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Reject.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
             </label>
           </div>
         </div>
-        <div id="d" class="mcq" data-aos="fade-up">
+        <div
+          id="d"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up"
+        >
           <!-- <div>D</div> -->
           <p>
             Assure Samia that there will be no retaliation or victimization for
@@ -165,11 +207,15 @@
 
             <!-- Accept Button -->
             <label for="toggle4" class="cursor-pointer peer-checked:hidden">
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Accept.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Accept.svg"
+                  alt=""
+                />
+              </div>
             </label>
 
             <!-- Reject Button -->
@@ -177,23 +223,19 @@
               for="toggle4"
               class="cursor-pointer hidden peer-checked:block"
             >
-              <img
-                class="min-w-[95px] max-w-[95px]"
-                src="./assets/icons/Reject.svg"
-                alt=""
-              />
+              <div
+                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./assets/icons/Reject.svg"
+                  alt=""
+                />
+              </div>
             </label>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="bg-white px-[9.375rem]">
-    <img
-      src="./assets/slider8user.png"
-      class="absolute bottom-0 z-10 min-[1792px]:h-[25rem] h-[20rem]"
-      alt=""
-      data-aos="fade-up"
-    />
   </div>
 </div>
