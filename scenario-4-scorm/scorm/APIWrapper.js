@@ -158,18 +158,18 @@ const handleSubmit = async () => {
   } else {
     await loadPage('./page-7.html');
     checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    console.log(checkboxes);
-    checkboxes.forEach((checkbox, index) => {
-      checkbox.checked = selectedValues[index] === 0;
-      const parentDiv = checkbox.closest(".answer");
-      if (selectedValues[index] !== answer[index]) {
-        parentDiv.classList.add("wrongBorder");
-      } else {
-        parentDiv.classList.add("rightBorder");
-      }
-
-      console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
-    })
-    return selectedValues = [];
+        console.log(checkboxes);
+        checkboxes.forEach((checkbox, index) => {
+            
+            const parentDiv = checkbox.closest(".mcq");
+            if (selectedValues[index] !== answer[index]) {
+                parentDiv.classList.add("wrongBorder");
+            } else {
+                parentDiv.classList.add("rightBorder");
+            }
+            // checkbox.checked = selectedValues[index] === 0;
+            console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
+        });
+        return (selectedValues = []);
   }
 }
