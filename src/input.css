@@ -9,7 +9,7 @@
 }
 
 .btn {
-  @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
+  @apply bg-blue text-white xl-zoom:text-[24px] text-[18px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .btnMcq {
   @apply text-center bg-blue leading-[32px] text-white rounded-[10px] py-[20px] px-[30px] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
