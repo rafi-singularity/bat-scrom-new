@@ -173,3 +173,21 @@ const handleSubmit = async () => {
         return (selectedValues = []);
   }
 }
+
+
+function isFullScreen() {
+  return window.innerWidth === screen.width && window.innerHeight === screen.height;
+}
+
+window.addEventListener('resize', () => {
+  let image = document.getElementsByClassName('respimg')
+  if (isFullScreen()) {
+    image.style.width = '835px'
+    // User is in fullscreen mode
+    console.log('Full screen detected');
+  } else {
+    image.style.width = '735px'
+    // User is not in fullscreen mode
+    console.log('Not full screen');
+  }
+});
