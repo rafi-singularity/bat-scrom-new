@@ -1,10 +1,6 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <img
-    src="../assets/slider8user.png"
-    class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[30rem] h-[25rem]"
-    alt=""
-    data-aos="fade-down"
-  />
+  <img src="../assets/slider8user.png" class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[30rem] h-[25rem]" alt=""
+    data-aos="fade-down" />
   <div class="h-[85vh] flex">
     <div class="w-full bg-primary h-full"></div>
     <div class="w-[16.33vw] bg-[#3DAA3D] h-full"></div>
@@ -14,61 +10,43 @@
 <div class="container mx-auto relative">
   <button
     class="btnMcq float-right absolute xl-zoom:bottom-[3rem] bottom-[1.7rem] right-0 z-20 xl-zoom:text-[26px] text-[22px]"
-    type="button"
-    onclick="handleSubmit()"
-  >
+    type="button" onclick="handleSubmit()">
     Submit
   </button>
   <div class="w-full cursor-pointer flex justify-end pt-[50px]">
-    <img
-      onclick="loadPage('./page-1.html')"
-      data-aos="fade-left"
-      src="../assets/icons/scenario02-badge.svg"
-      alt=""
-      srcset=""
-    />
+    <img onclick="loadPage('./page-1.html')" data-aos="fade-left" src="../assets/icons/scenario02-badge.svg" alt=""
+      srcset="" />
   </div>
-  <div class=" absolute top-[4rem] left-0"><p
-    class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
-    data-aos="fade-right"
-  >
-    Decision Time
-    <div
-    class="bg-[#97DE97] xl-zoom:w-[10.5rem] w-[8rem] h-2"
-  ></div>
-  </p></div>
-  
-  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)] xl-zoom:mt-[75px] mt-[50px]">
+  <div class=" absolute top-[4rem] left-0">
+    <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase" data-aos="fade-right">
+      Decision Time
+    <div class="bg-[#97DE97] xl-zoom:w-[10.5rem] w-[8rem] h-2"></div>
+    </p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-[78px] h-[calc(85vh-105px)] xl-zoom:mt-[75px] mt-[50px]">
     <div class="col-span-1 pt-[40px]">
       <div class="flex flex-col gap-[1.25rem] text-white">
-        <p
-          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] -mt-5"
-          data-aos="fade-up"
-        >
-        Shakib explains how Maliha helped him with the navigation and shares
-        his plan for the app upgrade. Take a moment to consider everything
-        Shakib has told you. What’s the right guidance as his line manager,
-        and what are the potential risks?
+        <p class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] -mt-5"
+          data-aos="fade-up">
+          Shakib explains how Maliha helped him with the navigation and shares
+          his plan for the app upgrade. Take a moment to consider everything
+          Shakib has told you. What’s the right guidance as his line manager,
+          and what are the potential risks?
         </p>
 
         <div class="flex justify-start items-center">
-          <p
-            class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-white border-l-4 ps-3"
-            data-aos="fade-left"
-          >
-          Select the buttons to approve or reject the activities, then submit.
+          <p class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-white border-l-4 ps-3"
+            data-aos="fade-left">
+            Select the buttons to approve or reject the activities, then submit.
           </p>
         </div>
       </div>
     </div>
     <div class="col-span-1 h-full flex justify-center items-start">
       <div class="space-y-4">
-        <div
-          id="a"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="a" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div class="">A</div> -->
           <p class="">
             Praise Shakib’s idea and ensure the revamp happens smoothly but keep
@@ -79,40 +57,21 @@
 
             <!-- Accept Button -->
             <label for="toggle1" class="cursor-pointer peer-checked:hidden">
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Accept.svg"
-                  alt=""
-                />
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Accept.svg" alt="" />
               </div>
             </label>
 
             <!-- Reject Button -->
-            <label
-              for="toggle1"
-              class="cursor-pointer hidden peer-checked:block"
-            >
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Reject.svg"
-                  alt=""
-                />
+            <label for="toggle1" class="cursor-pointer hidden peer-checked:block">
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Reject.svg" alt="" />
               </div>
             </label>
           </div>
         </div>
-        <div
-          id="b"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="b" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div>B</div> -->
           <p>
             Shakib should inform IDT to check and remove all system and
@@ -123,40 +82,21 @@
 
             <!-- Accept Button -->
             <label for="toggle2" class="cursor-pointer peer-checked:hidden">
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Accept.svg"
-                  alt=""
-                />
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Accept.svg" alt="" />
               </div>
             </label>
 
             <!-- Reject Button -->
-            <label
-              for="toggle2"
-              class="cursor-pointer hidden peer-checked:block"
-            >
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Reject.svg"
-                  alt=""
-                />
+            <label for="toggle2" class="cursor-pointer hidden peer-checked:block">
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Reject.svg" alt="" />
               </div>
             </label>
           </div>
         </div>
-        <div
-          id="c"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="c" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div>C</div> -->
           <p class="">
             The offboarding process for Maliha should have been completed,
@@ -168,40 +108,21 @@
 
             <!-- Accept Button -->
             <label for="toggle3" class="cursor-pointer peer-checked:hidden">
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Accept.svg"
-                  alt=""
-                />
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Accept.svg" alt="" />
               </div>
             </label>
 
             <!-- Reject Button -->
-            <label
-              for="toggle3"
-              class="cursor-pointer hidden peer-checked:block"
-            >
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Reject.svg"
-                  alt=""
-                />
+            <label for="toggle3" class="cursor-pointer hidden peer-checked:block">
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Reject.svg" alt="" />
               </div>
             </label>
           </div>
         </div>
-        <div
-          id="d"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="d" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div>D</div> -->
           <p>
             Consulting a new agency without proper assessment exposed
@@ -212,30 +133,15 @@
 
             <!-- Accept Button -->
             <label for="toggle4" class="cursor-pointer peer-checked:hidden">
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Accept.svg"
-                  alt=""
-                />
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Accept.svg" alt="" />
               </div>
             </label>
 
             <!-- Reject Button -->
-            <label
-              for="toggle4"
-              class="cursor-pointer hidden peer-checked:block"
-            >
-              <div
-                class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]"
-              >
-                <img
-                  class="w-full h-full"
-                  src="../assets/icons/Reject.svg"
-                  alt=""
-                />
+            <label for="toggle4" class="cursor-pointer hidden peer-checked:block">
+              <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
+                <img class="w-full h-full" src="../assets/icons/Reject.svg" alt="" />
               </div>
             </label>
           </div>
