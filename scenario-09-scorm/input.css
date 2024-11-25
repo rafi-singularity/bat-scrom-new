@@ -12,7 +12,7 @@
   @apply bg-blue text-white text-[24px] rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .btnMcq {
-  @apply text-center w-full max-w-[235px] bg-blue leading-[32px] text-white text-[24px]  rounded-[10px] py-[10px] px-[30px] min-w-[10rem] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
+  @apply text-center bg-blue leading-[32px] text-white rounded-[10px] py-[20px] px-[30px] flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .mcq {
   @apply flex items-center gap-5 bg-white  hover:bg-[#00B1EB] transition-all duration-300 cursor-pointer px-[2.2rem] 2xl:py-5 py-2 rounded-[15px] shadow-md;
