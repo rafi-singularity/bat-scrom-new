@@ -1,7 +1,7 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
   <img
     src="../assets/slider8user.png"
-    class="absolute bottom-0 left-60 z-10 min-[1792px]:h-[30rem] h-[25rem]"
+    class="absolute bottom-0 left-[20rem] z-10 min-[1792px]:h-[30rem] h-[25rem]"
     alt=""
     data-aos="fade-down"
   />
@@ -13,17 +13,18 @@
 
 <div class="container mx-auto relative">
   <button
-    class="btnMcq float-right absolute -bottom-6 right-0 z-20 xl-zoom:text-[26px] text-[18px] max-w-[235px] w-full"
+    class=" absolute xl-zoom:bottom-[-1.8rem] lg-zoom:bottom-[-2.2rem] right-0 z-20 xl-zoom:text-[26px] hover:scale-105 transition-all duration-200"
     type="button"
     onclick="handleSubmit()"
   >
-    Submit
+  <img src="../assets/icons/submitButton.svg" alt="" class="w-[12.3vw]" />
   </button>
-  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
+  <div class="w-full cursor-pointer flex justify-end pt-[50px] ">
     <img
       onclick="loadPage('./page-1.html')"
       data-aos="fade-left"
       src="../assets/icons/badge2.svg"
+      class="w-[13.2vw]"
       alt=""
       srcset=""
     />
@@ -36,12 +37,12 @@
       >
         Decision Time
         <div
-        class="bg-[#FFBB00] xl-zoom:w-[10rem] w-[8rem] h-2 mt-1"
+        class="bg-[#FFBB00] xl-zoom:w-[10rem] w-[8rem] h-2 -mt-1"
       ></div>
       </p>
       <div class="flex flex-col gap-[20px] text-white">
         <p
-          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] xl-zoom:mt-[1.25rem] lg-zoom:mt-[0.9375rem]"
           data-aos="fade-up"
         >
         Shakib shares his approach to handling the recent assignment. As his line manager, which of the following guidelines would best reflect the correct course of action?
@@ -59,7 +60,7 @@
       </div>
     </div>
     <div class="col-span-1 h-full flex justify-center items-center">
-      <div class="space-y-4">
+      <div class="xl-zoom:space-y-4 lg-zoom:space-y-3">
         <div
         id="a"
         onclick=" selectHandler(this)"
