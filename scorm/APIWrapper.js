@@ -152,42 +152,54 @@ const handleSubmit = async () => {
   });
   const isValid = isMatch(selectedValues);
   if (isValid) {
-    selectedValues = []
-    return loadPage('./page-6.html');
+    await loadPage('./page-6.html');
+
+    checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((checkbox, index) => {
+
+      const parentDiv = checkbox.closest(".mcq");
+      if (selectedValues[index] !== answer[index]) {
+        parentDiv.classList.add("wrongBorder");
+      } else {
+        parentDiv.classList.add("rightBorder");
+      }
+      // checkbox.checked = selectedValues[index] === 0;
+      console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
+    });
+    return (selectedValues = []);
 
   } else {
     await loadPage('./page-7.html');
     checkboxes = document.querySelectorAll('input[type="checkbox"]');
-        console.log(checkboxes);
-        checkboxes.forEach((checkbox, index) => {
-            
-            const parentDiv = checkbox.closest(".mcq");
-            if (selectedValues[index] !== answer[index]) {
-                parentDiv.classList.add("wrongBorder");
-            } else {
-                parentDiv.classList.add("rightBorder");
-            }
-            // checkbox.checked = selectedValues[index] === 0;
-            console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
-        });
-        return (selectedValues = []);
+    checkboxes.forEach((checkbox, index) => {
+
+      const parentDiv = checkbox.closest(".mcq");
+      if (selectedValues[index] !== answer[index]) {
+        parentDiv.classList.add("wrongBorder");
+      } else {
+        parentDiv.classList.add("rightBorder");
+      }
+      // checkbox.checked = selectedValues[index] === 0;
+      console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
+    });
+    return (selectedValues = []);
   }
 }
 
 
-function isFullScreen() {
-  return window.innerWidth === screen.width && window.innerHeight === screen.height;
-}
+// function isFullScreen() {
+//   return window.innerWidth === screen.width && window.innerHeight === screen.height;
+// }
 
-window.addEventListener('resize', () => {
-  let image = document.getElementsByClassName('respimg')
-  if (isFullScreen()) {
-    image.style.width = '835px'
-    // User is in fullscreen mode
-    console.log('Full screen detected');
-  } else {
-    image.style.width = '735px'
-    // User is not in fullscreen mode
-    console.log('Not full screen');
-  }
-});
+// window.addEventListener('resize', () => {
+//   let image = document.getElementsByClassName('respimg')
+//   if (isFullScreen()) {
+//     image.style.width = '835px'
+//     // User is in fullscreen mode
+//     console.log('Full screen detected');
+//   } else {
+//     image.style.width = '735px'
+//     // User is not in fullscreen mode
+//     console.log('Not full screen');
+//   }
+// });
