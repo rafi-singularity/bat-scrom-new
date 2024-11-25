@@ -5,13 +5,13 @@ module.exports = {
     container: {
       // padding: "100px",
       screens: {
-        md: "1080px",
+        md: "980px",
         // => @media (min-width: 1280px) { ... }
 
-        lg: "1336px",
+        lg: "1236px",
         // => @media (min-width: 1536px) { ... }
 
-        xl: "1720px",
+        xl: "1620px",
         // => @media (min-width: 1745px) { ... }
       },
     },
@@ -21,7 +21,6 @@ module.exports = {
         secondary: "#32BDF8",
         yellow: "#FFBB00",
         blue: "#0E2B63",
-        
       },
       screens: {
         "xl-zoom": "1600px", // Approximate effective viewport at 125% zoom on 1920px
@@ -29,5 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [],
 };
