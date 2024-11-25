@@ -5,7 +5,7 @@
     <div class="flex justify-end items-center">
       <div data-aos="fade-left">
         <img
-          class="cursor-pointer"
+          class="cursor-pointer w-[13.2vw]"
           onclick="loadPage('./page-1.html')"
           src="../assets/icons/badge2.svg"
           alt=""
@@ -15,13 +15,17 @@
   </div>
 
   <div
-    class="grid grid-cols-2 xl-zoom:gap-x-0 gap-x-5 h-[calc(100vh-105px)] container mx-auto z-10 relative"
+    class="grid grid-cols-2 xl-zoom:gap-x-0 gap-x-5 container mx-auto z-10 absolute bottom-0 left-[150px]"
   >
-    <div class="flex items-end h-full">
-      <img src="../assets/slider2user.png" class="" alt="" />
+    <div class="flex items-end w-full h-full xl-zoom:mt-[8px] relative">
+      <img
+        src="../assets/slider3user.png"
+        class="xl-zoom:h-[820px] h-[650px] mb-[-5px] w-auto object-contain"
+        alt=""
+      />
     </div>
-    <div class="" style="margin-top: 75px">
-      <div class="" style="margin-top: 75px">
+    <div class="xl-zoom:mt-[110px] mt-[90px] ">
+      <div class="">
         <h1
           class="text-white font-bold xl-zoom:text-[58px] lg-zoom:text-[43.5px]"
           data-aos="fade-right"
@@ -29,14 +33,18 @@
           Episode Summary
         </h1>
         <p
-          class="text-white xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
+          class="text-white xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-3"
           data-aos="fade-up"
         >
-          You have reached the end of this episode. Let’s look at what
-          Procurement Policy and other relevant company policies provide.
+        You have reached the end of this episode. Let’s look at what
+        Procurement Policy and other relevant company policies provide.
         </p>
         <div class="flex gap-7 mt-[36px]" data-aos="fade-up">
-          <button class="btn-svg w-[122px] h-[122px]" onclick="handleSummery('btn1')" type="button">
+          <button
+            class="btn-svg w-[122px] h-[122px]"
+            onclick="loadPage('./page-9.html')"
+            type="button"
+          >
             <img
               class="w-auto h-full mx-auto"
               src="../assets/icons/slide11-1.png"
@@ -45,9 +53,26 @@
           </button>
         </div>
         <p
-          class="text-white xl-zoom:text-[20px] lg-zoom:text-[18px] mt-[22px] italic flex items-center gap-2 border-white border-l-4 pl-2"
+          class="text-white xl-zoom:text-[20px] lg-zoom:text-[15px] mt-[22px] italic flex items-center gap-2"
         >
-          Select the icon to learn more
+          <span>
+            <svg
+              width="5"
+              height="20"
+              viewBox="0 0 5 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.368164"
+                y="0.150391"
+                width="3.94421"
+                height="19.698"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Select the first icon to learn more.
         </p>
       </div>
     </div>
