@@ -40,7 +40,7 @@
   @apply bg-blue text-white  rounded-[10px] py-[10px] px-[40px] max-w-[235px] w-full flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .mcq {
-  @apply flex items-center justify-between  bg-white transition-all duration-300 cursor-pointer pl-[2rem] pr-[2rem] xl-zoom:py-5 py-4 rounded-[15px] shadow-md;
+  @apply flex items-center justify-between  bg-white transition-all duration-300 cursor-pointer pl-[2rem] pr-[1rem] xl-zoom:py-5 py-4 rounded-[15px] shadow-md;
 }
 .mcq div {
 }
