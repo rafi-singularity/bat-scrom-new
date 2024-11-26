@@ -35,7 +35,7 @@
   @apply bg-blue text-white  rounded-[10px] py-[10px] px-[40px] max-w-[235px] w-full flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .mcq {
-  @apply flex items-center justify-between  bg-white transition-all duration-300 cursor-pointer pl-[2rem] pr-[1rem] xl-zoom:py-5 py-3 rounded-[15px] shadow-md;
+  @apply flex items-center justify-between  bg-white transition-all duration-300 cursor-pointer lg-zoom:py-[16px]  xl-zoom:py-5 xl-zoom:px-[36px] lg-zoom:px-[28px] rounded-[15px] shadow-md;
 }
 .mcq div {
 }
@@ -55,10 +55,10 @@
 
 /* Incorrect */
 .wrongBorder {
-  @apply border-4 border-[#FF1914] rounded-[15px];
+  @apply border-2 border-[#FF1914] rounded-[15px];
 }
 .rightBorder {
-  @apply border-4 border-[#36ad2b] rounded-[15px];
+  @apply border-2 border-[#36ad2b] rounded-[15px];
 }
 /* Correct */
 /* .correct {

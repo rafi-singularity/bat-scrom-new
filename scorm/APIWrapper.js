@@ -148,8 +148,20 @@ const handleSubmit = async () => {
     }); console.log('input value', selectedValues);
     const isValid = isMatch(selectedValues);
     if (isValid) {
-        selectedValues = []
-        return loadPage('./page-7.html');
+        await loadPage('./page-7.html');
+        checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        console.log(checkboxes);
+        checkboxes.forEach((checkbox, index) => {
+            checkbox.checked = selectedValues[index] === 0;
+            const parentDiv = checkbox.closest(".mcq");
+            if (selectedValues[index] !== answer[index]) {
+                parentDiv.classList.add("wrongBorder");
+            } else {
+                parentDiv.classList.add("rightBorder");
+            }
+            console.log(checkbox.checked, selectedValues[index] === 0 ? false : true);
+        })
+        return selectedValues = [];
 
     } else {
         await loadPage('./page-6.html');
@@ -172,23 +184,23 @@ const handleSubmit = async () => {
 let isSummery = false;
 
 const handleSummery = (data) => {
-  if (data == "btn1") {
-    isSummery = true;
-    loadPage("./page-9.html");
-  } else if (data == "btn2") {
-    if (isSummery) {
-      loadPage("./page-10.html");
-    } else return;
-  }
+    if (data == "btn1") {
+        isSummery = true;
+        loadPage("./page-9.html");
+    } else if (data == "btn2") {
+        if (isSummery) {
+            loadPage("./page-10.html");
+        } else return;
+    }
 };
 const badge = document.getElementById('badge');
 const main = document.getElementById('main');
 
 // Function to enable/disable pointer-events
 function togglePointerEvents(zooming) {
-  if (zooming) {
-    main.classList.add('no-pointer'); // Disable pointer events on badge
-  } else {
-    main.classList.remove('no-pointer'); // Enable pointer events
-  }
+    if (zooming) {
+        main.classList.add('no-pointer'); // Disable pointer events on badge
+    } else {
+        main.classList.remove('no-pointer'); // Enable pointer events
+    }
 }
