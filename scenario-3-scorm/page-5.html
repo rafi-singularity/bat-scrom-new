@@ -1,79 +1,93 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <img src="./assets/slider8user.png" class="absolute bottom-0 left-[200px] z-10 min-[1792px]:h-[30rem] h-[25rem]"
-    alt="" data-aos="fade-down" />
-  <div class="h-[85vh] flex">
+  <img src="./assets/slider8user.png" class="absolute bottom-0 left-[290px] z-10 min-[1792px]:h-[30rem] h-[25rem]" alt=""
+    data-aos="fade-down" />
+  <div class="h-[85vh] flex relative">
     <div class="w-full bg-[#1D92C3] h-full"></div>
     <div class="xl-zoom:w-[18.5vw] lg-zoom:w-[21.25vw] bg-primary h-full"></div>
+   
   </div>
+  <button
+    class=" float-right cursor-pointer absolute xl-zoom:bottom-[12.1vh] bottom-[11.8vh]  right-[150px] z-[1]  hover:shadow-lg hover:scale-105 transition-all duration-200 "
+    type="button"
+    onclick="handleSubmit()"
+  >
+  <img src="./assets/icons/submitButton.svg" alt="" class="w-[12.3vw]" />
+</button>
 </div>
 
-<div class="container mx-auto relative">
+<div class="container mx-auto relative h-[85vh]">
   <div class="w-full cursor-pointer flex justify-end pt-[50px]">
     <img onclick="loadPage('./page-1.html')" data-aos="fade-left" src="./assets/icons/badge2.svg" class="w-[13.2vw]"
       alt="" srcset="" />
   </div>
-  <div class=" absolute top-[4rem] left-0">
-    <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase" data-aos="fade-right">
-      Decision Time
-    <div class="bg-[#00B1EB] xl-zoom:w-[10.5rem] w-[8rem] h-2"></div>
-    </p>
-  </div>
+ 
 
-  <div class="flex gap-[180px] h-[calc(85vh-105px)] xl-zoom:mt-[75px] mt-[50px]">
-    <div class=" pt-[40px] xl-zoom:w-[648px] lg-zoom:w-[486px] shrink-0">
-      <div class="flex flex-col gap-[1.25rem] text-white">
-        <p class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] -mt-5"
-          data-aos="fade-up">
-          Eventually, Tahmid discloses that the government is not in favor of
-          approving the New Category product. With this information at hand,
-          Shakib now goes to his line manager to discuss the way forward. What
-          do you think about what Shakib has done? Select the most appropriate
-          options.
+  <div class="absolute bottom-[11.5%] right-0 left-0">
+    <div class="grid grid-cols-2 gap-[222px] xl-zoom:mt-[75px] mt-[50px] relative">
+      <div class=" absolute xl-zoom:-top-[8rem] -top-[6rem] left-0">
+        <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase" data-aos="fade-right">
+          Decision Time
+        <div class="bg-[#00B1EB] xl-zoom:w-[9.9rem] w-[7.4rem] h-2 xl-zoom:-mt-3"></div>
+        </p>
+      </div>
+      <div class="flex flex-col  text-white">
+        <p
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-3 mb-6 w-[653.5px]"
+          data-aos="fade-up"
+        >
+        Eventually, Tahmid discloses that the government is not in favor of
+        approving the New Category product. With this information at hand,
+        Shakib now goes to his line manager to discuss the way forward. What
+        do you think about what Shakib has done? Select the most appropriate
+        options.
         </p>
 
         <div class="flex justify-start items-center">
-          <p class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-[white] text-[#EFEFEF] border-l-4 ps-3"
-            data-aos="fade-left">
-            Select the most appropriate answers and click on <br />
-            Submit. There can be more than one correct answer.
+          <p
+            class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-[#EFEFEF] border-l-4 ps-3"
+            data-aos="fade-left"
+          >
+          Select the most appropriate answers and click on <br />
+          Submit. There can be more than one correct answer.
           </p>
         </div>
       </div>
-    </div>
-    <div class=" h-full flex justify-end items-start flex-col xl-zoom:bottom-[45px] lg-zoom:bottom-[15px] relative">
       <div class="space-y-4">
-        <div id="a" onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group" data-aos="fade-up">
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0">
-            A
-          </div>
-          <p class="group-hover:text-white">
+        <div
+          id="a"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
+          <div class="">A</div>
+          <p>
             Shakib is being collaborative by supporting the Regulatory Affairs
             team to meet their regulatory engagement goals. We need to work
             together as one team, no matter what it takes.
           </p>
         </div>
-        <div id="b" onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group" data-aos="fade-up">
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0">
-            B
-          </div>
-          <p class="group-hover:text-white">
+        <div
+          id="b"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
+          <div>B</div>
+          <p>
             The information is not yet public, so Shakib has induced a Public
             Official to breach a duty of confidentiality. Shakib should not have
             asked Tahmid for the report and should have refused to accept the
             report even if Tahmid had offered it.
           </p>
         </div>
-        <div id="c" onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group" data-aos="fade-up">
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0">
-            C
-          </div>
-          <p class="group-hover:text-white">
+        <div
+          id="c"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
+          <div>C</div>
+          <p>
             Shakib could be said to have offered the Formula 1 ticket as a gift
             to Tahmid to obtain a favour on behalf of the business. It is
             completely unacceptable for anyone connected to the business to be
@@ -81,22 +95,19 @@
             for the sake of achieving business results.
           </p>
         </div>
-        <div id="d" onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group" data-aos="fade-up">
-          <div
-            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0">
-            D
-          </div>
-          <p class="group-hover:text-white">
+        <div
+          id="d"
+          onclick=" selectHandler(this)"
+          class="mcq-main"
+          data-aos="fade-up"
+        >
+          <div>D</div>
+          <p>
             Shakib is being proactive by getting the draft regulation; one
             should be able to use on one’s social network in times like this.
           </p>
         </div>
       </div>
-      <button class="float-right z-20 hover:shadow-lg hover:scale-105 transition-all duration-200 mt-[50px] self-end"
-        type="button" onclick="handleSubmit()">
-        <img src="./assets/icons/submitButton.svg" alt="" class="w-[12.3vw]" />
-      </button>
     </div>
   </div>
 </div>
