@@ -1,82 +1,112 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <div class="h-[87vh] flex">
+  <div class="h-[85vh] flex relative">
     <div class="w-full bg-[#1D92C3] h-full"></div>
-    <div class="w-[16.33vw] bg-primary h-full"></div>
+    <div
+      class="xl-zoom:w-[18.5vw] lg-zoom:w-[21.25vw] bg-primary h-full"
+    ></div>
   </div>
-</div>
-
-<div class="container mx-auto relative">
   <button
-    class="btnMcq float-right absolute -bottom-[4.2rem] right-0 z-20 max-w-[235px] w-full"
+    class="float-right absolute cursor-pointer xl-zoom:bottom-[12vh] lg-zoom:bottom-[12vh] right-[150px] z-[1] hover:shadow-lg hover:scale-105 transition-all duration-200"
     type="button"
     onclick="loadPage('./page-8.html')"
   >
-    Continue
-  </button>
-  <div class="w-full flex justify-end pt-[50px]">
     <img
-      class="cursor-pointer"
+      src="./assets/icons/continue_btn.svg"
+      alt=""
+      class="w-[12.3vw] h-auto"
+    />
+  </button>
+</div>
+
+<div class="container mx-auto relative h-[85vh]">
+  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
+    <img
       onclick="loadPage('./page-1.html')"
       data-aos="fade-left"
       src="./assets/icons/badge2.svg"
+      class="w-[13.2vw]"
       alt=""
       srcset=""
     />
   </div>
-  <div
-    class="grid grid-cols-2 gap-[100px] h-[calc(85vh-165px)] xl-zoom:mt-[40px] mt-[30px]"
-  >
-    <div class="col-span-1 flex flex-col justify-start relative">
-      <p
-        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold xl-zoom:mt-0 mt-[10px]"
-        data-aos="fade-right"
-      >
-        That’s incorrect!
-      </p>
-      <div class="flex flex-col gap-[3rem] text-white">
+
+  <div class="absolute xl-zoom:bottom-[8%] bottom-[8%] right-0 left-0">
+    <div
+      class="grid grid-cols-2 gap-[125px] xl-zoom:mt-[75px] mt-[50px] relative"
+    >
+      <div class="text-white xl-zoom:-mt-[21px] -mt-[20px] relative">
         <p
-          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5"
-          data-aos="fade-up"
+          class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold"
+          data-aos="fade-right"
         >
-          <span class="font-bold">Option “B” & “C” is the correct answer</span
-          ><br /><br />
-          Shakib wilfully obtained confidential information from a Public
+          That’s incorrect!
+        </p>
+
+        <div class="xl-zoom:w-[685px] lg-zoom:w-[513px]">
+          <p class="font-bold text-[26px] mb-1">Option “B” & “C” is the correct answer</p>
+          
+
+          <p class="xl-zoom:text-[20px] lg-zoom:text-[14.5px]">
+            Shakib wilfully obtained confidential information from a Public
           Official, an action that breaches our SoBC Policy. We must engage with
           openness, transparency, and integrity. Moreover, he offered a ‘gift’
           to a Public Official to extract information out of him. This exchange
           may warrant a disciplinary action such as a verbal or written warning,
-          or even a termination of his contract.
-        </p>
+          or even a termination of his contract.   
+          </p>    
+                    <img
+            src="./assets/icons/cross.svg"
+            alt=""
+            class="mt-[70px] self-end xl-zoom:w-[191px] w-[136px] absolute right-[4rem] -bottom-[1.5rem]"
+            data-aos="zoom-out-down"
+          />
+        </div>
       </div>
-      <img
-        src="./assets/icons/cross.svg"
-        alt=""
-        class="absolute xl-zoom:bottom-[4%] bottom-0 right-1 min-[1792px]:w-[191px] w-[136px]"
-        data-aos="zoom-out-down"
-      />
-    </div>
-    <div class="col-span-1 h-full flex justify-center items-center">
       <div class="space-y-4">
-        <div id="a" class="mcq" data-aos="fade-up">
-          <div class="">A</div>
-          <p class="">
+        <div
+          id="a"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            A
+          </div>
+          <p class="group-hover:text-white">
             Shakib is being collaborative by supporting the Regulatory Affairs
             team to meet their regulatory engagement goals. We need to work
             together as one team, no matter what it takes.
           </p>
         </div>
-        <div id="b" class="mcq correct" data-aos="fade-up">
-          <div class="">B</div>
-          <p class="">
+        <div
+          id="b"
+          class="mcq correct xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            B
+          </div>
+          <p class="group-hover:text-white">
             The information is not yet public, so Shakib has induced a Public
             Official to breach a duty of confidentiality. Shakib should not have
             asked Tahmid for the report and should have refused to accept the
             report even if Tahmid had offered it.
           </p>
         </div>
-        <div id="c" class="mcq correct" data-aos="fade-up">
-          <div class="">C</div>
-          <p class="">
+        <div
+          id="c"
+          class="mcq correct xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            C
+          </div>
+          <p class="group-hover:text-white">
             Shakib could be said to have offered the Formula 1 ticket as a gift
             to Tahmid to obtain a favour on behalf of the business. It is
             completely unacceptable for anyone connected to the business to be
@@ -84,9 +114,17 @@
             for the sake of achieving business results.
           </p>
         </div>
-        <div id="d" class="mcq" data-aos="fade-up">
-          <div class="">D</div>
-          <p class="">
+        <div
+          id="d"
+          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group"
+          data-aos="fade-up"
+        >
+          <div
+            class="bg-[#E6EEF6] group-hover:bg-[#7fdbfa] mr-5 rounded-lg text-[#004F9F] group-hover:text-white font-bold text-2xl flex items-center justify-center h-[46px] w-[46px] shrink-0"
+          >
+            D
+          </div>
+          <p class="group-hover:text-white">
             Shakib is being proactive by getting the draft regulation; one
             should be able to use on one’s social network in times like this.
           </p>
