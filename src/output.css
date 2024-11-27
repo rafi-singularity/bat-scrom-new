@@ -1227,11 +1227,6 @@ video {
   border-left-width: 4px;
 }
 
-.border-\[\#5F78A9\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(95 120 169 / var(--tw-border-opacity));
-}
-
 .border-\[white\]{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1295,11 +1290,6 @@ video {
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-5{
