@@ -1,51 +1,42 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <img
-    src="../assets/slider8user.png"
-    class="absolute bottom-0 left-[20rem] z-10 min-[1792px]:h-[30rem] h-[25rem]"
-    alt=""
-    data-aos="fade-down"
-  />
-  <div class="h-[85vh] flex">
+  <img src="../assets/slider8user.png" class="absolute bottom-0 left-[290px] z-10 min-[1792px]:h-[30rem] h-[25rem]" alt=""
+    data-aos="fade-down" />
+  <div class="h-[85vh] flex relative">
     <div class="w-full bg-primary h-full"></div>
-    <div class="w-[16.33vw] bg-[#B51D66] h-full"></div>
+    <div class="xl-zoom:w-[16.5vw] lg-zoom:w-[14.9vw] bg-[#B51D66] h-full"></div>
+   
   </div>
-</div>
-
-<div class="container mx-auto relative">
   <button
-    class=" absolute xl-zoom:bottom-[-1.8rem] lg-zoom:bottom-[-2.2rem] right-0 z-20 xl-zoom:text-[26px] hover:scale-105 transition-all duration-200"
+    class=" float-right absolute xl-zoom:bottom-[12.1vh] bottom-[11.8vh]  xl-zoom:right-[150px] lg-zoom:right-[100px] z-10 hover:scale-105 transition-all duration-200 "
     type="button"
     onclick="handleSubmit()"
   >
-  <img src="../assets/icons/submitButton.svg" alt="" class="w-[12.3vw]" />
-  </button>
-  <div class="w-full cursor-pointer flex justify-end pt-[50px] ">
-    <img
-      onclick="loadPage('./page-1.html')"
-      data-aos="fade-left"
-      src="../assets/icons/badge2.svg"
-      class="w-[13.2vw]"
-      alt=""
-      srcset=""
-    />
+  <img src="../assets/icons/submitButton.svg" alt="" class="w-[12.3vw] cursor-pointer" />
+</button>
+</div>
+
+<div class="container mx-auto relative h-[85vh]">
+  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
+    <img onclick="loadPage('./page-1.html')" data-aos="fade-left" src="../assets/icons/badge2.svg" class="w-[13.2vw]"
+      alt="" srcset="" />
   </div>
-  <div class="grid grid-cols-2 gap-[100px] h-[calc(85vh-105px)]">
-    <div class="col-span-1">
-      <p
-        class="text-white xl-zoom:text-[65px] text-[48.75px] font-bold uppercase"
-        data-aos="fade-right"
-      >
-        Decision Time
-        <div
-        class="bg-[#FFBB00] xl-zoom:w-[10rem] w-[8rem] h-2 -mt-1"
-      ></div>
-      </p>
-      <div class="flex flex-col gap-[20px] text-white">
+ 
+
+  <div class="absolute bottom-[10%] right-0 left-0">
+    <div class="grid grid-cols-2 gap-[125px] xl-zoom:mt-[75px] mt-[50px] relative">
+      <div class=" absolute xl-zoom:-top-[8rem] -top-[6rem] left-0">
+        <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase" data-aos="fade-right">
+          Decision Time
+        <div class="bg-[#FFBB00] xl-zoom:w-[9.9rem] w-[7.4rem] h-2 xl-zoom:-mt-3"></div>
+        </p>
+      </div>
+      <div class="flex flex-col  text-white xl-zoom:w-[653px] lg-zoom:w-[489.75px]">
         <p
-          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] xl-zoom:mt-[1.25rem] lg-zoom:mt-[0.9375rem]"
+          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5 mb-8"
           data-aos="fade-up"
         >
         Shakib shares his approach to handling the recent assignment. As his line manager, which of the following guidelines would best reflect the correct course of action?
+
         </p>
 
         <div class="flex justify-start items-center">
@@ -58,8 +49,6 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="col-span-1 h-full flex justify-center items-center">
       <div class="xl-zoom:space-y-4 lg-zoom:space-y-3">
         <div
         id="a"
@@ -82,7 +71,7 @@
       <div
         id="b"
         onclick=" selectHandler(this)"
-         class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group"
+         class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px] group "
         data-aos="fade-up"
       >
         <div
@@ -91,11 +80,9 @@
           B
         </div>
         <p
-        class="group-hover:text-white"
+        class="group-hover:text-white pr-[10px]"
         >
-          Rapide is a reputable market research agency with a previously
-          low-risk rating. Therefore, immediately completing the AFC
-          assessment and mitigation plans is not critical.
+        <i>FastTrack</i> is a reputable market research agency with a previously low-risk rating. Therefore, immediately completing the AFC assessment and mitigation plans is not critical.
         </p>
       </div>
       <div
@@ -112,9 +99,7 @@
         <p
         class="group-hover:text-white"
         >
-          Considering Shakib’s previous positive experiences with Rapide, it
-          was appropriate to contact and select them for the project without
-          further due diligence.
+        Despite Shakib’s previous positive experiences with <i>FastTrack</i>, Shakib should have done the right due diligence and complete the AFC assessment. 
         </p>
       </div>
       <div
@@ -129,11 +114,9 @@
           D
         </div>
         <p
-        class="group-hover:text-white"
+        class="group-hover:text-white xl-zoom:!text-[18.5px]"
         >
-          Since the survey cost was already within the approved budget, Shakib
-          was justified in moving forward with Rapide without seeking a second
-          competitive bid.
+        Since the survey cost was already within the approved budget, Shakib was justified in in moving forward with FastTrack without seeking a second competitive bid.
         </p>
       </div>
       </div>
