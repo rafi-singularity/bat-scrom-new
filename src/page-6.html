@@ -1,55 +1,63 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <div class="xl-zoom:h-[88vh] h-[82vh] flex">
+  <div class="h-[88vh] flex relative">
     <div class="w-full bg-[#298429] h-full"></div>
-    <div class="w-[16.33vw] bg-primary h-full"></div>
-  </div>
-</div>
-
-<div class="container mx-auto relative">
-  <div class="flex justify-end gap-4 items-center mt-[50px]">
-    <!-- Badge -->
-    <div
-      class="cursor-pointer"
-      onclick="loadPage('./page-1.html')"
-      data-aos="fade-left"
-    >
-      <img src="../assets/icons/badge2.svg" alt="" />
-    </div>
+    <div class="xl-zoom:w-[14vw] lg-zoom:w-[18.25vw] bg-primary h-full"></div>
   </div>
   <button
-    class="btnMcq float-right absolute xl-zoom:-bottom-[10rem] -bottom-[7rem] right-0 z-20 xl-zoom:text-[26px] text-[18px] max-w-[235px] w-full"
+    class="float-right absolute cursor-pointer xl-zoom:bottom-[9.3vh] bottom-[8.8vh] right-[150px] z-[1] hover:shadow-lg hover:scale-105 transition-all duration-200"
     type="button"
     onclick="loadPage('./page-8.html')"
-    id="checkAnswer"
   >
-    Continue
+    <img
+      src="../assets/icons/continue_btn.svg"
+      alt=""
+      class="h-[6.3vh] w-auto"
+    />
   </button>
+</div>
 
-  <div class="xl-zoom:mt-[111px] mt-[70px]">
-    <div class="grid grid-cols-2 gap-[120px]">
-      <div class="relative">
+<div class="container mx-auto relative h-[85vh]">
+  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
+    <img
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+      src="../assets/icons/badge2.svg"
+      class="w-[13.2vw]"
+      alt=""
+      srcset=""
+    />
+  </div>
+
+  <div class="absolute xl-zoom:bottom-[15%] bottom-[15%] right-0 left-0">
+    <div
+      class="grid grid-cols-2 gap-[125px] xl-zoom:mt-[75px] mt-[50px] relative"
+    >
+      <div class="text-white relative">
         <p
-          class="font-bold xl-zoom:text-[70px] text-[40px] mb-[30px] text-white"
+          class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold"
+          data-aos="fade-right"
         >
           That’s incorrect!
         </p>
-        <div class="mt-[37px]">
-          <p class="xl-zoom:text-[22px] text-[14px] font-medium text-white">
-            Our products cannot be marketed with images, themes, or individuals
-            that appeal to the youth. It is important to ensure our content is
-            inaccessible by the Underage group. Click next to learn more.
+
+        <div class="flex justify-start items-center">
+          <p
+            class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5 xl-zoom:pr-[66px]"
+            data-aos="fade-up"
+          >
+            Our products cannot be marketed with images, themes, or <br />
+            individuals that appeal to the youth. It is important to ensure<br />
+            our content is inaccessible by the Underage group. <br />Click next
+            to learn more.
           </p>
-        </div>
-        <div class="absolute xl-zoom:-bottom-[4rem] -bottom-[2rem] right-0">
           <img
             src="../assets/icons/cross.svg"
             alt=""
-            class="z-20 xl-zoom:w-[191px] w-[116px]"
+            class="mt-[130px] self-end xl-zoom:w-[191px] w-[136px] absolute right-[4rem] -bottom-[4rem]"
             data-aos="zoom-out-down"
           />
         </div>
       </div>
-
       <div class="grid grid-cols-2 gap-[17px]">
         <div
           class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]"
