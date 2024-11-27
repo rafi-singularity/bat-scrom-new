@@ -771,8 +771,8 @@ video {
   margin-right: auto;
 }
 
-.-ml-6{
-  margin-left: -1.5rem;
+.-ml-4{
+  margin-left: -1rem;
 }
 
 .-mt-2{
@@ -859,6 +859,10 @@ video {
   margin-top: 100px;
 }
 
+.mt-\[10px\]{
+  margin-top: 10px;
+}
+
 .mt-\[130px\]{
   margin-top: 130px;
 }
@@ -877,26 +881,6 @@ video {
 
 .mt-\[90px\]{
   margin-top: 90px;
-}
-
-.mt-\[30px\]{
-  margin-top: 30px;
-}
-
-.mt-\[20px\]{
-  margin-top: 20px;
-}
-
-.mt-\[10px\]{
-  margin-top: 10px;
-}
-
-.-ml-5{
-  margin-left: -1.25rem;
-}
-
-.-ml-4{
-  margin-left: -1rem;
 }
 
 .flex{
@@ -1441,12 +1425,12 @@ video {
   padding-left: 5rem;
 }
 
-.pl-\[70px\]{
-  padding-left: 70px;
-}
-
 .pl-\[72\.5px\]{
   padding-left: 72.5px;
+}
+
+.pl-\[80px\]{
+  padding-left: 80px;
 }
 
 .pr-2{
@@ -1495,10 +1479,6 @@ video {
 
 .pt-\[5px\]{
   padding-top: 5px;
-}
-
-.pl-\[80px\]{
-  padding-left: 80px;
 }
 
 .text-justify{
@@ -1988,8 +1968,8 @@ video {
     width: 17.25vw;
   }
 
-  .lg-zoom\:w-\[18\.25vw\]{
-    width: 18.25vw;
+  .lg-zoom\:w-\[19vw\]{
+    width: 19vw;
   }
 
   .lg-zoom\:w-\[240px\]{
@@ -2006,10 +1986,6 @@ video {
 
   .lg-zoom\:w-\[800\.5px\]{
     width: 800.5px;
-  }
-
-  .lg-zoom\:w-\[19vw\]{
-    width: 19vw;
   }
 
   .lg-zoom\:pb-\[20px\]{
@@ -2135,16 +2111,16 @@ video {
     left: 8%;
   }
 
-  .xl-zoom\:left-\[9\%\]{
-    left: 9%;
-  }
-
   .xl-zoom\:top-\[22\%\]{
     top: 22%;
   }
 
   .xl-zoom\:top-\[5rem\]{
     top: 5rem;
+  }
+
+  .xl-zoom\:-ml-6{
+    margin-left: -1.5rem;
   }
 
   .xl-zoom\:-mt-3{
@@ -2195,6 +2171,10 @@ video {
     margin-top: 110px;
   }
 
+  .xl-zoom\:mt-\[20px\]{
+    margin-top: 20px;
+  }
+
   .xl-zoom\:mt-\[3\.5rem\]{
     margin-top: 3.5rem;
   }
@@ -2209,14 +2189,6 @@ video {
 
   .xl-zoom\:mt-\[90px\]{
     margin-top: 90px;
-  }
-
-  .xl-zoom\:mt-\[20px\]{
-    margin-top: 20px;
-  }
-
-  .xl-zoom\:-ml-6{
-    margin-left: -1.5rem;
   }
 
   .xl-zoom\:h-2{
@@ -2247,8 +2219,8 @@ video {
     width: 13.5vw;
   }
 
-  .xl-zoom\:w-\[15\.5vw\]{
-    width: 15.5vw;
+  .xl-zoom\:w-\[16\.5vw\]{
+    width: 16.5vw;
   }
 
   .xl-zoom\:w-\[191px\]{
@@ -2289,22 +2261,6 @@ video {
 
   .xl-zoom\:w-\[990px\]{
     width: 990px;
-  }
-
-  .xl-zoom\:w-\[15vw\]{
-    width: 15vw;
-  }
-
-  .xl-zoom\:w-\[14vw\]{
-    width: 14vw;
-  }
-
-  .xl-zoom\:w-\[16vw\]{
-    width: 16vw;
-  }
-
-  .xl-zoom\:w-\[16\.5vw\]{
-    width: 16.5vw;
   }
 
   .xl-zoom\:max-w-\[50\%\]{

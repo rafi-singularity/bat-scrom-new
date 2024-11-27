@@ -155,6 +155,7 @@ function isMatch(inputArray) {
   );
 }
 const handleSubmit = async () => {
+  if (response.length == 0) return;
   const ascResponse = response.sort();
   console.log(ascResponse);
   const isValid = isMatch(ascResponse);
