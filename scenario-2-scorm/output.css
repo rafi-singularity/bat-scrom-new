@@ -755,14 +755,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-\[110px\]{
-  margin-top: 110px;
-}
-
-.mt-\[135px\]{
-  margin-top: 135px;
-}
-
 .mt-\[22px\]{
   margin-top: 22px;
 }
@@ -809,10 +801,6 @@ video {
 
 .h-\[40px\]{
   height: 40px;
-}
-
-.h-\[5\.2vh\]{
-  height: 5.2vh;
 }
 
 .h-\[5\.5px\]{
@@ -892,10 +880,6 @@ video {
   width: 136px;
 }
 
-.w-\[4\.3vw\]{
-  width: 4.3vw;
-}
-
 .w-\[43\.3\%\]{
   width: 43.3%;
 }
@@ -943,6 +927,10 @@ video {
 
 .max-w-\[44\%\]{
   max-width: 44%;
+}
+
+.max-w-\[847px\]{
+  max-width: 847px;
 }
 
 .shrink-0{
@@ -1227,6 +1215,10 @@ video {
   font-size: 13px;
 }
 
+.text-\[14px\]{
+  font-size: 14px;
+}
+
 .text-\[17px\]{
   font-size: 17px;
 }
@@ -1237,10 +1229,6 @@ video {
 
 .text-\[52\.5px\]{
   font-size: 52.5px;
-}
-
-.text-\[14px\]{
-  font-size: 14px;
 }
 
 .font-bold{
@@ -1623,16 +1611,8 @@ video {
     margin-top: 40px;
   }
 
-  .lg-zoom\:mt-\[80ox\]{
-    margin-top: 80ox;
-  }
-
   .lg-zoom\:mt-\[80px\]{
     margin-top: 80px;
-  }
-
-  .lg-zoom\:mt-\[90px\]{
-    margin-top: 90px;
   }
 
   .lg-zoom\:mt-\[95px\]{
@@ -1683,6 +1663,14 @@ video {
     gap: 1.25rem;
   }
 
+  .lg-zoom\:p-\[10px\]{
+    padding: 10px;
+  }
+
+  .lg-zoom\:p-\[12px\]{
+    padding: 12px;
+  }
+
   .lg-zoom\:p-\[14px\]{
     padding: 14px;
   }
@@ -1729,6 +1717,10 @@ video {
 
   .lg-zoom\:text-\[16\.5px\]{
     font-size: 16.5px;
+  }
+
+  .lg-zoom\:text-\[17px\]{
+    font-size: 17px;
   }
 
   .lg-zoom\:text-\[18px\]{
@@ -1845,6 +1837,10 @@ video {
     margin-top: 110px;
   }
 
+  .xl-zoom\:mt-\[135px\]{
+    margin-top: 135px;
+  }
+
   .xl-zoom\:mt-\[50px\]{
     margin-top: 50px;
   }
@@ -1861,10 +1857,6 @@ video {
     margin-top: 8px;
   }
 
-  .xl-zoom\:mt-\[135px\]{
-    margin-top: 135px;
-  }
-
   .xl-zoom\:h-2{
     height: 0.5rem;
   }
@@ -1875,10 +1867,6 @@ video {
 
   .xl-zoom\:h-\[52px\]{
     height: 52px;
-  }
-
-  .xl-zoom\:h-\[6\.2vh\]{
-    height: 6.2vh;
   }
 
   .xl-zoom\:h-\[60px\]{
@@ -1925,16 +1913,12 @@ video {
     width: 254px;
   }
 
+  .xl-zoom\:w-\[648\.3px\]{
+    width: 648.3px;
+  }
+
   .xl-zoom\:w-\[648px\]{
     width: 648px;
-  }
-
-  .xl-zoom\:w-\[679px\]{
-    width: 679px;
-  }
-
-  .xl-zoom\:w-\[6vw\]{
-    width: 6vw;
   }
 
   .xl-zoom\:w-\[821\.5px\]{
@@ -1960,6 +1944,10 @@ video {
   .xl-zoom\:gap-x-\[40px\]{
     -moz-column-gap: 40px;
          column-gap: 40px;
+  }
+
+  .xl-zoom\:p-\[14px\]{
+    padding: 14px;
   }
 
   .xl-zoom\:p-\[3rem\]{
