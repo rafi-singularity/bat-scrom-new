@@ -590,8 +590,8 @@ video {
   position: relative;
 }
 
-.-bottom-\[1rem\]{
-  bottom: -1rem;
+.-bottom-\[2rem\]{
+  bottom: -2rem;
 }
 
 .-bottom-\[6\%\]{
@@ -634,6 +634,10 @@ video {
   bottom: 11.8vh;
 }
 
+.bottom-\[12\%\]{
+  bottom: 12%;
+}
+
 .bottom-\[13\.5rem\]{
   bottom: 13.5rem;
 }
@@ -644,10 +648,6 @@ video {
 
 .bottom-\[1rem\]{
   bottom: 1rem;
-}
-
-.bottom-\[9\%\]{
-  bottom: 9%;
 }
 
 .left-0{
@@ -682,12 +682,12 @@ video {
   right: 10%;
 }
 
-.right-\[150px\]{
-  right: 150px;
+.right-\[10rem\]{
+  right: 10rem;
 }
 
-.right-\[4rem\]{
-  right: 4rem;
+.right-\[150px\]{
+  right: 150px;
 }
 
 .top-0{
@@ -708,22 +708,6 @@ video {
 
 .top-\[6rem\]{
   top: 6rem;
-}
-
-.bottom-\[11\%\]{
-  bottom: 11%;
-}
-
-.bottom-\[12\%\]{
-  bottom: 12%;
-}
-
-.-bottom-\[2rem\]{
-  bottom: -2rem;
-}
-
-.right-\[10rem\]{
-  right: 10rem;
 }
 
 .z-10{
@@ -1165,10 +1149,6 @@ video {
   gap: 1.75rem;
 }
 
-.gap-\[125px\]{
-  gap: 125px;
-}
-
 .gap-\[99px\]{
   gap: 99px;
 }
@@ -1253,6 +1233,11 @@ video {
 }
 
 .border-\[white\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
@@ -1398,8 +1383,8 @@ video {
   padding-right: 18px;
 }
 
-.pr-\[50px\]{
-  padding-right: 50px;
+.pr-\[63px\]{
+  padding-right: 63px;
 }
 
 .ps-3{
@@ -1434,34 +1419,6 @@ video {
   padding-top: 5px;
 }
 
-.pr-\[60px\]{
-  padding-right: 60px;
-}
-
-.pr-\[55px\]{
-  padding-right: 55px;
-}
-
-.pr-\[58px\]{
-  padding-right: 58px;
-}
-
-.pr-\[63px\]{
-  padding-right: 63px;
-}
-
-.pr-\[\]{
-  padding-right: ;
-}
-
-.pr-\[40px\]{
-  padding-right: 40px;
-}
-
-.pr-\[59px\]{
-  padding-right: 59px;
-}
-
 .text-justify{
   text-align: justify;
 }
@@ -1474,6 +1431,10 @@ video {
   font-size: 16.5px;
 }
 
+.text-\[19px\]{
+  font-size: 19px;
+}
+
 .text-\[24px\]{
   font-size: 24px;
 }
@@ -1484,18 +1445,6 @@ video {
 
 .text-\[52\.5px\]{
   font-size: 52.5px;
-}
-
-.text-\[20px\]{
-  font-size: 20px;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
-}
-
-.text-\[19px\]{
-  font-size: 19px;
 }
 
 .font-bold{
@@ -1930,6 +1879,10 @@ video {
     font-size: 16.5px;
   }
 
+  .lg-zoom\:text-\[17px\]{
+    font-size: 17px;
+  }
+
   .lg-zoom\:text-\[18px\]{
     font-size: 18px;
   }
@@ -1956,14 +1909,6 @@ video {
 
   .lg-zoom\:text-\[60px\]{
     font-size: 60px;
-  }
-
-  .lg-zoom\:text-\[17\.5px\]{
-    font-size: 17.5px;
-  }
-
-  .lg-zoom\:text-\[17px\]{
-    font-size: 17px;
   }
 
   .lg-zoom\:leading-\[24px\]{
@@ -2031,6 +1976,10 @@ video {
     bottom: 45px;
   }
 
+  .xl-zoom\:bottom-\[9\%\]{
+    bottom: 9%;
+  }
+
   .xl-zoom\:left-\[5\%\]{
     left: 5%;
   }
@@ -2053,10 +2002,6 @@ video {
 
   .xl-zoom\:top-\[8rem\]{
     top: 8rem;
-  }
-
-  .xl-zoom\:bottom-\[9\%\]{
-    bottom: 9%;
   }
 
   .xl-zoom\:-mt-3{
@@ -2159,6 +2104,14 @@ video {
     width: 122px;
   }
 
+  .xl-zoom\:w-\[123px\]{
+    width: 123px;
+  }
+
+  .xl-zoom\:w-\[128px\]{
+    width: 128px;
+  }
+
   .xl-zoom\:w-\[13\.2vw\]{
     width: 13.2vw;
   }
@@ -2191,8 +2144,8 @@ video {
     width: 631px;
   }
 
-  .xl-zoom\:w-\[640px\]{
-    width: 640px;
+  .xl-zoom\:w-\[645px\]{
+    width: 645px;
   }
 
   .xl-zoom\:w-\[648px\]{
@@ -2221,38 +2174,6 @@ video {
 
   .xl-zoom\:w-\[990px\]{
     width: 990px;
-  }
-
-  .xl-zoom\:w-\[645px\]{
-    width: 645px;
-  }
-
-  .xl-zoom\:w-\[561px\]{
-    width: 561px;
-  }
-
-  .xl-zoom\:w-\[130px\]{
-    width: 130px;
-  }
-
-  .xl-zoom\:w-\[635px\]{
-    width: 635px;
-  }
-
-  .xl-zoom\:w-\[128px\]{
-    width: 128px;
-  }
-
-  .xl-zoom\:w-\[126px\]{
-    width: 126px;
-  }
-
-  .xl-zoom\:w-\[124px\]{
-    width: 124px;
-  }
-
-  .xl-zoom\:w-\[123px\]{
-    width: 123px;
   }
 
   .xl-zoom\:max-w-\[43\%\]{
@@ -2300,12 +2221,16 @@ video {
     padding-right: 30px;
   }
 
+  .xl-zoom\:pr-\[59px\]{
+    padding-right: 59px;
+  }
+
   .xl-zoom\:pr-\[6rem\]{
     padding-right: 6rem;
   }
 
-  .xl-zoom\:pr-\[90px\]{
-    padding-right: 90px;
+  .xl-zoom\:pr-\[95px\]{
+    padding-right: 95px;
   }
 
   .xl-zoom\:pt-0{
@@ -2326,18 +2251,6 @@ video {
 
   .xl-zoom\:pt-\[64px\]{
     padding-top: 64px;
-  }
-
-  .xl-zoom\:pr-\[50px\]{
-    padding-right: 50px;
-  }
-
-  .xl-zoom\:pr-\[95px\]{
-    padding-right: 95px;
-  }
-
-  .xl-zoom\:pr-\[59px\]{
-    padding-right: 59px;
   }
 
   .xl-zoom\:text-\[18px\]{
@@ -2382,10 +2295,6 @@ video {
 
   .xl-zoom\:text-\[80px\]{
     font-size: 80px;
-  }
-
-  .xl-zoom\:text-\[17px\]{
-    font-size: 17px;
   }
 
   .xl-zoom\:leading-\[100px\]{
