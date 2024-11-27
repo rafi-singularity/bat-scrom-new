@@ -1330,6 +1330,10 @@ video {
   padding-top: 95px;
 }
 
+.pl-\[250px\]{
+  padding-left: 250px;
+}
+
 .text-justify{
   text-align: justify;
 }
