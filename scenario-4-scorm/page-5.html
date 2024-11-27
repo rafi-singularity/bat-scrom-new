@@ -1,76 +1,60 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <img src="./assets/slider8user.png" class="absolute bottom-0 left-[290px] z-10 min-[1792px]:h-[30rem] h-[25rem]" alt=""
+  <img src="./assets/slider8user.png" class="absolute bottom-0 left-[150px] z-10 min-[1792px]:h-[30rem] h-[25rem]" alt=""
     data-aos="fade-down" />
-  <div class="h-[85vh] flex relative">
+  <div class="h-[85vh] flex">
     <div class="w-full bg-primary h-full"></div>
-    <div class="xl-zoom:w-[14.5vw] lg-zoom:w-[17.25vw] bg-[#10357D] h-full"></div>
-   
+    <div class="xl-zoom:w-[18.5vw] lg-zoom:w-[21.25vw] bg-[#133475] h-full"></div>
   </div>
-  <button
-    class=" float-right absolute xl-zoom:bottom-[12.1vh] bottom-[11.8vh]  right-[150px] z-[1]  hover:shadow-lg hover:scale-105 transition-all duration-200 "
-    type="button"
-    onclick="handleSubmit()"
-  >
-  <img src="./assets/icons/submitButton.svg" alt="" class="w-[12.3vw]" />
-</button>
 </div>
 
-<div class="container mx-auto relative h-[85vh]">
+<div class="container mx-auto relative">
   <div class="w-full cursor-pointer flex justify-end pt-[50px]">
     <img onclick="loadPage('./page-1.html')" data-aos="fade-left" src="./assets/icons/badge2.svg" class="w-[13.2vw]"
       alt="" srcset="" />
   </div>
- 
+  <div class=" absolute top-[4rem] left-0">
+    <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase" data-aos="fade-right">
+      Decision Time
+    <div class="bg-[#3F7ADD] xl-zoom:w-[10.5rem] w-[8rem] h-2"></div>
+    </p>
+  </div>
 
-  <div class="absolute bottom-[15%] right-0 left-0">
-    <div class="grid grid-cols-2 gap-[125px] xl-zoom:mt-[75px] mt-[50px] relative">
-      <div class=" absolute xl-zoom:-top-[8rem] -top-[6rem] left-0">
-        <p class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase" data-aos="fade-right">
-          Decision Time
-        <div class="bg-[#3F7ADD] xl-zoom:w-[9.9rem] w-[7.4rem] h-2 xl-zoom:-mt-3"></div>
-        </p>
-      </div>
-      <div class="flex flex-col  text-white">
-        <p
-          class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] mt-5 mb-8"
-          data-aos="fade-up"
-        >
-          Do you think Shakib’s activities were compliant? There can <br />
-          be more than one correct answer.
+  <div class="flex gap-[99px] h-[calc(85vh-105px)] xl-zoom:mt-[75px] mt-[50px]">
+    <div class=" pt-[40px] xl-zoom:w-[648px] lg-zoom:w-[486px] shrink-0">
+      <div class="flex flex-col gap-[1.25rem] text-white">
+        <p class="xl-zoom:text-[22px] lg-zoom:text-[16.5px] font-medium xl-zoom:leading-[32px] lg-zoom:leading-[24px] -mt-5"
+          data-aos="fade-up">
+          Which of these suggestions should you as Shakib’s line manager approve
+          or decline?
         </p>
 
         <div class="flex justify-start items-center">
-          <p
-            class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-[#5F78A9] border-l-4 ps-3"
-            data-aos="fade-left"
-          >
-            Select all that apply and click Submit. There may be more <br />
-            than one correct answer.
+          <p class="xl-zoom:text-[20px] lg-zoom:text-[15px] xl-zoom:leading-[32px] lg-zoom:leading-[24px] italic border-[white] text-[#EFEFEF] border-l-4 ps-3"
+            data-aos="fade-left">
+            Select the buttons to approve or reject the activities, <br> then submit.
           </p>
         </div>
       </div>
+    </div>
+    <div class=" h-full flex justify-end items-start flex-col xl-zoom:bottom-[45px] lg-zoom:bottom-[15px] relative">
       <div class="space-y-4">
-        <div
-          id="a"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="a" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div class="">A</div> -->
           <p class="">
-            Accept the suggestions without a thought- volume and profit over anything
-            else.
+            Accept the suggestions without a thought- volume and profit over
+            anything else.
           </p>
           <div class="flex justify-center items-center space-x-4">
             <input type="checkbox" id="toggle1" class="hidden peer" />
-      
+
             <!-- Accept Button -->
             <label for="toggle1" class="cursor-pointer peer-checked:hidden">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
                 <img class="w-full h-full" src="./assets/icons/Accept.svg" alt="" />
               </div>
             </label>
-      
+
             <!-- Reject Button -->
             <label for="toggle1" class="cursor-pointer hidden peer-checked:block">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
@@ -79,28 +63,24 @@
             </label>
           </div>
         </div>
-        <div
-          id="b"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="b" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div>B</div> -->
           <p>
-            Colluding with Stimulants Tobacco and allocating markets might help boost
-            the sales. Check with the team and see how the engagement strategy can be
-            started.
+            Colluding with Stimulants Tobacco and allocating markets might help
+            boost the sales. Check with the team and see how the engagement
+            strategy can be started.
           </p>
           <div class="flex justify-center items-center space-x-4">
             <input type="checkbox" id="toggle2" class="hidden peer" />
-      
+
             <!-- Accept Button -->
             <label for="toggle2" class="cursor-pointer peer-checked:hidden">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
                 <img class="w-full h-full" src="./assets/icons/Accept.svg" alt="" />
               </div>
             </label>
-      
+
             <!-- Reject Button -->
             <label for="toggle2" class="cursor-pointer hidden peer-checked:block">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
@@ -109,28 +89,24 @@
             </label>
           </div>
         </div>
-        <div
-          id="c"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="c" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div>C</div> -->
           <p class="">
-            Seek advice from the Legal Team on how to proceed with this. It may unlock
-            potential; however, the company cannot influence the market outcome this
-            way.
+            Seek advice from the Legal Team on how to proceed with this. It may
+            unlock potential; however, the company cannot influence the market
+            outcome this way.
           </p>
           <div class="flex justify-center items-center space-x-4">
             <input type="checkbox" id="toggle3" class="hidden peer" />
-      
+
             <!-- Accept Button -->
             <label for="toggle3" class="cursor-pointer peer-checked:hidden">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
                 <img class="w-full h-full" src="./assets/icons/Accept.svg" alt="" />
               </div>
             </label>
-      
+
             <!-- Reject Button -->
             <label for="toggle3" class="cursor-pointer hidden peer-checked:block">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
@@ -139,27 +115,23 @@
             </label>
           </div>
         </div>
-        <div
-          id="d"
-          onclick=" selectHandler(this)"
-          class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
-          data-aos="fade-up"
-        >
+        <div id="d" onclick=" selectHandler(this)" class="mcq xl-zoom:text-[18px] text-[13px] xl-zoom:leading-[27px]"
+          data-aos="fade-up">
           <!-- <div>D</div> -->
           <p>
-            Restricting the retailers from selling the competitors’ products is a
-            serious breach of the competition and anti-trust policy.
+            Restricting the retailers from selling the competitors’ products is
+            a serious breach of the competition and anti-trust policy.
           </p>
           <div class="flex justify-center items-center space-x-4">
             <input type="checkbox" id="toggle4" class="hidden peer" />
-      
+
             <!-- Accept Button -->
             <label for="toggle4" class="cursor-pointer peer-checked:hidden">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
                 <img class="w-full h-full" src="./assets/icons/Accept.svg" alt="" />
               </div>
             </label>
-      
+
             <!-- Reject Button -->
             <label for="toggle4" class="cursor-pointer hidden peer-checked:block">
               <div class="xl-zoom:w-[135px] xl-zoom:h-[52px] w-[120px] h-[40px]">
@@ -169,8 +141,11 @@
           </div>
         </div>
       </div>
+      <button
+      class="float-right z-20 hover:scale-105 transition-all duration-200 mt-[70px] self-end"
+      type="button" onclick="handleSubmit()">
+      <img src="./assets/icons/submitButton.svg" alt="" class="w-[12.3vw]" />
+    </button>
     </div>
   </div>
 </div>
-
-
