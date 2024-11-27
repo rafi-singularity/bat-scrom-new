@@ -875,10 +875,6 @@ video {
   height: 73vh;
 }
 
-.h-\[80px\]{
-  height: 80px;
-}
-
 .h-\[85vh\]{
   height: 85vh;
 }
@@ -912,22 +908,6 @@ video {
   height: 100vh;
 }
 
-.h-\[100px\]{
-  height: 100px;
-}
-
-.h-\[4rem\]{
-  height: 4rem;
-}
-
-.h-\[3rem\]{
-  height: 3rem;
-}
-
-.h-\[2rem\]{
-  height: 2rem;
-}
-
 .max-h-full{
   max-height: 100%;
 }
@@ -954,10 +934,6 @@ video {
 
 .w-\[2\.3vw\]{
   width: 2.3vw;
-}
-
-.w-\[4\.3vw\]{
-  width: 4.3vw;
 }
 
 .w-\[43\.3\%\]{
@@ -988,10 +964,6 @@ video {
   width: 7.4rem;
 }
 
-.w-\[80px\]{
-  width: 80px;
-}
-
 .w-auto{
   width: auto;
 }
@@ -1007,14 +979,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.w-\[100px\]{
-  width: 100px;
-}
-
-.w-\[4rem\]{
-  width: 4rem;
 }
 
 .max-w-\[43\%\]{
@@ -1225,20 +1189,16 @@ video {
      object-fit: cover;
 }
 
+.\!p-4{
+  padding: 1rem !important;
+}
+
 .p-5{
   padding: 1.25rem;
 }
 
 .p-\[3rem\]{
   padding: 3rem;
-}
-
-.\!p-2{
-  padding: 0.5rem !important;
-}
-
-.\!p-4{
-  padding: 1rem !important;
 }
 
 .px-\[150px\]{
@@ -1763,10 +1723,6 @@ video {
     width: 80px;
   }
 
-  .lg-zoom\:\!p-2{
-    padding: 0.5rem !important;
-  }
-
   .lg-zoom\:py-\[4\.5rem\]{
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
@@ -1961,18 +1917,6 @@ video {
     height: 820px;
   }
 
-  .xl-zoom\:h-\[80px\]{
-    height: 80px;
-  }
-
-  .xl-zoom\:h-\[4rem\]{
-    height: 4rem;
-  }
-
-  .xl-zoom\:h-\[3rem\]{
-    height: 3rem;
-  }
-
   .xl-zoom\:w-\[100px\]{
     width: 100px;
   }
@@ -2013,10 +1957,6 @@ video {
     width: 679px;
   }
 
-  .xl-zoom\:w-\[6vw\]{
-    width: 6vw;
-  }
-
   .xl-zoom\:w-\[750px\]{
     width: 750px;
   }
@@ -2041,18 +1981,6 @@ video {
     width: 9.9rem;
   }
 
-  .xl-zoom\:w-\[vw\]{
-    width: vw;
-  }
-
-  .xl-zoom\:w-\[10vw\]{
-    width: 10vw;
-  }
-
-  .xl-zoom\:w-\[9vw\]{
-    width: 9vw;
-  }
-
   .xl-zoom\:max-w-\[43\%\]{
     max-width: 43%;
   }
@@ -2064,10 +1992,6 @@ video {
 
   .xl-zoom\:p-\[3rem\]{
     padding: 3rem;
-  }
-
-  .xl-zoom\:p-4{
-    padding: 1rem;
   }
 
   .xl-zoom\:pb-\[20px\]{
