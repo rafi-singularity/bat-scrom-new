@@ -35,13 +35,13 @@
 
 /* drag drop design */
 .dragDropInitialColor {
-  @apply bg-[#205820] text-white xl-zoom:h-[120px] h-[80px]   rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
+  @apply bg-[#205820] text-white xl-zoom:h-[120px] h-[90px]   rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
 }
 .dragDropApprovedColor {
-  @apply border-[#205820] border-[2px]  bg-[#205820] xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 overflow-hidden flex items-center justify-center;
+  @apply border-[#40B236] border-[2px]  bg-[#40B236] xl-zoom:h-[120px] h-[90px]  rounded-[13px] relative p-4 overflow-hidden flex items-center justify-center;
 }
 .dragDropYellowBorder {
-  @apply xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
+  @apply xl-zoom:h-[120px] h-[90px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
 }
 .dragDropBreachColor {
   @apply border-[#CA380B] bg-[#CA380B]  border-[2px] xl-zoom:h-[120px] h-[80px]  rounded-[13px] relative p-4 px-7 overflow-hidden flex items-center justify-center;
@@ -82,4 +82,29 @@
 /* No Scrollbar */
 ::-webkit-scrollbar {
   display: none;
+}
+
+#droppedItem1 > p {
+  @apply xl-zoom:text-[16px] lg-zoom:text-[10.75px]
+}
+
+#droppedItem2 > p {
+  @apply xl-zoom:text-[16px] lg-zoom:text-[10.75px]
+}
+
+#droppedItem3 > p {
+  @apply xl-zoom:text-[16px] lg-zoom:text-[10.75px]
+}
+
+#droppedItem4 > p {
+  @apply xl-zoom:text-[16px] lg-zoom:text-[10.75px]
+}
+
+#droppedItem5 > p {
+  @apply xl-zoom:text-[16px] lg-zoom:text-[10.75px]
+}
+
+
+#droppedItem6 > p {
+  @apply xl-zoom:text-[16px] lg-zoom:text-[10.75px]
 }

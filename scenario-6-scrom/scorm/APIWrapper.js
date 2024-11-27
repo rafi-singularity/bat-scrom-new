@@ -231,6 +231,9 @@ const handleAnswerSubmit = async () => {
   const potentialElement = document
     .getElementById("droppedPotential")
     .querySelectorAll(".answer");
+  if(appropriateElement.length !== 3 && potentialElement.length !== 3){
+    return;
+  }  
   for (let i = 0; i < potentialElement.length; i++) {
     potentialElement[i].parentElement.classList = "dragDropInitialColor ";
 

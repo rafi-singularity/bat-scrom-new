@@ -1,57 +1,45 @@
 <div class="bg-white fixed top-0 bottom-0 left-0 right-0">
-  <div class="xl-zoom:h-[88vh] h-[86vh] flex">
+  <div class="h-[88vh] flex relative">
     <div class="w-full bg-[#298429] h-full"></div>
-    <div class="w-[16.33vw] bg-primary h-full"></div>
-  </div>
-</div>
-
-<div class="container mx-auto relative">
-  <div class="flex justify-end gap-4 items-center mt-[50px]">
-    <!-- Badge -->
-    <div
-      class="cursor-pointer"
-      onclick="loadPage('./page-1.html')"
-      data-aos="fade-left"
-    >
-      <img src="./assets/icons/badge2.svg" alt="" />
-    </div>
+    <div class="xl-zoom:w-[14vw] lg-zoom:w-[18.25vw] bg-primary h-full"></div>
   </div>
   <button
-    class="btnMcq float-right absolute xl-zoom:-bottom-[6rem] -bottom-[5.4rem] right-0 z-20 xl-zoom:text-[26px] text-[18px] max-w-[235px] w-full"
+    class="float-right z-[1000] cursor-pointer absolute xl-zoom:bottom-[9vh] bottom-[8.8vh] right-[150px] hover:shadow-lg hover:scale-105 transition-all duration-200"
     type="button"
     onclick="handleAnswerSubmit()"
-    id="checkAnswer"
   >
-    Submit
+    <img src="./assets/icons/submitButton-quiz.svg" alt="" class="w-[12.3vw]" />
   </button>
-  <div class="xl-zoom:-mt-[15px] -mt-[6px]">
-    <div>
-      <p
-        class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold leading-none uppercase"
-        data-aos="fade-right"
-      >
-        Decision Time
-      </p>
-    </div>
-    <div class="grid grid-cols-2">
-      <div class="mt-[4px]">
-        <svg
-          width="167"
-          height="9"
-          viewBox="0 0 167 9"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+</div>
+
+<div class="container mx-auto relative h-[88vh]">
+  <div class="w-full cursor-pointer flex justify-end pt-[50px]">
+    <img
+      onclick="loadPage('./page-1.html')"
+      data-aos="fade-left"
+      src="./assets/icons/badge2.svg"
+      class="w-[13.2vw]"
+      alt=""
+      srcset=""
+    />
+  </div>
+
+  <div class="absolute xl-zoom:bottom-[8%] bottom-[10%] right-0 left-0">
+    <div class="grid grid-cols-2 gap-[25px] relative place-content-start">
+      <div class="absolute xl-zoom:-top-[6rem] -top-[4.5rem] left-0">
+        <p
+          class="text-white xl-zoom:text-[70px] text-[52.5px] font-bold uppercase"
+          data-aos="fade-right"
         >
-          <rect
-            x="0.917969"
-            y="0.395844"
-            width="166"
-            height="8"
-            fill="#97DE97"
-          />
-        </svg>
-        <div class="mt-[37px]">
-          <p class="xl-zoom:text-[22px] text-[14px] font-medium text-white">
+          Decision Time
+        </p>
+      </div>
+      <div class="">
+        <div class="bg-[#97DE97] xl-zoom:w-[10.5rem] w-[7.9rem] h-2"></div>
+        <div class="">
+          <p
+            class="xl-zoom:text-[22px] text-[14px] xl-zoom:w-[648px] w-[550px] font-medium text-white xl-zoom:mt-[30px] mt-[23px]"
+          >
             You will be presented with a few scenarios which you have to
             classify as potential risks or appropriate content.
           </p>
@@ -65,9 +53,9 @@
               correct response
             </p>
           </div>
-          <div class="grid grid-cols-2 gap-2 w-[90%] z-50">
+          <div class="grid grid-cols-2 gap-2 w-[100%] z-50">
             <div
-              class="dragDropInitialColor border-[2px] border-[#50AF47] cursor-pointer"
+              class="dragDropInitialColor cursor-grab border-[2px] border-[#50AF47]"
               draggable="true"
               ondragstart="handleDragStart(event)"
               ondrop="handleDrop(event)"
@@ -75,7 +63,7 @@
               id="item1"
             >
               <p
-                class="xl-zoom:text-[16px] text-[12px] answer"
+                class="xl-zoom:text-[17px] text-[12.25px] answer"
                 data-aos="fade-down"
                 id="answer1"
               >
@@ -85,7 +73,7 @@
               </p>
             </div>
             <div
-              class="dragDropInitialColor border-[2px] border-[#50AF47]"
+              class="dragDropInitialColor cursor-grab border-[2px] border-[#50AF47]"
               draggable="true"
               ondragstart="handleDragStart(event)"
               ondrop="handleDrop(event)"
@@ -93,7 +81,7 @@
               id="item2"
             >
               <p
-                class="xl-zoom:text-[16px] text-[12px] answer"
+                class="xl-zoom:text-[17px] text-[12.25px] answer"
                 data-aos="fade-down"
                 id="answer2"
               >
@@ -102,7 +90,7 @@
               </p>
             </div>
             <div
-              class="dragDropInitialColor border-[2px] border-[#50AF47]"
+              class="dragDropInitialColor cursor-grab border-[2px] border-[#50AF47]"
               draggable="true"
               ondragstart="handleDragStart(event)"
               ondrop="handleDrop(event)"
@@ -110,7 +98,7 @@
               id="item3"
             >
               <p
-                class="xl-zoom:text-[16px] text-[12px] answer"
+                class="xl-zoom:text-[17px] text-[12.25px] answer"
                 data-aos="fade-down"
                 id="answer3"
               >
@@ -119,7 +107,7 @@
               </p>
             </div>
             <div
-              class="dragDropInitialColor border-[2px] border-[#50AF47]"
+              class="dragDropInitialColor cursor-grab border-[2px] border-[#50AF47]"
               draggable="true"
               ondragstart="handleDragStart(event)"
               ondrop="handleDrop(event)"
@@ -127,7 +115,7 @@
               id="item4"
             >
               <p
-                class="xl-zoom:text-[16px] text-[12px] answer"
+                class="xl-zoom:text-[17px] text-[12.25px] answer"
                 data-aos="fade-down"
                 id="answer4"
               >
@@ -135,7 +123,7 @@
               </p>
             </div>
             <div
-              class="dragDropInitialColor border-[2px] border-[#50AF47]"
+              class="dragDropInitialColor cursor-grab border-[2px] border-[#50AF47]"
               draggable="true"
               ondragstart="handleDragStart(event)"
               ondrop="handleDrop(event)"
@@ -143,7 +131,7 @@
               id="item5"
             >
               <p
-                class="xl-zoom:text-[16px] text-[12px] answer"
+                class="xl-zoom:text-[17px] text-[12.25px] answer"
                 data-aos="fade-down"
                 id="answer5"
               >
@@ -152,7 +140,7 @@
               </p>
             </div>
             <div
-              class="dragDropInitialColor border-[2px] border-[#50AF47]"
+              class="dragDropInitialColor cursor-grab border-[2px] border-[#50AF47]"
               draggable="true"
               ondragstart="handleDragStart(event)"
               ondrop="handleDrop(event)"
@@ -160,7 +148,7 @@
               id="item6"
             >
               <p
-                class="xl-zoom:text-[16px] text-[12px] answer"
+                class="xl-zoom:text-[17px] text-[12.25px] answer"
                 data-aos="fade-down"
                 id="answer6"
               >
@@ -171,7 +159,6 @@
           </div>
         </div>
       </div>
-
       <div class="grid grid-cols-2 gap-[17px]">
         <div
           class="bg-white rounded-3xl border-[2px] border-dashed border-[#0E2B63]"
@@ -185,7 +172,7 @@
             </div>
             <div class="space-y-2" id="droppedAppropriate">
               <div
-                class="dragDropInitialColor"
+                class="dragDropInitialColor cursor-grab"
                 draggable="true"
                 ondragstart="handleDragStart(event)"
                 ondrop="handleDrop(event)"
@@ -193,7 +180,7 @@
                 id="droppedItem1"
               ></div>
               <div
-                class="dragDropInitialColor"
+                class="dragDropInitialColor cursor-grab"
                 draggable="true"
                 ondragstart="handleDragStart(event)"
                 ondrop="handleDrop(event)"
@@ -201,7 +188,7 @@
                 id="droppedItem2"
               ></div>
               <div
-                class="dragDropInitialColor"
+                class="dragDropInitialColor cursor-grab"
                 draggable="true"
                 ondragstart="handleDragStart(event)"
                 ondrop="handleDrop(event)"
@@ -223,7 +210,7 @@
             </div>
             <div class="space-y-2" id="droppedPotential">
               <div
-                class="dragDropInitialColor"
+                class="dragDropInitialColor cursor-grab"
                 draggable="true"
                 ondragstart="handleDragStart(event)"
                 ondrop="handleDrop(event)"
@@ -231,7 +218,7 @@
                 id="droppedItem4"
               ></div>
               <div
-                class="dragDropInitialColor"
+                class="dragDropInitialColor cursor-grab"
                 draggable="true"
                 ondragstart="handleDragStart(event)"
                 ondrop="handleDrop(event)"
@@ -239,7 +226,7 @@
                 id="droppedItem5"
               ></div>
               <div
-                class="dragDropInitialColor"
+                class="dragDropInitialColor cursor-grab"
                 draggable="true"
                 ondragstart="handleDragStart(event)"
                 ondrop="handleDrop(event)"
