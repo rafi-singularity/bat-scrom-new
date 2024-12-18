@@ -8,6 +8,11 @@
   font-family: "Poppins", sans-serif !important;
   @apply overflow-x-hidden overflow-y-hidden;
 }
+/* body {
+  transform-origin: top left;
+  transform: scale(1);
+  overflow-x: hidden;
+} */
 .badge {
   position: fixed; /* Keeps it anchored to the viewport */
   z-index: 9999; /* Ensures it appears above other elements */
@@ -35,7 +40,7 @@
   @apply bg-blue text-white  rounded-[10px] py-[10px] px-[40px] max-w-[235px] w-full flex items-center gap-2 justify-center hover:shadow-lg hover:scale-105 transition-all duration-200;
 }
 .mcq {
-  @apply flex items-center justify-between gap-1  bg-white transition-all duration-300 cursor-pointer px-[21px] xl-zoom:py-5 py-4 rounded-[15px] shadow-md;
+  @apply flex items-center justify-between  bg-white transition-all duration-300 cursor-pointer pl-[2rem] pr-[1rem] xl-zoom:py-5 py-4 rounded-[15px] shadow-md;
 }
 .mcq div {
 }
@@ -55,10 +60,10 @@
 
 /* Incorrect */
 .wrongBorder {
-  @apply border-4 border-[#FF1914] rounded-[15px];
+  @apply border-2 border-[#FF1914] rounded-[15px];
 }
 .rightBorder {
-  @apply border-4 border-[#36ad2b] rounded-[15px];
+  @apply border-2 border-[#36ad2b] rounded-[15px];
 }
 /* Correct */
 /* .correct {
