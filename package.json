@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.12"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }

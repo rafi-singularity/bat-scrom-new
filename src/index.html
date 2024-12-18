@@ -5,34 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="aos.css" />
-    <script src="../scorm/APIWrapper.js"></script>
+    <script src="../scorm/scorm_api_wrapper.js"></script>
+    <script src="../scorm/app.js"></script>
     <script src="../scorm/aos.js"></script>
     <title>Make Responsible Choices</title>
     <script>
-      var scorm = pipwerks.SCORM;
-
-      function initCourse() {
-        var connected = scorm.init();
-        if (connected) {
-          console.log("SCORM connection established.");
-          // Additional SCORM code here (e.g., get learner name, progress)
-        } else {
-          console.log("SCORM connection failed.");
-        }
-      }
-
-      function exitCourse() {
-        var success = scorm.quit();
-        if (success) {
-          console.log("SCORM connection terminated.");
-        } else {
-          console.log("SCORM termination failed.");
-        }
-      }
-
-      window.onload = initCourse;
-      window.onunload = exitCourse;
-
       async function loadPage(page) {
         let newDocument;
         await fetch(page)
@@ -46,7 +23,7 @@
           .catch((error) => console.log("Error loading page:", error));
         return newDocument;
       }
-      loadPage("./page-1.html");
+      loadPage("./page-15.html");
     </script>
   </head>
   <body class="">
