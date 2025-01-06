@@ -33,6 +33,8 @@ if (isInitialized) {
 }
 
 const completeSession = () => {
+  let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+  console.log(result);
   pipwerks.SCORM.save();
   window.close();
 }
@@ -77,15 +79,15 @@ const handleSubmit = async () => {
   const ascResponse = selectedOptions.sort();
   const isValid = isMatch(ascResponse);
   if (isValid) {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     loadPage("./page-12.html");
     return;
   } else {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "failed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "failed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     const newDocument = await loadPage("./page-11.html");
     selectedOptions.map((elem) => {
       return newDocument.getElementById(elem).classList.add("wrong");
