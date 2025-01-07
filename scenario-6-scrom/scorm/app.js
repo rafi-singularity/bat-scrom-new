@@ -26,6 +26,7 @@ if (isInitialized) {
 }
 
 const completeSession = () => {
+  let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
   pipwerks.SCORM.save();
   window.close();
 }
@@ -161,9 +162,9 @@ const handleAnswerSubmit = async () => {
   }
 
   if (correctValue === 6) {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     await loadPage("./page-7.html");
     appropriateElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 1}`);
@@ -175,9 +176,9 @@ const handleAnswerSubmit = async () => {
       targetDiv.appendChild(item);
     });
   } else {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "failed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "failed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     await loadPage("./page-6.html");
     appropriateElement.forEach((item, index) => {
       const targetDiv = document.getElementById(`droppedItem${index + 1}`);
