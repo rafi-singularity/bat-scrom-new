@@ -28,6 +28,7 @@ if (isInitialized) {
 }
 
 const completeSession = () => {
+  let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
   pipwerks.SCORM.save();
   window.close();
 }
@@ -72,15 +73,15 @@ const handleSubmit = async () => {
   const isValid = isMatch(ascResponse);
   console.log(isValid);
   if (isValid) {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     loadPage("./page-7.html");
     return;
   } else {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     const newDocument = await loadPage("./page-6.html");
     response.map((elem) => {
       return newDocument.getElementById(elem).classList.add("wrong");
