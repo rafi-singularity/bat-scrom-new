@@ -26,6 +26,7 @@ if (isInitialized) {
 }
 
 const completeSession = () => {
+  let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
   pipwerks.SCORM.save();
   window.close();
 }
@@ -63,15 +64,15 @@ const handleSubmit = async () => {
   console.log("input value", selectedValues);
   const isValid = isMatch(selectedValues);
   if (isValid) {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     selectedValues = [];
     return loadPage("./page-7.html");
   } else {
-    let result = pipwerks.SCORM.set("cmi.core.lesson_status", "failed");
-    console.log(result);
-    pipwerks.SCORM.save();
+    // let result = pipwerks.SCORM.set("cmi.core.lesson_status", "failed");
+    // console.log(result);
+    // pipwerks.SCORM.save();
     await loadPage("./page-6.html");
     checkboxes = document.querySelectorAll('input[type="checkbox"]');
     console.log(checkboxes);
