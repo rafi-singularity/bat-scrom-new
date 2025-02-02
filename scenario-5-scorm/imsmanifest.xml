@@ -8,7 +8,7 @@
 
     <organizations default="bat">
         <organization identifier="bat-license-to-manage">
-            <title>03. The Right Approach</title>
+            <title>05. The Right Approach</title>
             <item identifier="bat-episode-5" identifierref="episode-5-resource">
                 <title>The Right Approach</title>
             </item>
