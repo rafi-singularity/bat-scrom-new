@@ -26,7 +26,10 @@ if (isInitialized) {
 }
 
 const completeSession = () => {
-  let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+  let lessonStatus = pipwerks.SCORM.set("cmi.core.lesson_status", "completed");
+  let successStatus = pipwerks.SCORM.set("cmi.success_status", "passed");
+  console.log(lessonStatus);
+  console.log(successStatus);
   pipwerks.SCORM.save();
   window.close();
 }
