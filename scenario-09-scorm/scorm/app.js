@@ -20,16 +20,28 @@ if (isInitialized) {
     const endTime = new Date();
     const timeSpent = (endTime - startTime) / 1000; // Time in seconds
     pipwerks.SCORM.set("cmi.core.session_time", formatTime(timeSpent));
-    pipwerks.SCORM.quit();
   });
 } else {
   console.error("Failed to initialize SCORM.");
 }
 
+const courseInit = () => {
+  pipwerks.SCORM.init();
+  var status = pipwerks.SCORM.get("cmi.core.lesson_status");
+  if (status === "not attempted") {
+    pipwerks.SCORM.set("cmi.core.lesson_status", "incomplete");
+  }
+}
 const completeSession = () => {
-  let result = pipwerks.SCORM.set("cmi.core.lesson_status", "passed");
+  pipwerks.SCORM.set("cmi.core.lesson_status", "completed");
+  // pipwerks.SCORM.set("cmi.success_status", "passed");
   pipwerks.SCORM.save();
-  window.close();
+  if (window.API) {
+    API.LMSSetValue("cmi.core.exit", "logout");  // Valid: "logout", "suspend", ""
+    API.LMSCommit("");
+    API.LMSFinish(""); // Signals the course is finished
+  }
+  loadPage('./page-1.html')
 }
 // Format time for SCORM
 function formatTime(seconds) {
