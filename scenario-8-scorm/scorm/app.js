@@ -27,20 +27,23 @@ if (isInitialized) {
   console.error("Failed to initialize SCORM.");
 }
 
-const completeSession = () => {
-  let lessonStatus = pipwerks.SCORM.set("cmi.core.lesson_status", "completed");
-  let successStatus = pipwerks.SCORM.set("cmi.success_status", "passed");
-  console.log(lessonStatus);
-  console.log(successStatus);
-  pipwerks.SCORM.save();
-  window.close();
+const courseInit = () => {
+  pipwerks.SCORM.init();
+  var status = pipwerks.SCORM.get("cmi.core.lesson_status");
+  if (status === "not attempted") {
+    pipwerks.SCORM.set("cmi.core.lesson_status", "incomplete");
+  }
 }
-// Format time for SCORM
-function formatTime(seconds) {
-  const hours = Math.floor(seconds / 3600);
-  const minutes = Math.floor((seconds % 3600) / 60);
-  const secs = Math.floor(seconds % 60);
-  return `${hours}:${minutes}:${secs}`;
+const completeSession = () => {
+  pipwerks.SCORM.set("cmi.core.lesson_status", "completed");
+  // pipwerks.SCORM.set("cmi.success_status", "passed");
+  pipwerks.SCORM.save();
+  if (window.API) {
+    API.LMSSetValue("cmi.core.exit", "logout");  // Valid: "logout", "suspend", ""
+    API.LMSCommit("");
+    API.LMSFinish(""); // Signals the course is finished
+  }
+  loadPage('./page-1.html')
 }
 
 
