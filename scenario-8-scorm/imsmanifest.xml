@@ -6,8 +6,8 @@
     xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
                         http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
 
-    <organizations default="bat-2">
-        <organization identifier="bat-license-to-manage-2">
+    <organizations default="bat-8">
+        <organization identifier="bat-license-to-manage-8">
             <title>08. An Era of Simplification</title>
             <item identifier="bat-episode-8" identifierref="episode-8-resource">
                 <title>An Era of Simplification</title>
