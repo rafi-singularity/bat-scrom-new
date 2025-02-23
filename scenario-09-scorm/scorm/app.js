@@ -41,7 +41,8 @@ const completeSession = () => {
     API.LMSCommit("");
     API.LMSFinish(""); // Signals the course is finished
   }
-  loadPage('./page-1.html')
+  // loadPage('./page-1.html')
+  window.close()
 }
 // Format time for SCORM
 function formatTime(seconds) {

@@ -6,8 +6,8 @@
     xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
                         http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
 
-    <organizations default="bat-1">
-        <organization identifier="bat-license-to-manage-2">
+    <organizations default="bat-9">
+        <organization identifier="bat-license-to-manage-9">
             <title>09. The Right Intention</title>
             <item identifier="bat-episode-9" identifierref="episode-9-resource">
                 <title>The Right Intention</title>
