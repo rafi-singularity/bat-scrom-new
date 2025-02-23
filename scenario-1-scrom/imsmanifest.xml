@@ -6,15 +6,14 @@
     xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
                         http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
 
-    <organizations default="bat">
-        <organization identifier="bat-license-to-manage">
+    <organizations default="bat-1">
+        <organization identifier="bat-license-to-manage-1">
             <title>01. Make Responsible Choices</title>
             <item identifier="bat-episode-1" identifierref="episode-1-resource">
                 <title>Make Responsible Choices</title>
             </item>
         </organization>
     </organizations>
-
     <resources>
         <resource identifier="episode-1-resource" type="webcontent" adlcp:scormType="sco" href="index.html">
             <file href="index.html" />
