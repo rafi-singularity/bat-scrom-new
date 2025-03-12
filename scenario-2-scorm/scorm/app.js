@@ -39,14 +39,11 @@ const completeSession = () => {
   // pipwerks.SCORM.set("cmi.success_status", "passed");
   pipwerks.SCORM.save();
   if (window.API) {
-    // API.LMSSetValue("cmi.core.exit", "logout");  // Valid: "logout", "suspend", ""
+    API.LMSSetValue("cmi.core.exit", "logout");  // Valid: "logout", "suspend", ""
     API.LMSCommit("");
     API.LMSFinish(""); // Signals the course is finished
   }
-  // loadPage('./page-1.html')
-  setTimeout(() => {
-    window.close();
-  }, 300);
+  window.close()
 }
 // Format time for SCORM
 function formatTime(seconds) {
