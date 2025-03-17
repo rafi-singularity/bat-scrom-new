@@ -17,13 +17,18 @@ if (isInitialized) {
 
   // Save Time Tracking on Exit
   window.addEventListener("beforeunload", () => {
-    const endTime = new Date();
-    const timeSpent = (endTime - startTime) / 1000; // Time in seconds
-    pipwerks.SCORM.set("cmi.core.session_time", formatTime(timeSpent));
-    pipwerks.SCORM.quit();
+
+    // pipwerks.SCORM.quit();
   });
 } else {
   console.error("Failed to initialize SCORM.");
+}
+const courseInit = () => {
+  pipwerks.SCORM.init();
+  var status = pipwerks.SCORM.get("cmi.core.lesson_status");
+  if (status === "not attempted") {
+    pipwerks.SCORM.set("cmi.core.lesson_status", "incomplete");
+  }
 }
 
 const completeSession = () => {
@@ -31,7 +36,11 @@ const completeSession = () => {
   let successStatus = pipwerks.SCORM.set("cmi.success_status", "passed");
   console.log(lessonStatus);
   console.log(successStatus);
+  const endTime = new Date();
+  const timeSpent = (endTime - startTime) / 1000; // Time in seconds
+  pipwerks.SCORM.set("cmi.core.session_time", formatTime(timeSpent));
   pipwerks.SCORM.save();
+
   window.close();
 }
 // Format time for SCORM
